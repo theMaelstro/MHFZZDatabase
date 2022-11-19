@@ -1,5 +1,8 @@
 # MHFZZDatabase
 
+<img src="https://img.shields.io/github/downloads/theMaelstro/MHFZZDatabase/total"
+         alt="Total_Downloads"/>
+
 This app is derived from GH Studios apps.
 You can find source code here:
 https://github.com/gatheringhallstudios/MHGenDatabase
