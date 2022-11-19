@@ -1,9 +1,10 @@
 # MHFZZDatabase
-
+<a href="https://github.com/theMaelstro/MHFZZDatabase/releases">
 <img src="https://img.shields.io/github/downloads/theMaelstro/MHFZZDatabase/total?style=for-the-badge"
-         alt="Total_Downloads"/>
+         alt="Total_Downloads"/></a>
+<a href="https://github.com/theMaelstro/MHFZZDatabase/releases/latest">
 <img src="https://img.shields.io/github/downloads/theMaelstro/MHFZZDatabase/latest/mhfzz_database_release.apk?style=for-the-badge"
-     alt="Latest_Downloads"/>
+     alt="Latest_Downloads"/></a>
 
 This app is derived from GH Studios apps.
 You can find source code here:
