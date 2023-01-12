@@ -18,3 +18,4 @@ I want to thank everyone who helped me so far.
 Especially:
 - silversoulart for app banner and icon design (and work put in future high definition remake of map/monster images and creating missing item icons)
 - supream and Sera for their time put into data gathering
+- Ezemania for French translation of the UI
