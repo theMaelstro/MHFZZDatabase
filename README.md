@@ -16,6 +16,9 @@ The database is designed to be used with the Community Edition of the game. It m
 
 I want to thank everyone who helped me so far.
 Especially:
-- silversoulart for app banner and icon design (and work put in future high definition remake of map/monster images and creating missing item icons)
+- silversoulart for app banner, icon design, designing missing icons, monster icons remake and custom monster icons
 - supream and Sera for their time put into data gathering
+- Pax for help with quests
 - Ezemania for French translation of the UI
+- Buddy for German translation of the UI
+- Evo for Italian translation of the UI
