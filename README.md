@@ -13,6 +13,7 @@ https://github.com/gatheringhallstudios/MHGenDatabase
 All credit for initial code goes to them.
 
 The database is designed to be used with the Community Edition of the game. It may stay a little out of date due to how fast the game evolves.
+Share your thoughts on my discord server https://discord.gg/tJm7SZe3bR
 
 I want to thank everyone who helped me so far.
 Especially:
