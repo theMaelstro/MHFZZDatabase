@@ -24,3 +24,4 @@ Especially:
 - Ezemania for French translation of the UI
 - Buddy for German translation of the UI
 - Evo for Italian translation of the UI
+- Dedsonic for Portugese translation of the UI
