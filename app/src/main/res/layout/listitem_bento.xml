@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/list_item_basic"
+    android:clickable="false"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_large"
+    android:paddingRight="@dimen/margin_large"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:minHeight="@dimen/list_item_height"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        style="@style/small_image"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:iconSrc="@drawable/icon_egg" />
+
+    <TextView
+        android:id="@+id/bento_name"
+        style="@style/text_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/effects_section"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Fried Pokkori" />
+
+    <LinearLayout
+        android:id="@+id/effects_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="center_vertical|end"
+        android:minWidth="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/effecheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/effectheader_1"
+                style="@style/text_small_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health:" />
+
+            <TextView
+                android:id="@+id/effectheader_2"
+                style="@style/text_small_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stamina:" />
+
+            <TextView
+                android:id="@+id/effectheader_3"
+                style="@style/text_small_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attack:" />
+
+            <TextView
+                android:id="@+id/effectheader_4"
+                style="@style/text_small_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Defense:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/effectvalue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/effect_1"
+                style="@style/text_small_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                tools:text="+30" />
+
+            <TextView
+                android:id="@+id/effect_2"
+                style="@style/text_small_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="+50" />
+
+            <TextView
+                android:id="@+id/effect_3"
+                style="@style/text_small_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                tools:text="+3" />
+
+            <TextView
+                android:id="@+id/effect_4"
+                style="@style/text_small_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                tools:text="+10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

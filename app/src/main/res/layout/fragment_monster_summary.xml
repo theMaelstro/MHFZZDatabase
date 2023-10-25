@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Common header -->
+        <!--
+        <com.ghstudios.android.components.TitleBarCell
+            android:id="@+id/monster_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:iconSrc="@drawable/drawer_monsters"
+            tools:titleText="Azure Rathalos" >
+
+        </com.ghstudios.android.components.TitleBarCell>
+        -->
+
+        <!--android:adjustViewBounds="true"
+            android:scaleType="centerCrop"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/monster_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/drawer_monsters" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/list_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/list_item"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/icon_book" />
+
+                        <TextView
+                            android:id="@+id/monster_detail_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type"
+                            android:textSize="21sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_size_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/list_item"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_crown_silver" />
+
+                        <TextView
+                            android:id="@+id/monster_detail_size_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0000m"
+                            android:textSize="21sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_size_max"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/list_item"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_crown_gold" />
+
+                        <TextView
+                            android:id="@+id/monster_detail_size_max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0000m"
+                            android:textSize="21sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/monster_state_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/ahahaha"
+                layout="@layout/fragment_monster_summary_state"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <include
+                layout="@layout/fragment_monster_summary_state"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:id="@+id/ailments_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/monster_ailments" />
+
+        <include
+            android:id="@+id/ailments_empty"
+            layout="@layout/listitem_empty"/>
+
+        <TextView
+            android:id="@+id/ailments_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            style="@style/text_small_secondary"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:text="Blastblight\nSevere Dragonblight" />
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/monster_habitats" />
+
+        <include
+            android:id="@+id/habitats_empty"
+            layout="@layout/listitem_empty"/>
+
+        <LinearLayout
+            android:id="@+id/habitat_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_solid"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

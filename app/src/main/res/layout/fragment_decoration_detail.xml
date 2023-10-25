@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.ghstudios.android.components.TitleBarCell
+            android:id="@+id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:iconSrc="@drawable/drawer_decorations"
+            tools:titleText="Attack Jewel 3"
+            tools:titleAltText="攻撃珠【３】"
+            tools:altTitleEnabled="true"/>
+
+        <FrameLayout
+            android:id="@+id/divider1"
+            style="@style/SectionDivider"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/data_row"
+            style="@style/cell_column_row">
+
+            <com.ghstudios.android.components.ColumnLabelTextCell
+                android:id="@+id/rare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_rarity"
+                tools:valueText="6" />
+
+            <include layout="@layout/view_column_slots"/>
+
+            <com.ghstudios.android.components.ColumnLabelTextCell
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_buy"
+                tools:valueText="80z" />
+
+            <com.ghstudios.android.components.ColumnLabelTextCell
+                android:id="@+id/sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_sell"
+                tools:valueText="80z" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/skills" />
+
+        <LinearLayout
+            android:id="@+id/skill_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.LabelTextRowCell
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:labelText="Attack"
+                app:valueText="1"
+                tools:visibility="visible" />
+
+            <com.ghstudios.android.components.LabelTextRowCell
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:labelText="Defense"
+                app:valueText="-1"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/item_crafting" />
+
+        <LinearLayout
+            android:id="@+id/recipe_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ghstudios.android.components.ItemRecipeCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:titleText="Recipe 1"
+                tools:visibility="visible" />
+
+            <com.ghstudios.android.components.ItemRecipeCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:titleText="Recipe 2"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

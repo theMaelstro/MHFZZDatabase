@@ -1,0 +1,305 @@
+package com.ghstudios.android.features.monsters.detail
+
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
+import android.content.Context
+import android.os.Bundle
+import android.support.annotation.DrawableRes
+import android.support.v4.app.Fragment
+import android.support.v4.content.ContextCompat
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
+import android.widget.TextView
+import butterknife.BindView
+import butterknife.ButterKnife
+import com.ghstudios.android.AssetLoader
+import com.ghstudios.android.ClickListeners.LocationClickListener
+import com.ghstudios.android.ElementRegistry
+import com.ghstudios.android.components.SectionHeaderCell
+import com.ghstudios.android.components.TitleBarCell
+import com.ghstudios.android.data.classes.*
+import com.ghstudios.android.mhgendatabase.R
+
+
+private fun imageFromWeaknessRating(weaknessRating: WeaknessRating) = when(weaknessRating) {
+    WeaknessRating.WEAK -> R.drawable.effectiveness_2
+    WeaknessRating.VERY_WEAK -> R.drawable.effectiveness_3
+    else -> null
+}
+
+private fun localizeAilment(ctx: Context, ailmentStr: String): String {
+    val resId = when (ailmentStr) {
+        "Small Roar" -> R.string.ailment_roar_small
+        "Large Roar" -> R.string.ailment_roar_large
+        "Small Special Roar" -> R.string.ailment_roar_small_special
+        "Special Roar" -> R.string.ailment_roar_special
+        "Small Wind Pressure" -> R.string.ailment_wind_small
+        "Large Wind Pressure" -> R.string.ailment_wind_large
+        "Dragon Wind Pressure" -> R.string.ailment_wind_dragon
+        "Tremor" -> R.string.ailment_tremor
+        "Fireblight" -> R.string.ailment_fire
+        "Waterblight" -> R.string.ailment_water
+        "Thunderblight" -> R.string.ailment_thunder
+        "Iceblight" -> R.string.ailment_ice
+        "Dragonblight" -> R.string.ailment_dragon
+        "Blastblight" -> R.string.ailment_blast
+        "Bleeding" -> R.string.ailment_bleed
+        "Poison" -> R.string.ailment_poison
+        "Noxious Poison" -> R.string.ailment_poison_noxious
+        "Deadly Poison" -> R.string.ailment_poison_deadly
+        "Sleep" -> R.string.ailment_sleep
+        "Paralysis" -> R.string.ailment_paralysis
+        "Stun" -> R.string.ailment_stun
+        "Snowman" -> R.string.ailment_snowman
+        "Muddy" -> R.string.ailment_muddy
+        "Bubbles" -> R.string.ailment_bubbles
+        "Boned" -> R.string.ailment_boned
+        "Mucus" -> R.string.ailment_mucus
+        "Soiled" -> R.string.ailment_soiled
+        "Environmental" -> R.string.ailment_environmental
+        "Defense Down" -> R.string.ailment_defensedown
+        "Frenzy Virus" -> R.string.ailment_frenzy
+        "Confusion" -> R.string.ailment_confusion
+        else -> 0
+    }
+
+    if (resId == 0) {
+        Log.e("MonsterSummary", "Ailment localization failed for $ailmentStr")
+        return ailmentStr
+    }
+
+    return ctx.getString(resId)
+}
+
+/**
+ * Represents a subfragment displayed in the summary tab of the monster detail.
+ */
+class MonsterSummaryFragment : Fragment() {
+    companion object {
+        private val ARG_MONSTER_ID = "MONSTER_ID"
+
+        @JvmStatic
+        fun newInstance(monsterId: Long): MonsterSummaryFragment {
+            val args = Bundle()
+            args.putLong(ARG_MONSTER_ID, monsterId)
+            val f = MonsterSummaryFragment()
+            f.arguments = args
+            return f
+        }
+    }
+
+    private val TAG = this::class.java.simpleName
+
+    //@BindView(R.id.monster_header)
+    //lateinit var headerView: TitleBarCell
+
+    @BindView(R.id.monster_detail_type)
+    lateinit var monster_classType: TextView
+
+    @BindView(R.id.monster_detail_size_min)
+    lateinit var monster_sizeMin: TextView
+
+    @BindView(R.id.monster_detail_size_max)
+    lateinit var monster_sizeMax: TextView
+
+    @BindView(R.id.monster_picture)
+    lateinit var headerImage: ImageView
+
+    @BindView(R.id.monster_state_list)
+    lateinit var statesListView: LinearLayout
+
+    @BindView(R.id.ailments_data) lateinit var ailmentTextView: TextView
+    @BindView(R.id.habitat_list) lateinit var habitatListView: LinearLayout
+
+    @BindView(R.id.ailments_empty) lateinit var ailmentsEmpty: View
+    @BindView(R.id.habitats_empty) lateinit var habitatsEmpty: View
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_monster_summary, container, false)
+        ButterKnife.bind(this, view)
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val viewModel = ViewModelProviders.of(activity!!).get(MonsterDetailViewModel::class.java)
+
+        viewModel.monsterData.observe(this, Observer { monster ->
+            if (monster == null) return@Observer
+
+            // Return unknown size if size is NULL and format size with metrics if its not
+            fun parse_size (Size: String): String{
+                if (Size == "Unknown") {
+                    return Size
+                }
+                else {
+                    return ("$Size cm")
+                }
+            }
+
+            AssetLoader.setIcon(headerImage, monster)
+            monster_classType.setText(AssetLoader.localizeMonsterType(monster.monsterClassType))
+            monster_sizeMin.setText(parse_size(monster.sizeMin))
+            monster_sizeMax.setText(parse_size(monster.sizeMax))
+            //headerView.setIcon(monster)
+            //headerView.setTitleText(monster.name)
+
+        })
+
+        viewModel.weaknessData.observe(this, Observer(::updateWeaknesses))
+        viewModel.ailmentData.observe(this, Observer(::populateAilments))
+        viewModel.habitatData.observe(this, Observer(::populateHabitats))
+    }
+
+
+    /**
+     * Populates weakness data in the view using the provided data.
+     * If null or empty, then nothing is rendered regarding weaknesses
+     */
+    private fun updateWeaknesses(weaknesses: List<MonsterWeaknessResult>?) {
+        statesListView.removeAllViews()
+        if (weaknesses == null || weaknesses.isEmpty()) return
+
+        for (weakness in weaknesses) {
+            addWeakness(weakness)
+        }
+    }
+
+    private fun addWeakness(mWeakness: MonsterWeaknessResult) {
+        val inflater = LayoutInflater.from(context)
+        val weaknessView = inflater.inflate(R.layout.fragment_monster_summary_state, statesListView, false)
+
+        // Set title
+        val header = weaknessView.findViewById<SectionHeaderCell>(R.id.state_name)
+        header.setLabelText(mWeakness.state)
+
+        val weaknessListView = weaknessView.findViewById<ViewGroup>(R.id.weakness_data)
+        val itemListView = weaknessView.findViewById<ViewGroup>(R.id.item_data)
+
+        // weakness line (element part)
+        for (value in mWeakness.element) {
+            val imagePath = ElementRegistry[value.type]
+            val imageModification = imageFromWeaknessRating(value.rating)
+            addIcon(weaknessListView, imagePath, imageModification)
+        }
+
+        // weakness line (status part)
+        for (value in mWeakness.status) {
+            val imagePath = ElementRegistry[value.type]
+            val imageModification = imageFromWeaknessRating(value.rating)
+            addIcon(weaknessListView, imagePath, imageModification)
+        }
+
+        // items line
+        for (trapType in mWeakness.items) {
+            val imagePath = when (trapType) {
+                WeaknessType.PITFALL_TRAP -> R.drawable.item_trap_pitfall
+                WeaknessType.SHOCK_TRAP -> R.drawable.item_trap_shock
+                WeaknessType.MEAT -> R.drawable.item_meat
+                WeaknessType.FLASH_BOMB -> R.drawable.item_bomb_flash
+                WeaknessType.SONIC_BOMB -> R.drawable.item_bomb_sonic
+                WeaknessType.DUNG_BOMB -> R.drawable.item_bomb_dung
+            }
+
+            addIcon(itemListView, imagePath, null)
+        }
+
+        statesListView.addView(weaknessView)
+    }
+
+    /**
+     * Populates ailment data in the view using the provided data.
+     * If null or empty is given, the blank slate is shown instead.
+     */
+    private fun populateAilments(ailments: List<MonsterAilment>?) {
+        // if no ailments, show blank slate instead of the ailment list, and return
+        if (ailments == null || ailments.isEmpty()) {
+            ailmentsEmpty.visibility = View.VISIBLE
+            ailmentTextView.visibility = View.GONE
+            return
+        }
+
+        // hide blank slate, and make the ailment list visible
+        ailmentsEmpty.visibility = View.GONE
+        ailmentTextView.visibility = View.VISIBLE
+        ailmentTextView.text = ailments.joinToString("\n") {
+            localizeAilment(context!!, it.ailment)
+        }
+    }
+
+    /**
+     * Populates habitat data in th e view using the provided data.
+     * If null or empty is given, the blank slate is shown instead.
+     */
+    private fun populateHabitats(habitats: List<Habitat>?) {
+        if (habitats == null || habitats.isEmpty()) {
+            habitatsEmpty.visibility = View.VISIBLE
+            return
+        }
+
+        habitatsEmpty.visibility = View.GONE
+        val inflater = LayoutInflater.from(context)
+
+        habitatListView.removeAllViews()
+        for (habitat in habitats) {
+            val view = inflater.inflate(R.layout.fragment_monster_habitat_listitem, habitatListView, false)
+
+            val itemLayout = view.findViewById<RelativeLayout>(R.id.listitem)
+            val mapView = view.findViewById<ImageView>(R.id.mapImage)
+            val mapTextView = view.findViewById<TextView>(R.id.map)
+            val startTextView = view.findViewById<TextView>(R.id.start)
+            val areaTextView = view.findViewById<TextView>(R.id.move)
+            val restTextView = view.findViewById<TextView>(R.id.rest)
+
+            mapTextView.text = habitat.location?.name
+            startTextView.text = habitat.start.toString()
+            areaTextView.text = habitat.areas?.joinToString(", ")
+            restTextView.text = habitat.rest.toString()
+
+            AssetLoader.setIcon(mapView,habitat.location!!)
+
+            val locationId = habitat.location?.id
+            if (locationId != null) {
+                itemLayout.tag = locationId
+                itemLayout.setOnClickListener(LocationClickListener(context, locationId))
+            }
+
+            habitatListView.addView(view)
+        }
+    }
+
+    // Add small_icon to a particular LinearLayout
+    private fun addIcon(parentview: ViewGroup, @DrawableRes image: Int?, @DrawableRes mod: Int?) {
+        if (image == null) {
+            Log.e(TAG, "Tried to add null image as an icon")
+            return
+        }
+
+        // Create new small_icon layout
+        val inflater = LayoutInflater.from(context)
+        val view = inflater.inflate(R.layout.fragment_monster_summary_weakness, parentview, false)
+
+        // Get reference to image in small_icon layout
+        val mImage = view.findViewById<ImageView>(R.id.image)
+        val mImageMod = view.findViewById<ImageView>(R.id.image_mod)
+
+        // Open Image
+        val mainImage = ContextCompat.getDrawable(context!!, image)
+        mImage.setImageDrawable(mainImage)
+
+        // Open Image Mod if applicable
+        if (mod != null) {
+            val modImage = ContextCompat.getDrawable(context!!, mod)
+            mImageMod.setImageDrawable(modImage)
+            mImageMod.visibility = View.VISIBLE
+        }
+
+        // Add small_icon to appropriate layout
+        parentview.addView(view)
+    }
+}

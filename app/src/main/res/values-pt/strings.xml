@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MHFZZ Database</string>
+    <string name="app_name_launcher">MHFZZDB</string>
+    <string name="search">Pesquisar</string>
+    <string name="search_hint">Pesquisar Database</string>
+    <string name="filter_hint">Filtro…</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="copy">Copiar</string>
+    <string name="submit">Submeter</string>
+    <string name="undo">Desfazer</string>
+
+    <string name="about">Sobre</string>
+    <string name="about_version">Versão %s</string>
+    <string name="about_message">
+        Gathering Hall Studios é uma equipa de fonte aberta de designers e desenvolvedores 
+        dedicados a construir apps de alta qualidade para a série de Monster Hunter.
+        Contacta-os em contact@gatheringhallstudios.com ou visita o seu Discord!
+    </string>
+
+    <string name="about_artist">Artista</string>
+    <string name="about_global">Global</string>
+    <string name="about_europe">Europa</string>
+    <string name="about_channel">Canal</string>
+    <string name="about_website">Website</string>
+    <string name="about_source">Fonte</string>
+
+    <string name="about_language_en">Inglês</string>
+    <string name="about_language_fr">Francês</string>
+    <string name="about_language_de">Alemão</string>
+    <string name="about_language_it">Italiano</string>
+    <string name="about_language_pt">Português</string>
+    <string name="about_japanese_wiki">Wiki Japonesa</string>
+    <string name="about_asb">Construtor de Conjunto de Armaduras</string>
+
+    <string name="about_title_links_mael">Links (MAEL)</string>
+    <string name="about_title_links_ghstudios">Links (GHStudios)</string>
+    <string name="about_title_libraries">Livrarias de Fonte Aberta</string>
+
+    <string name="about_title_credits_mhfzz">Créditos (MHFZZ)</string>
+    <string name="about_title_credits_mhgu">Créditos (MHGU)</string>
+    <string name="about_title_credits_mhgen">Créditos (MHGen)</string>
+    <string name="about_title_credits_data_support">Créditos (Suporte de Dados)</string>
+    <string name="about_title_credits_data_sources">Créditos (Fonte de Dados)</string>
+    <string name="about_title_credits_app_translation">Créditos (Traduções da Aplicação)</string>
+    <string name="about_title_credits_translation">Créditos (Traduções das Fontes)</string>
+
+    <string name="about_title_ghstudios">Sobre Gathering Hall Studios</string>
+    <string name="about_title_community">Comunidade</string>
+
+
+
+    <string name="value_zenny">%dz</string>
+
+    <string name="placeholder_unknown">Desconhecido</string>
+    <string name="filter_final_option">Apenas Final</string>
+    <string name="empty_message">Sem data</string>
+    <string name="list_empty_message">Materiais insuficientes.</string>
+
+    <string name="dialog_message_delete">\"%s\" será eliminado.</string>
+    <string name="dialog_message_delete_multi">Estes %d itens serão duplicados..</string>
+    <string name="dialog_message_copy">\"%s\" será duplicado.</string>
+    <string name="dialog_message_copy_multi">Estes %d itens serão duplicados.</string>
+
+    <!-- CONFIRM EXIT -->
+    <string name="exit_title">Abandonar Quest</string>
+    <string name="exit_dialog">Cancelar a Quest e retornar à aldeia?</string>
+    <string name="exit_confirm">Sim</string>
+    <string name="exit_cancel">Não</string>
+
+    <!-- CHANGELOG DIALOG -->
+    <string name="changelog_full_title">Lista de Mudanças</string>
+    <string name="changelog_title">O que é novo</string>
+    <string name="changelog_ok_button">OK</string>
+    <string name="changelog_show_full">Mais…</string>
+
+    <!-- Various data types (for search results and things like that) -->
+    <string name="type_location">Local</string>
+    <string name="type_monster">Monstro</string>
+    <string name="type_quest">Quest</string>
+    <string name="type_skill_tree">Árvore de Habilidades</string>
+    <string name="type_item">Item</string>
+    <string name="type_bento">Bento</string>
+    <string name="type_weapon">Arma</string>
+    <string name="type_armor">Armadura</string>
+    <string name="type_armor_set">Conjunto de Armaduras</string>
+    <string name="type_armor_set_gunner">Conjunto de Armaduras (Atirador)</string>
+    <string name="type_armor_set_blade">Conjunto de Armaduras (Lâminas)</string>
+    <string name="type_decoration">Adornos</string>
+    <string name="type_palico_weapon">Arma do Palico</string>
+    <string name="type_palico_armor">Armadura do Palico</string>
+    <string name="type_material">Material</string>
+    <string name="type_hub_village">Não implementado</string>
+    <string name="type_hub_hunter_quests">Caçador</string>
+    <string name="type_hub_g_hunter_quests">Caçador G</string>
+    <string name="type_hub_special_quests">Especial</string>
+    <string name="type_hub_g_special_quests">G Especial</string>
+    <string name="type_hub_conquest">Conquest</string>
+    <string name="type_hub_other">Outro</string>
+    <string name="type_hub_zenith">Zenith</string>
+    <string name="type_hub_caravan">Caravana</string>
+    <string name="type_hub_placetwo">Place Two</string>
+    <string name="type_hub_placethree">Place Three</string>
+    <string name="type_hub_placefour">Place Four</string>
+    <string name="type_hub_guild">Guilda</string>
+    <string name="type_hub_event">Evento</string>
+    <string name="type_hub_arena">Arena</string>
+    <string name="type_hub_permit">Permit</string>
+    <string name="type_weapon_greatsword">Espadão</string>
+    <string name="type_weapon_longsword">Espada Longa</string>
+    <string name="type_weapon_tonfa">Tonfa</string>
+    <string name="type_weapon_magnetspike">Magnet Spike</string>
+    <string name="type_weapon_swordandshield">Espada e Escudo</string>
+    <string name="type_weapon_dualblades">Duplas-Lâminas</string>
+    <string name="type_weapon_hammer">Martelo</string>
+    <string name="type_weapon_huntinghorn">Berrante de Caça</string>
+    <string name="type_weapon_lance">Lança</string>
+    <string name="type_weapon_gunlance">Lançarma</string>
+    <string name="type_weapon_switchaxe">Transmachado</string>
+    <string name="type_weapon_chargeblade">Lâmina Dínamo</string>
+    <string name="type_weapon_insectglaive">Glaive Inseto</string>
+    <string name="type_weapon_lightbowgun">Fuzilarco Leve</string>
+    <string name="type_weapon_heavybowgun">Fuzilarco Pesado</string>
+    <string name="type_weapon_bow">Arco</string>
+
+    <string name="palicos">Palicos</string>
+    <string name="combining">Criação</string>
+    <string name="skills">Habilidades</string>
+    <string name="recipes">Receitas</string>
+
+    <string name="format_plus">%1$+d</string>
+    <string name="skill_points">%s %+d</string>
+    <string name="skill_points_joined">%s / %s</string>
+
+    <!-- value strings -->
+    <string name="value_rare">Raro %s</string>
+
+    <!-- Generic strings -->
+    <string name="rank_ex">Treino</string>
+    <string name="rank_lr">Ranque Baixo</string>
+    <string name="rank_hr">Ranque Alto</string>
+    <string name="rank_gou">Ranque Gou</string>
+    <string name="rank_g">Ranque G</string>
+    <string name="rank_z1">Z★1</string>
+    <string name="rank_z2">Z★2</string>
+    <string name="rank_z3">Z★3</string>
+    <string name="rank_z4">Z★4</string>
+    <string name="rank_any">Qualquer</string>
+    
+    <!-- Ailments -->
+    <string name="ailment_roar_small">Rugido Pequeno</string>
+    <string name="ailment_roar_large">Rugido Grande</string>
+    <string name="ailment_roar_small_special">Rugido Pequeno Especial</string>
+    <string name="ailment_roar_special">Rugido Especial</string>
+    <string name="ailment_wind_small">Pressão do Vento Pequena</string>
+    <string name="ailment_wind_large">Pressão do Vento Grande</string>
+    <string name="ailment_wind_dragon">Pressão do Vento de Dragão</string>
+    <string name="ailment_tremor">Tremor</string>
+    <string name="ailment_fire">Flagelo de Fogo</string>
+    <string name="ailment_water">Flagelo de Água</string>
+    <string name="ailment_thunder">Flagelo de Raio</string>
+    <string name="ailment_ice">Flagelo de Gelo</string>
+    <string name="ailment_dragon">Flagelo de Dragão</string>
+    <string name="ailment_blast">Flagelo de Explosão</string>
+    <string name="ailment_bleed">Sangramento</string>
+    <string name="ailment_poison">Veneno</string>
+    <string name="ailment_poison_noxious">Veneno Nocivo</string>
+    <string name="ailment_poison_deadly">Veneno Letal</string>
+    <string name="ailment_sleep">Sono</string>
+    <string name="ailment_paralysis">Paralisia</string>
+    <string name="ailment_stun">Atordoamento</string>
+    <string name="ailment_snowman">Boneco de Neve</string>
+    <string name="ailment_muddy">Enlamado</string>
+    <string name="ailment_bubbles">Bolhas</string>
+    <string name="ailment_boned">Ossificado</string>
+    <string name="ailment_mucus">Muco</string>
+    <string name="ailment_soiled">Manchado</string>
+    <string name="ailment_environmental">Ambiental</string>
+    <string name="ailment_defensedown">Defesa Reduzida</string>
+    <string name="ailment_frenzy">Vírus frenético</string>
+    <string name="ailment_confusion">Confusão</string>
+
+    <!-- Drawer items -->
+    <string name="drawer_open">Abrir Gaveta da Navegação</string>
+    <string name="drawer_close">Fechar Gaveta da Navegação</string>
+
+    <string name="title_monsters">Monstros</string>
+    <string name="title_weapons">Armas</string>
+    <string name="title_armor">Armadura</string>
+    <string name="title_armor_sets">Conjuntos de Armadura</string>
+    <string name="title_quests">Quests</string>
+    <string name="title_items">Itens</string>
+    <string name="title_bentos">Bento</string>
+    <string name="title_palicos">Palicos</string>
+    <string name="title_combining">Criação</string>
+    <string name="title_locations">Locais</string>
+    <string name="title_decorations">Adornos</string>
+    <string name="title_skills">Habilidades</string>
+    <string name="title_asb">Construtor de Conjuntos de Armadura</string>
+    <string name="title_wishlists">Listas de Desejos</string>
+    <string name="title_talismans">Talismãs</string>
+
+    <string name="drawer_group_other">Outros</string>
+    <string name="drawer_preferences">Definições</string>
+    <string name="drawer_feedback">Enviar Feedback</string>
+    <string name="drawer_changelog">Mudar Registo</string>
+
+    <string name="logo_description">Logo</string>
+
+    <!-- Standard Menu Options -->
+    <string name="option_wishlist_add">Criar Lista de Desejos</string>
+    <string name="option_wishlist_delete">Eliminar Lista de Desejos</string>
+    <string name="option_wishlist_copy">Copiar Lista de Desejos</string>
+    <string name="option_wishlist_rename">Renomear Lista de Desejos</string>
+    <string name="option_wishlist_edit">Editar Lista de Desejos</string>
+    <string name="option_wishlist_data_add">Adicionar à Lista de Desejos</string>
+    <string name="option_wishlist_data_edit">Mudar Quantidade</string>
+    <string name="option_wishlist_data_delete">Eliminar da Lista de Desejos</string>
+
+    <!-- Page titles -->
+    <string name="title_search">Proucurar item</string>
+    <string name="title_preferences">Definições</string>
+    <string name="monster_image">imagem_monstro</string>
+    <string name="monster_damage">dano_monstro</string>
+    <string name="arena_quests">Quests de Arena</string>
+    <string name="wishlist">Listas de Desejos</string>
+    <string name="dialog_armor_filter_title">Filtro</string>
+    <string name="armor_filter_label_rank">Ranque</string>
+
+    <!--
+    Unicode Black Circle \u25CF
+    Unicode White Circle \u25CB
+    Unicode Dash \u2015
+    -->
+
+    <!-- Setting names -->
+    <string name="preference_app_language">Língua da Aplicação</string>
+    <string name="preference_app_language_description">
+        Usa %s como a língua da aplicação.
+        \nDefault vai usar a língua do sistema se existir uma tradução, ou inglês se não existir.
+        Requer reniciação.
+    </string>
+    <string name="preference_app_language_description_disabled">
+        A língua da aplicação não pode ser sobrescrita na sua versão de android.
+    </string>
+    <string name="preference_data_language">Língua dos Dados (BETA)</string>
+    <string name="preference_data_language_description">
+        Mostra dados dentro do jogo usando %s.
+        \nDefault tenta usar a lingua da aplicação se estiver disponível.
+    </string>
+    <string name="preference_dark_mode">Tema (BETA)</string>
+    <string name="preference_dark_mode_description">
+        Ativar modo escuro.
+    </string>
+    <string name="preference_dark">Escuro</string>
+    <string name="preference_light">Claro (Padrão)</string>
+    <string name="preference_language_default">Padrão</string>
+    <string name="preference_japanese">Mostrar Japonês</string>
+    <string name="preference_japanese_description">
+        Mostrar nomes japoneses junto dos ingleses.
+    </string>
+
+    <string name="preference_bloated">Valor Exagerado</string>
+    <string name="preference_bloated_description">Liga o multiplicador do valor do ataque exagerado.</string>
+
+    <string name="preference_true_raw">Display Element Raw Damage</string>
+    <string name="preference_true_raw_description">Toggle weapon element damage true raw value.</string>
+    <!-- Monsters -->
+    <string name="monster_class_small">Pequeno</string>
+    <string name="monster_class_large">Grande</string>
+    <string name="monster_class_deviant">Zenith</string>
+    <string name="monster_class_extreme">Musou</string>
+    <string name="monster_class_type">Tipo</string>
+
+    <string name="monster_class_type_brute_wyvern">Wyvern Bruto</string>
+    <string name="monster_class_type_flying_wyvern">Wyvern Voador</string>
+    <string name="monster_class_type_carapaceon">Carapaceão</string>
+    <string name="monster_class_type_leviathan">Leviatã</string>
+    <string name="monster_class_type_pelagus">Pelagus</string>
+    <string name="monster_class_type_piscine_wyvern">Wyvern de Piscina</string>
+    <string name="monster_class_type_bird_wyvern">Wyvern Pássaro</string>
+    <string name="monster_class_type_fanged_wyvern">Wyvern Dentado</string>
+    <string name="monster_class_type_elder_dragon">Dragão Ancião</string>
+    <string name="monster_class_type_herbivore">Herbívoro</string>
+    <string name="monster_class_type_lynian">Lyniano</string>
+    <string name="monster_class_type_neopteron">Neóptero</string>
+    <string name="monster_class_type_snake_wyvern">Wyvern Cobra</string>
+    <string name="monster_class_type_unknown">Desconhecido</string>
+
+    <string name="monster_detail_tab_summary">Sumário</string>
+    <string name="monster_detail_tab_damage">Dano</string>
+    <string name="monster_summary_weaknesses">Fraquezas</string>
+    <string name="monster_ailments">Enfermidade</string>
+    <string name="monster_habitats">Habitats</string>
+    <string name="monster_damage_area">Área</string>
+    <string name="monster_status_icon">Condição</string>
+    <string name="monster_status_initial">Inicial</string>
+    <string name="monster_status_increase">Aumento</string>
+    <string name="monster_status_max">Máx</string>
+    <string name="monster_status_duration">Duração</string>
+    <string name="monster_status_damage">Dano</string>
+
+    <!-- Bentos -->
+    <string name="bento_ingredients">Ingredientes</string>
+    <string name="bento_effects">Efeitos</string>
+    <string name="bento_health">Vida</string>
+    <string name="bento_stamina">Estamina</string>
+
+    <!-- Items -->
+    <string name="item_detail_tab_detail">Detalhe</string>
+    <string name="item_detail_tab_usage">Uso</string>
+    <string name="item_rarity">Raridade</string>
+    <string name="item_carry_max">Transporte Máximo:</string>
+    <string name="item_buy">Preço de Compra</string>
+    <string name="item_sell">Preço de Venda</string>
+    <string name="item_sell_label">Preço de Venda:</string> <!-- variation with : after -->
+    <string name="item_description">Descrição</string>
+    <string name="item_combinations">Receitas</string>
+    <string name="item_crafting">Criação</string>
+    <string name="item_combination_yield">Recolhas</string>
+    <string name="item_gather_fixed">[Fixo]</string>
+    <string name="item_gather_common">[Comum]</string>
+    <string name="item_gather_rare">[Raro]</string>
+    <string name="item_gather_summer">[Verão]</string>
+    <string name="item_gather_breeding">[Reprodução]</string>
+    <string name="item_gather_winter">[Inverno]</string>
+    <string name="item_gather_day">[D]</string>
+    <string name="item_gather_night">[N]</string>
+    <string name="item_gather_full">%3$s%2$s %1$s</string>
+    <string name="gather_site_bug">Inseto</string>
+    <string name="gather_site_gather">Recolher</string>
+    <string name="gather_site_mine">Minerar</string>
+    <string name="gather_site_fishing_none">Pescar (Sem Isco)</string>
+    <string name="gather_site_fishing_burst">Pescar (Isco Burst)</string>
+    <string name="gather_site_fishing_goldenfish">Pescar (Isco Goldenfish)</string>
+    <string name="gather_site_fishing_megafly">Pescar (Isco Mega Fishing Fly)</string>
+    <string name="gather_site_fishing_sushi">Pescar (Isco Sushifish)</string>
+
+    <!-- Skill detail -->
+    <string name="skill_tab_detail">Detalhe</string>
+    <string name="skill_tab_head">Cabeça</string>
+    <string name="skill_tab_body">Corpo</string>
+    <string name="skill_tab_arms">Braço</string>
+    <string name="skill_tab_waist">Anca</string>
+    <string name="skill_tab_legs">Pernas</string>
+    <string name="skill_show_penalties">Mostrar Penalidades</string>
+
+    <!-- Equipment -->
+    <string name="equipment_defense">Defesa</string>
+    <string name="equipment_slots">Slots</string>
+
+    <!-- Armor -->
+    <string name="armor_part">Parte</string>
+    <string name="armor_type_both">Qualquer</string>
+    <string name="armor_type_blade">Mestre das Lâminas</string>
+    <string name="armor_type_gunner">Atirador</string>
+    <string name="armor_type_blade_short">Lâminas</string>
+    <string name="armor_type_gunner_short">Atirador</string>
+    <string name="armor_title_set">Conjunto</string>
+    <string name="armor_res_fire">Resistência a Fogo:</string>
+    <string name="armor_res_water">Resistência a Água:</string>
+    <string name="armor_res_thunder">Resistência a Raio:</string>
+    <string name="armor_res_ice">Reistência a Gelo:</string>
+    <string name="armor_res_dragon">Resistência a Dragão:</string>
+
+    <!-- Weapons -->
+    <string name="weapon_detail_tab_detail">Detalhe</string>
+    <string name="weapon_detail_tab_melodies">Melodias</string>
+    <string name="weapon_detail_tab_family">Família</string>
+    <string name="weapon_tree_origin">Origem</string>
+    <string name="weapon_tree_family">Família</string>
+    <string name="weapon_tree_side_branches">Ramos</string>
+    <string name="weapon_tree_final">Final (Todos os Ramos)</string>
+
+    <string name="equipment_reach">Alcance</string>
+    <string name="reach_vshort">M. Curto</string>
+    <string name="reach_short">Curto</string>
+    <string name="reach_medium">Médio</string>
+    <string name="reach_long">Longo</string>
+    <string name="reach_vlong">M. Longo</string>
+
+    <string name="phial_power">Poder</string>
+    <string name="phial_poison">Veneno</string>
+    <string name="phial_paralysis">Paralisia</string>
+    <string name="phial_exhaust">Exhaustão</string>
+    <string name="phial_dragon">Dragão</string>
+    <string name="phial_impact">Impacto</string>
+    <string name="phial_element">Elemento</string>
+    <string name="phial_status">Condição</string>
+    <string name="phial_stun">Atordoamento</string>
+    <string name="shelling_wide">Amplo</string>
+    <string name="shelling_long">Longo</string>
+    <string name="shelling_normal">Normal</string>
+    <string name="shot_normal">Normal</string>
+    <string name="shot_pierce">Perfuração</string>
+    <string name="shot_pellet">Estilhaço</string>
+    <string name="shot_crag">Pegajosa</string>
+    <string name="shot_clust">Frag</string>
+    <string name="shot_poison">Veneno</string>
+    <string name="shot_paralysis">Paralisia</string>
+    <string name="shot_sleep">Sono</string>
+    <string name="shot_exhaust">Exaustão</string>
+    <string name="shot_recovery">Curativa</string>
+    <string name="shot_fire">Fogo</string>
+    <string name="shot_water">Água</string>
+    <string name="shot_thunder">Raio</string>
+    <string name="shot_ice">Gelo</string>
+    <string name="shot_dragon">Dragão</string>
+    <string name="shot_tranq">Sedativa</string>
+    <string name="shot_paint">Tinta</string>
+    <string name="shot_demon">Demónio</string>
+    <string name="shot_armor">Armadura</string>
+    <string name="coating_power">Poder</string>
+    <string name="coating_explosive">Explosiva</string>
+    <string name="coating_impact">Impacto</string>
+    <string name="coating_elemental">Elem Up</string>
+    <string name="coating_lv1">Lv1</string>
+    <string name="coating_lv2">Lv2</string>
+    <string name="coating_lv3">Lv3</string>
+    <string name="coating_lv4">Lv4</string>
+    <string name="coating_closerange">C. Distância</string>
+    <string name="coating_poison">Veneno</string>
+    <string name="coating_paralysis">Paralisia</string>
+    <string name="coating_sleep">Sono</string>
+    <string name="coating_exhaust">Exaustão</string>
+    <string name="coating_blast">Explosão</string>
+    <string name="coating_paint">Tinta</string>
+    <string name="bow_charge_rapid">Rápido</string>
+    <string name="bow_charge_pierce">Perfuração</string>
+    <string name="bow_charge_spread">Dispersão</string>
+    <string name="bow_charge_heavy">Pesado</string>
+    <string name="bow_charge_format">%s %d</string>
+    <string name="bow_charge_format_locked">(%s %d)</string>
+
+    <string name="weapon_attack">Ataque</string>
+    <string name="weapon_affinity">Afinidade</string>
+    <string name="weapon_sharpness">Afiamento</string>
+    <string name="weapon_notes">Notas</string>
+    <string name="weapon_phial_type">Frasco</string>
+    <string name="weapon_shelling">Morteiro</string>
+    <string name="weapon_upgrade">Melhoria</string>
+    <string name="weapon_create">Criar</string>
+    <string name="weapon_charges">Cargas</string>
+    <string name="weapon_arc">Arc</string>
+    <string name="weapon_recoil">Recoil</string>
+    <string name="weapon_reload">Reload</string>
+    <string name="weapon_deviation">Velocidade</string>
+    <string name="weapon_coatings">Revestimentos</string>
+    <string name="weapon_ammo">Munição</string>
+    <string name="weapon_internal_row" translatable="false">%s • %s • %s</string>
+    <string name="weapon_rapid_row" translatable="false">%s</string>
+    <!--
+    <string name="weapon_rapid_row" translatable="false">%s • %s • %s%% • %s</string>
+    -->
+    <string name="weapon_siege_row" translatable="false">%s • %s</string>
+    <string name="weapon_melody_duration">DUR: %s</string>
+    <string name="weapon_melody_extension">EXT: %s</string>
+
+
+    <!-- Palicos -->
+    <string name="palico_equipment_tab_detail">Detalhe</string>
+    <string name="palico_equipment_tab_components">Componente</string>
+
+    <!-- Wishlist stuff -->
+    <string name="wishlist_name_hint">Nome da Lista de Desejos</string>
+    <string name="wishlist_quantity_label">Quantidade:</string>
+    <string name="wishlist_quantity_hint">Quantidade</string>
+    <string name="wishlist_add_title">Adicionar a que Lista de Desejos?</string>
+    <string name="wishlist_add_set_title">Adicionar conjunto de armaduras a que Lista de Desejos?</string>
+    <string name="wishlist_add_success">Adicionado à %s Lista de Desejos.</string>
+    <string name="wishlist_text_total">Custo total</string>
+    <string name="wishlist_error_name_required">Nome da Lista de Desejos é necessário</string>
+    <string name="wishlist_error_quantity_required">Quantidade é necessária</string>
+    <string name="wishlist_error_quantity_invalid">Quantidade é fora dos parâmetros</string>
+    <string name="wishlist_error_unknown">Erro inesperado</string>
+    <string name="wishlist_tab_wishlist">Lista de Desejos</string>
+    <string name="wishlist_tab_materials">Materiais</string>
+
+    <string name="wishlist_created">Criada Lista de Desejos %s</string>
+    <string name="wishlist_add_item">Adicionado %s</string>
+    <string name="wishlist_renamed">Renomeado para %s</string>
+    <string name="wishlist_deleted">Lista de Desejos Eliminada</string>
+
+    <string name="no_slots" translatable="false">―――</string>
+    <string name="one_slot" translatable="false">○――</string>
+    <string name="two_slots" translatable="false">○○―</string>
+    <string name="three_slots" translatable="false">○○○</string>
+
+    <string name="one_slot_jewel" translatable="false">●</string>
+    <string name="two_slot_jewel" translatable="false">●●</string>
+    <string name="three_slot_jewel" translatable="false">●●●</string>
+
+
+    <!-- Armor Set Builder Stuff !-->
+    <string name="dialog_title_add_asb_set">Novo Conjunto</string>
+    <string name="dialog_title_edit_asb_set">Editar Conjunto</string>
+    <string name="asb_dialog_name_hint">Nome do Conjunto</string>
+    <string name="asb_dialog_rank">Ranque</string>
+    <string name="asb_dialog_hunter_type">Tipo de Caçador</string>
+    <string name="asb_context_action_delete">Eliminar</string>
+    <string name="asb_context_action_edit_data">Alterar Dados</string>
+    <string name="asb_context_action_copy">Copiar</string>
+
+    <string name="activity_asb">Construtor de Conjunto de Armaduras</string>
+    <string name="asb_tab_equipment">Equipamento</string>
+    <string name="asb_title_select_armor">Selecionar Armadura</string>
+    <string name="asb_title_select_head">Selecionar Capacete</string>
+    <string name="asb_title_select_body">Selecionar Peitoral</string>
+    <string name="asb_title_select_arms">Selecionar Braçadeiras</string>
+    <string name="asb_title_select_waist">Selecionar Cintura</string>
+    <string name="asb_title_select_legs">Selecionar Perneiras</string>
+    <string name="asb_title_armor_all">Todos</string>
+
+    <string name="asb_empty_slot">Slot Vazio</string>
+    <string name="asb_no_slots">Sem Slots</string>
+    <string name="asb_action_select">Selecionar</string>
+    <string name="asb_action_add">Adicionar</string>
+    <string name="asb_action_remove">Remover</string>
+    <string name="asb_action_edit">Editar</string>
+    <string name="asb_result_set_deleted">Conjunto de Armaduras Eliminado</string>
+    <string name="asb_result_talisman_deleted">Talismã Eliminado</string>
+
+    <string name="option_asb_set_add">Novo Conjunto</string>
+    <string name="option_asb_edit">Editar Conjunto</string>
+    <string name="option_asb_delete">Eliminar Conjunto</string>
+
+    <string name="asb_dialog_talisman_title">Talismã</string>
+    <string name="asb_talisman_skill">Habilidade %d</string>
+    <string name="asb_talisman_skill_1">Habilidade 1</string>
+    <string name="asb_talisman_skill_2">Habilidade 2</string>
+
+    <string name="asb_none">(Nenhuma)</string>
+    <string name="asb_skill_tree">Árvore de Habilidades</string>
+    <string name="asb_skill_points_total">Total</string>
+
+    <string name="asb_dialog_title_delete_set">Eliminar este conjunto?</string>
+    <string name="asb_dialog_title_delete_set_multi">Eliminar conjuntos?</string>
+    <string name="asb_dialog_title_copy_set">Copiar este conjunto?</string>
+    <string name="asb_dialog_title_copy_set_multi">Copiar conjuntos?</string>
+    <string name="monster_normal_state">Estado Normal</string>
+
+    <string name="asb_weapon_slots_none">Arma (Sem Slots)</string>
+    <string name="asb_weapon_slots_one">Arma (Um Slot)</string>
+    <string name="asb_weapon_slots_two">Arma (Dois Slots)</string>
+    <string name="asb_weapon_slots_three">Arma (Três Slots)</string>
+
+    <!-- Bowgun strings -->
+    <string name="siege_mode">Modo de Cerco</string>
+    <string name="ammo_divider">" • "</string>
+    <string name="rapid_fire_short_wait">Curta</string>
+    <string name="rapid_fire_medium_wait">Média</string>
+    <string name="rapid_fire_long_wait">Longa</string>
+    <string name="rapid_fire_very_long_wait">Muito Longa</string>
+    <string name="ammo_none">(Nenhuma)</string>
+    <string name="internal_ammo">Munição Interna</string>
+    <string name="rapid_fire">Tiro Rápido</string>
+
+    <!-- Quest Detail -->
+    <string name="quest_detail_tab_detail">Detalhe</string>
+    <string name="quest_detail_tab_rewards">Recompensas</string>
+    <string name="quest_detail_reward">Recompensa</string>
+    <string name="quest_detail_hrp">HRP</string>
+    <string name="quest_detail_fee">Custo</string>
+    <string name="quest_detail_goal">Objetivo</string>
+    <string name="quest_detail_subquest_a">Subquest A</string>
+    <string name="quest_detail_subquest_reward_a">Recompensa da Subquest A</string>
+    <string name="quest_detail_subquest_hrp_a">Subquest A HRP</string>
+    <string name="quest_detail_subquest_b">Subquest B</string>
+    <string name="quest_detail_subquest_reward_b">Recompensa da Subquest B</string>
+    <string name="quest_detail_subquest_hrp_b">Subquest B HRP</string>
+    <string name="quest_detail_hirer">Comissionado por</string>
+    <string name="quest_detail_description">Descrição</string>
+    <string name="unstable">Instável</string>
+    <string name="hyper">Hyper</string>
+    <string name="key">Chave</string>
+    <string name="urgent">Urgente</string>
+    <string name="armor_pieces">Peças de Armadura</string>
+
+    <!-- Locations -->
+    <string name="location_detail_tab_map">Mapa</string>
+
+    <string name="talisman_full_name">%s Talismã</string>
+    <string-array name="talisman_names">
+        <item>Pawn</item>
+        <item>Bishop</item>
+        <item>Knight</item>
+        <item>Rook</item>
+        <item>Queen</item>
+        <item>King</item>
+        <item>Dragon</item>
+        <item>Unknowable</item>
+        <item>Mystic</item>
+        <item>Hero</item>
+        <item>Legend</item>
+        <item>Creator</item>
+    </string-array>
+
+    <string-array name="slot_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="filter_restriction">
+        <item>Mínimo</item>
+        <item>Exatamente</item>
+        <item>Máximo</item>
+    </string-array>
+
+    <string-array name="hunter_type">
+        <item>Mestre das Lâminas</item>
+        <item>Atirador</item>
+    </string-array>
+
+</resources>

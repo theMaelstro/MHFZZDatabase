@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listitem"
+    android:layout_width="match_parent"
+    style="@style/list_item"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            style="@style/main_image"
+            tools:src="@drawable/switch_axe1"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image"
+            android:layout_centerVertical="true"
+            style="@style/text_medium"
+            tools:text="Rathalos Vambraces S"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_qty_required"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        style="@style/text_small"
+        android:gravity="center"
+        tools:text="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_component_qty"
+        android:layout_weight=".3"
+        android:gravity="right|center_vertical"
+        android:dropDownWidth="wrap_content" />
+
+    <!-- Turn this into an editable -->
+
+
+</LinearLayout>

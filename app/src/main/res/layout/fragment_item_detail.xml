@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:orientation="vertical">
+
+        <com.ghstudios.android.components.TitleBarCell
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:iconSrc="@drawable/drawer_items"
+            tools:titleText="Barrel Bomb L+"/>
+
+        <FrameLayout style="@style/SectionDivider"/>
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/Description"
+            tools:text="Upgraded Large Barrel Bomb. Effective against large monsters." />
+
+        <FrameLayout style="@style/SectionDivider"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/data_row"
+            style="@style/cell_column_row">
+
+            <com.ghstudios.android.components.LabelValueCell
+                android:id="@+id/carry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_carry_max"
+                tools:valueText="99" />
+
+            <!-- Buy Price is currently hidden as the DB has incorrect info -->
+            <com.ghstudios.android.components.ColumnLabelTextCell
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_buy"
+                tools:valueText="80z"
+                android:visibility="gone"/>
+
+            <com.ghstudios.android.components.LabelValueCell
+                android:id="@+id/sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_sell_label"
+                tools:valueText="80z" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <FrameLayout style="@style/SectionDivider"/>
+
+        <!-- Combination section, make sure to make it visible if items exist -->
+        <LinearLayout
+            android:id="@+id/combination_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:visibility="gone"
+            tools:visibility="visible">
+            <com.ghstudios.android.components.SectionHeaderCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="@string/item_combinations"/>
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/craft_combinations"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!-- Store section, make sure to make it visible if items exist -->
+        <LinearLayout
+            android:id="@+id/store_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:visibility="gone"
+            tools:visibility="visible">
+            <com.ghstudios.android.components.SectionHeaderCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Store"/>
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/store_items"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

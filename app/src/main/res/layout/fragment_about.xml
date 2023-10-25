@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.ghstudios.android.components.TitleBarCell
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconSrc="@drawable/ic_mascot"
+            app:titleText="MHFZZ Database"
+            tools:titleAltText="Version 2.11"/>
+
+        <FrameLayout style="@style/SectionDivider"/>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:labelText="@string/about_title_credits_mhfzz" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="MAEL"
+                app:valueText="Dev"
+                android:tag="https://github.com/theMaelstro"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="silversoulart"
+                app:valueText="@string/about_artist" />
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:labelText="@string/about_title_links_mael" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://www.youtube.com/channel/UCA3hASoTtbnTQ8-rfUtQV5w"
+                app:iconSrc="@drawable/ic_mascot"
+                app:labelText="YouTube" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://discord.gg/tJm7SZe3bR"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="App Discord" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Github"
+                android:tag="https://github.com/theMaelstro"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="@string/about_website"
+                android:tag="https://themaelstro.github.io"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="KeyFlag Calc"
+                android:tag="https://themaelstro.github.io/sub/flagcalc.html"/>
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_credits_data_support" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="supream" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Sera" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Pax" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Gow6255" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="RNN963" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Malckyor"
+                android:tag="https://github.com/Malckyor" />
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_credits_app_translation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Ezemania"
+                app:valueText="@string/about_language_fr" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Buddy"
+                app:valueText="@string/about_language_de" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Evo"
+                android:tag="https://github.com/Evotushon"
+                app:valueText="@string/about_language_it" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Dedsonic"
+                app:valueText="@string/about_language_pt" />
+
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_credits_translation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Cappuccino"
+                app:valueText="@string/about_language_en" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Dionmid"
+                app:valueText="@string/about_language_en" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Fist"
+                app:valueText="@string/about_language_en" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Malckyor"
+                android:tag="https://github.com/Malckyor"
+                app:valueText="@string/about_language_en"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Rahka"
+                app:valueText="@string/about_language_en" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="SephVII"
+                app:valueText="@string/about_language_en" />
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_community" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://discord.gg/CFnzbhQ"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="PewPewDojo"
+                app:valueText="@string/about_global" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://discord.gg/NwX9kajbt3"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="MHF: Renewal"
+                app:valueText="USA" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://discord.gg/xBehkx4HUr"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="MezeLounge"
+                app:valueText="@string/about_europe" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://discord.gg/Zh8czhRuT7"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="RAIN"
+                app:valueText="@string/about_global" />
+
+
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://www.youtube.com/channel/UCBUTDOrYtCCIf-UmPa26HDA/featured"
+                app:labelText="SephVII"
+                app:valueText="@string/about_channel" />
+
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_credits_data_sources" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="http://ferias.life.coocan.jp/"
+                app:iconSrc="@drawable/icon_binoculars"
+                app:labelText="Ferias"
+                app:valueText="@string/about_japanese_wiki" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="https://github.com/xl3lackout"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Deerby" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/icon_armor_body"
+                app:labelText="Hiroaki"
+                app:valueText="@string/about_asb" />
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:labelText="@string/about_title_ghstudios" />
+
+        <TextView
+            style="@style/Description"
+            android:text="@string/about_message" />
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:labelText="@string/about_title_links_ghstudios" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="http://gatheringhallstudios.com/"
+                app:iconSrc="@drawable/ic_mascot_old"
+                app:labelText="@string/about_website" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Github"
+                android:tag="https://github.com/gatheringhallstudios"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="Discord"
+                android:tag="https://discord.gg/k5rmEWh" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_discord"
+                app:labelText="MHGen"
+                android:tag="https://github.com/gatheringhallstudios/MHGenDatabase"
+                app:valueText="@string/about_source"
+                />
+
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_credits_mhgu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Carlos &quot;Supe&quot; Fernandez"
+                android:tag="https://github.com/CarlosFdez" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Joseph &quot;Joedev&quot; Michels"
+                android:tag="https://github.com/JosephMichels" />
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_credits_mhgen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="https://github.com/jaysondc"
+                android:tag="https://github.com/jaysondc"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="https://github.com/kevinn"
+                android:tag="https://github.com/kevinn"/>
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/about_title_libraries" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_solid"
+            android:showDividers="middle">
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="Butterknife"
+                android:tag="https://github.com/JakeWharton/butterknife" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="AdapterDelegates"
+                android:tag="https://github.com/sockeqwe/AdapterDelegates" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="SQLiteAssetHelper"
+                android:tag="https://github.com/jgilfelt/android-sqlite-asset-helper"/>
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="MultiLevelExpandableIndentableListView"
+                android:tag="https://github.com/defacto133/MultiLevelExpandableIndentableListView" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="android-section-adapter"
+                android:tag="https://github.com/monxalo/android-section-adapter"/>
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="Capcom Co.,Ltd" />
+        <TextView
+            style="@style/Description"
+            android:text="Who are the rightful owners of trademarked content. Special thanks for making great Monster Hunter games." />
+
+    </LinearLayout>
+
+</ScrollView>

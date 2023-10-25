@@ -1,0 +1,130 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// This handles both kotlin and java. Use kapt instead of annotationProcessor
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    defaultConfig {
+        applicationId "com.mael.android.mhfzzdatabase"
+        minSdkVersion 14
+        targetSdkVersion 27
+
+        //1.00   Version Code: 1   Released 7-14-2016
+        //1.0.1  Version Code: 2   Released 7-19-2016
+        //1.0.2  Version Code: 3   Released 7-19-2016
+        //1.1.0  Version Code: 4   Released 7-31-2016
+        //1.1.1  Version Code: 5   Released 8-05-2016
+        //1.1.2  Version Code: 6   Released 10-17-2016
+        //?????  Version Code: 7   Released ????????
+        //2.0.0  Version Code: 8   Released 9-8-2018
+        //2.0.1  Version Code: 9   Released 9-8-2018
+        //2.0.2  Version Code:10   Released 9-??-2018
+        //2.1.0  Version Code:11   Released 9-??-2018
+        //2.1.1  Version Code:12   Released 9-??-2018
+        //2.2.0  Version Code:13   Released 10-08-2018
+        //2.2.1  Version Code:14   Released 10-14-2018
+        //2.3.0  Version Code:15   Released 11-07-2018
+        //2.3.1  Version Code:16   Released 11-07-2018
+        //2.3.2  Version Code:17   Released 12-15-2018
+        //2.3.3  Version Code:18   Released 12-19-2018
+        //2.3.4  Version Code:19   Released 12-20-2018
+        //2.3.5  Version Code:20   Released 12-20-2018
+        //2.3.6  Version Code:21   Released 12-20-2018
+
+        versionCode 20
+        versionName "1.0.7.4"
+
+        compileOptions {
+            // we'll still be able to target lower java versions because of desugar
+            // however, avoid using java 8 only libraries like @FunctionalInterface and streams
+            // this enables us to use language features like lambdas and interface defaults
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        sourceSets{
+            //Small hack to separate icons into a different resource folder
+            main.res.srcDirs += 'src/main/icon-res/'
+        }
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4G"
+    }
+
+}
+
+androidExtensions {
+    // Enables KTX viewbinding to work on viewholders as well
+    experimental = true
+}
+
+dependencies {
+    // kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    /*
+     * Google Support Libraries
+     */
+    def google_version = "27.1.1"
+    implementation "com.android.support:appcompat-v7:${google_version}"
+    implementation "com.android.support:design:${google_version}"
+    implementation "com.android.support:cardview-v7:${google_version}"
+    implementation "com.android.support:gridlayout-v7:${google_version}"
+    implementation "com.android.support:recyclerview-v7:${google_version}"
+    implementation "com.android.support.constraint:constraint-layout:1.1.3"
+    implementation "com.android.support:preference-v7:${google_version}"
+    implementation "com.android.support:preference-v14:${google_version}"
+
+    /*
+     * lifecycle components
+     */
+    def lifecycle_version = '1.1.1'
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    testImplementation "android.arch.core:core-testing:$lifecycle_version"
+
+    implementation 'com.google.android:flexbox:1.0.0'
+
+    // Resources here https://github.com/ApmeM/android-flowlayout
+    implementation 'de.cketti.library.changelog:ckchangelog:1.2.2' // Library to display a changelog on first run
+    // Integration instructions here https://github.com/cketti/ckChangeLog
+    implementation project(':multilevelexpindlistview')
+    implementation project(':android-sqlite-asset-helper')
+    implementation project(':android-section-adapter')
+
+    /*
+     * Butterknife (view binding)
+     */
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    /*
+     * Adapter Delegates
+     * https://github.com/sockeqwe/AdapterDelegates
+     */
+    implementation 'com.hannesdorfmann:adapterdelegates3:3.0.1'
+}
+
+repositories {
+    mavenCentral()
+}

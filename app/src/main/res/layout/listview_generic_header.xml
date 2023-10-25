@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/text_small"
+    android:textStyle="bold"
+    android:textColor="@color/accent_color"
+    android:gravity="center_vertical"
+    app:elevation="4dp"
+    android:paddingLeft="@dimen/margin_large"
+    android:paddingRight="@dimen/margin_large"
+    android:minHeight="@dimen/list_item_height"
+    tools:text="Sample Label" />

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/title_preferences">
+
+    <!-- Disabled feature...language changing is hacky and difficult -->
+    <!--
+    <ListPreference
+        android:key="APP_LOCALE"
+        android:title="@string/preference_app_language"
+        android:summary="@string/preference_app_language_description"/>
+    -->
+
+
+    <ListPreference
+        android:key="DATA_LOCALE"
+        android:title="@string/preference_data_language"
+        android:summary="@string/preference_data_language_description"/>
+
+    <SwitchPreference
+    android:key="DARK_MODE_ENABLED"
+    android:title="@string/preference_dark_mode"
+    android:summary="@string/preference_dark_mode_description"/>
+
+    <SwitchPreference
+        android:key="BLOATED_ENABLED"
+        android:title="@string/preference_bloated"
+        android:summary="@string/preference_bloated_description"/>
+
+    <SwitchPreference
+        android:key="TRUE_RAW_ENABLED"
+        android:title="@string/preference_true_raw"
+        android:summary="@string/preference_true_raw_description"/>
+
+
+    <!-- Disabled feature, enable if there is sufficient demand and interest -->
+    <!--
+    <SwitchPreference
+        android:key="JAPANESE_ENABLED"
+        android:title="@string/preference_japanese"
+        android:summary="@string/preference_japanese_description"/>
+        -->
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ghstudios.android.monsterhunter4udatabase.MainActivity" >
+
+    <item android:id="@+id/universal_search"
+        android:title="@string/search"
+        android:icon="@drawable/abc_ic_search_api_material"
+        app:showAsAction="ifRoom" />
+</menu>

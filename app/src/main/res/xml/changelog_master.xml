@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release version="1.0.7.5" versioncode="21">
+        <change>Added Official App discord link.</change>
+    </release>
+    <release version="1.0.7.4" versioncode="20">
+        <change>Added Event Quest lists (Low Rank, G Rank).</change>
+        <change>Added Zenith skills to Skills List.</change>
+    </release>
+    <release version="1.0.7.3" versioncode="19">
+        <change>Added Special Quest lists (Luxury, Promotional).</change>
+        <change>Added Other Quest lists (Gear Acquisition, Hunting Technique).</change>
+        <change>Added True Raw switch for Weapon Elemental Damage.</change>
+    </release>
+    <release version="1.0.7.2" versioncode="18">
+        <change>Re-added G Quest lists (Zenith, G Hunter, Conquest).</change>
+    </release>
+    <release version="1.0.7.1" versioncode="17">
+        <change>Re-added next batch of Quests to listing.</change>
+        <change>Added Portuguese UI language (Dedsonic).</change>
+    </release>
+    <release version="1.0.7" versioncode="16">
+        <change>WIP: Re-added Hunter Quests listing.</change>
+        <change>Added Monster icons (silversoulart).</change>
+        <change>Added German UI language (Buddy).</change>
+        <change>Added Italian UI language (Evo).</change>
+    </release>
+    <release version="1.0.6.1" versioncode="15">
+        <change>Fixed Crashes in Quest view and some Monsters.</change>
+    </release>
+    <release version="1.0.6" versioncode="14">
+        <change>Added French UI language (Ezemania).</change>
+        <change>WIP: Added Shop List info.</change>
+        <change>Added description to Skills.</change>
+        <change>Reworked all quests info.</change>
+        <change>Added Sub Quest rewards.</change>
+        <change>Added Quest Detail strings.</change>
+        <change>Added Quest types with colored icons.</change>
+        <change>Fixed some missing monsters in Quest summary.</change>
+    </release>
+
+    <release version="1.0.5" versioncode="13">
+        <change>Added Phials to Switch Axes.</change>
+        <change>Removed obsolete Reach from Switch Axes.</change>
+    </release>
+
+    <release version="1.0.4" versioncode="12">
+        <change>Added Upgrade Trees to Armors.</change>
+        <change>Added Item HID search functionality (Flipped byte order AAXX is XXAA).</change>
+    </release>
+
+    <release version="1.0.3" versioncode="11">
+        <change>Added crafting info to Armors and Armor Families.</change>
+        <change>Added improvement info to Armors.</change>
+    </release>
+
+    <release version="1.0.2" versioncode="10">
+        <change>BETA: Added Bento menu.</change>
+    </release>
+
+    <release version="1.0.1" versioncode="9">
+        <change>Added crafting info to Decorations.</change>
+        <change>Added crafting info to Weapons.</change>
+        <change>Updated monster habitat info.</change>
+    </release>
+
+    <release version="1.0.0" versioncode="8">
+        <change>Demo release of MHFZZ Database.</change>
+    </release>
+</changelog>
