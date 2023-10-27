@@ -98,6 +98,7 @@ private fun createHandlers(ctx: Context) = mapOf(
                 ItemType.ITEM -> ctx.getString(R.string.type_item)
                 ItemType.WEAPON -> ctx.getString(R.string.type_weapon)
                 ItemType.BENTO -> ctx.getString(R.string.type_bento)
+                ItemType.CUFF -> ctx.getString(R.string.type_cuff)
                 ItemType.ARMOR -> ctx.getString(R.string.type_armor)
                 ItemType.PALICO_WEAPON -> ctx.getString(R.string.type_palico_weapon)
                 ItemType.PALICO_ARMOR -> ctx.getString(R.string.type_palico_armor)

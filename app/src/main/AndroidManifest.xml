@@ -155,6 +155,21 @@
                 android:value="com.ghstudios.android.features.decorations.list.DecorationListActivity" />
         </activity>
 
+        <!-- CUFF SECTION -->
+        <activity
+            android:name="com.ghstudios.android.features.cuffs.list.CuffListActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ghstudios.android.features.cuffs.detail.CuffDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ghstudios.android.features.cuffs.list.CuffListActivity" />
+        </activity>
+
         <!-- WEAPON SECTION -->
         <activity
             android:name="com.ghstudios.android.features.weapons.WeaponSelectionListActivity"

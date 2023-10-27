@@ -84,6 +84,7 @@
     <string name="type_skill_tree">Ramo Abilità</string>
     <string name="type_item">Oggetto</string>
     <string name="type_bento">Bento</string>
+    <string name="type_cuff">Cuff</string>
     <string name="type_weapon">Arma</string>
     <string name="type_armor">Armatura</string>
     <string name="type_armor_set">Set Armatura</string>
@@ -198,6 +199,7 @@
     <string name="title_combining">Combinazioni</string>
     <string name="title_locations">Posti</string>
     <string name="title_decorations">Decorazioni</string>
+    <string name="title_cuffs">Skill Cuffs</string>
     <string name="title_skills">Abilità</string>
     <string name="title_asb">Calcolatrice Set Armatura</string>
     <string name="title_wishlists">Lista Desideri</string>

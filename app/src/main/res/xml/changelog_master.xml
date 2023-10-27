@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
-    <release version="1.0.7.5" versioncode="21">
+    <release version="1.0.8" versioncode="21">
+        <change>Added Skill Cuffs (No ASB Functionality).</change>
         <change>Added Official App discord link.</change>
     </release>
     <release version="1.0.7.4" versioncode="20">

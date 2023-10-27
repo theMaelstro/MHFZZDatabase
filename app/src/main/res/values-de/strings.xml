@@ -83,6 +83,7 @@
     <string name="type_skill_tree">Fertigkeitsbaum</string>
     <string name="type_item">Item</string>
     <string name="type_bento">Bento</string>
+    <string name="type_cuff">Cuff</string>
     <string name="type_weapon">Waffe</string>
     <string name="type_armor">Rüstung</string>
     <string name="type_armor_set">Rüstungs Set</string>
@@ -197,6 +198,7 @@
     <string name="title_combining">Kombination</string>
     <string name="title_locations">Orte</string>
     <string name="title_decorations">Dekorationen</string>
+    <string name="title_cuffs">Skill Cuffs</string>
     <string name="title_skills">Fähigkeiten</string>
     <string name="title_asb">Armor Set Builder</string>
     <string name="title_wishlists">Wunschlisten</string>

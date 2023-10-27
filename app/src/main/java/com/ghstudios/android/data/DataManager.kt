@@ -204,6 +204,35 @@ class DataManager private constructor(private val mAppContext: Context) {
         return decoration
     }
 
+
+    /********************************* CUFF QUERIES  */
+    /* Get a Cursor that has a list of all Cuffs */
+    fun queryCuffs(): CuffCursor {
+        return mHelper.queryCuffs()
+    }
+
+    /**
+     * Gets a cursor that has a list of cuffs that pass the filter.
+     * Having a null or empty filter is the same as calling without a filter
+     */
+    fun queryCuffsSearch(filter: String?): CuffCursor {
+        return mHelper.queryCuffsSearch(filter ?: "")
+    }
+
+    /* Get a specific Cuff */
+    fun getCuff(id: Long): Cuff? {
+        var cuff: Cuff? = null
+        val cursor = mHelper.queryCuff(id)
+        cursor.moveToFirst()
+
+        if (!cursor.isAfterLast)
+            cuff = cursor.cuff
+        cursor.close()
+        return cuff
+    }
+
+    
+
     /********************************* GATHERING QUERIES  */
     /* Get a Cursor that has a list of Gathering based on Item */
     fun queryGatheringItem(id: Long): GatheringCursor {

@@ -27,6 +27,7 @@ class ItemClickListener(context: Context, type: ItemType, id: Long?) : View.OnCl
             ItemType.BENTO -> BentoClickListener(c, id)
             ItemType.MATERIAL -> MaterialClickListener(c, id)
             ItemType.PALICO_WEAPON -> PalicoWeaponClickListener(c, id)
+            ItemType.CUFF -> CuffClickListener(c, id)
 
             // todo: add a page for palico armor
             ItemType.PALICO_ARMOR -> BasicItemClickListener(c, id)

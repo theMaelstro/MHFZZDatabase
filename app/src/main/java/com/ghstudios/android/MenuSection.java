@@ -25,6 +25,7 @@ public class MenuSection {
     public static final int COMBINING = R.id.nav_combining;
     public static final int LOCATIONS = R.id.nav_locations;
     public static final int DECORATION = R.id.nav_decorations;
+    public static final int CUFF = R.id.nav_cuffs;
     public static final int SKILL_TREES = R.id.nav_skills;
     public static final int ARMOR_SET_BUILDER = R.id.nav_asb;
     public static final int WISH_LISTS = R.id.nav_wishlists;

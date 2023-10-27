@@ -34,6 +34,7 @@ class ASBDetailPagerActivity : BasePagerActivity() {
         const val EXTRA_PIECE_INDEX = "com.daviancorp.android.ui.detail.piece_index"
         const val EXTRA_DECORATION_INDEX = "com.daviancorp.android.ui.detail.decoration_index"
         const val EXTRA_DECORATION_MAX_SLOTS = "com.daviancorp.android.ui.detail.decoration_max_slots"
+        const val EXTRA_CUFF_MAX_SLOTS = "com.daviancorp.android.ui.detail.cuff_max_slots"
         const val EXTRA_SET_RANK = "com.daviancorp.android.ui.detail.set_rank"
         const val EXTRA_SET_HUNTER_TYPE = "com.daviancorp.android.ui.detail.hunter_type"
 
@@ -46,6 +47,7 @@ class ASBDetailPagerActivity : BasePagerActivity() {
 
         const val REQUEST_CODE_ADD_PIECE = 537
         const val REQUEST_CODE_ADD_DECORATION = 538
+        const val REQUEST_CODE_ADD_CUFF = 652
         const val REQUEST_CODE_CREATE_TALISMAN = 539
         const val REQUEST_CODE_REMOVE_PIECE = 540
         const val REQUEST_CODE_REMOVE_DECORATION = 541

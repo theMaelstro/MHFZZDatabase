@@ -42,6 +42,7 @@ enum class ItemType {
     ITEM,
     BENTO,
     DECORATION,
+    CUFF,
     WEAPON,
     PALICO_WEAPON,
     PALICO_ARMOR,

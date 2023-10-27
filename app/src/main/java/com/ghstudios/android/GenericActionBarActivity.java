@@ -26,6 +26,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.ghstudios.android.features.bentos.list.BentoListActivity;
+import com.ghstudios.android.features.cuffs.list.CuffListActivity;
 import com.ghstudios.android.features.meta.AboutActivity;
 import com.ghstudios.android.features.monsters.list.MonsterListPagerActivity;
 import com.ghstudios.android.features.meta.PreferencesActivity;
@@ -228,6 +229,9 @@ public abstract class GenericActionBarActivity extends AppCompatActivity
                 break;
             case MenuSection.DECORATION: // Decorations
                 intent = new Intent(ctx, DecorationListActivity.class);
+                break;
+            case MenuSection.CUFF: // Cuffs
+                intent = new Intent(ctx, CuffListActivity.class);
                 break;
             case MenuSection.SKILL_TREES: // Skill Trees
                 intent = new Intent(ctx, SkillTreeListActivity.class);

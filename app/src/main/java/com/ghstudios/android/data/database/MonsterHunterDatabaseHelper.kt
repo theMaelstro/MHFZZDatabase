@@ -823,6 +823,125 @@ internal class MonsterHunterDatabaseHelper constructor(ctx: Context):
         return QB
     }
 
+
+    /**
+     * ****************************** CUFF QUERIES *****************************************
+     */
+
+    /*
+	 * Get all cuffs
+	 */
+    fun queryCuffs(): CuffCursor {
+
+        val qh = QueryHelper()
+        qh.Columns = null
+        qh.Table = S.TABLE_CUFFS
+        qh.Selection = null
+        qh.SelectionArgs = null
+        qh.GroupBy = "i._id"
+        qh.Having = null
+        qh.OrderBy = "skill_1_name ASC"
+        qh.Limit = null
+
+        return CuffCursor(wrapJoinHelper(builderCuff(), qh))
+    }
+
+    /**
+     * Get cuffs filtered by a search term.
+     * This query filters by name, and not by skill
+     */
+    fun queryCuffsSearch(searchTerm: String): CuffCursor {
+        val searchFilter = SqlFilter("i.$column_name", searchTerm)
+
+        val qh = QueryHelper()
+        qh.Columns = null
+        qh.Table = S.TABLE_CUFFS
+        qh.Selection = searchFilter.predicate
+        qh.SelectionArgs = searchFilter.parameters
+        qh.GroupBy = null
+        qh.Having = null
+        qh.OrderBy = "skill_1_name ASC"
+        qh.Limit = null
+
+        return CuffCursor(wrapJoinHelper(builderCuff(), qh))
+    }
+
+    /*
+     * Get a specific cuff
+     */
+    fun queryCuff(id: Long): CuffCursor {
+
+        val qh = QueryHelper()
+        qh.Columns = null
+        qh.Table = S.TABLE_CUFFS
+        qh.Selection = "i._id" + " = ?"
+        qh.SelectionArgs = arrayOf(id.toString())
+        qh.GroupBy = null
+        qh.Having = null
+        qh.OrderBy = null
+        qh.Limit = "1"
+
+        return CuffCursor(wrapJoinHelper(builderCuff(), qh))
+    }
+
+    /*
+     * Helper method to query for cuffs
+     */
+    private fun builderCuff(): SQLiteQueryBuilder {
+        //      SELECT i._id AS item_id, i.name, i.type, i.rarity, i.carry_capacity, i.buy, i.sell, i.description,
+        //      i.icon_name, d.num_slots, s1._id AS skill_1_id, s1.name AS skill_1_name, its1.point_value
+        //      AS skill_1_point, s2._id AS skill_1_id, s2.name AS skill_2_name, its2.point_value AS skill_2_point
+        //      FROM cuffs AS d LEFT OUTER JOIN items AS i ON d._id = i._id
+        //      LEFT OUTER JOIN item_to_skill_tree AS its1 ON i._id = its1.item_id and its1.point_value > 0
+        //      LEFT OUTER JOIN skill_trees AS s1 ON its1.skill_tree_id = s1._id
+        //      LEFT OUTER JOIN item_to_skill_tree AS its2 ON i._id = its2.item_id and s1._id != its2.skill_tree_id
+        //      LEFT OUTER JOIN skill_trees AS s2 ON its2.skill_tree_id = s2._id;
+
+        val projectionMap = HashMap<String, String>()
+        projectionMap["_id"] = "i." + S.COLUMN_ITEMS_ID + " AS " + "_id"
+        projectionMap["item_name"] = "i.$column_name AS item_name"
+        projectionMap[S.COLUMN_ITEMS_ITEM_HID] = "i." + S.COLUMN_ITEMS_ITEM_HID
+        projectionMap[S.COLUMN_ITEMS_JPN_NAME] = "i." + S.COLUMN_ITEMS_JPN_NAME
+        projectionMap[S.COLUMN_ITEMS_TYPE] = "i." + S.COLUMN_ITEMS_TYPE
+        projectionMap[S.COLUMN_ITEMS_SUB_TYPE] = "i." + S.COLUMN_ITEMS_SUB_TYPE
+        projectionMap[S.COLUMN_ITEMS_RARITY] = "i." + S.COLUMN_ITEMS_RARITY
+        projectionMap[S.COLUMN_ITEMS_CARRY_CAPACITY] = "i." + S.COLUMN_ITEMS_CARRY_CAPACITY
+        projectionMap[S.COLUMN_ITEMS_BUY] = "i." + S.COLUMN_ITEMS_BUY
+        projectionMap[S.COLUMN_ITEMS_SELL] = "i." + S.COLUMN_ITEMS_SELL
+        projectionMap[S.COLUMN_ITEMS_DESCRIPTION] = "i." + S.COLUMN_ITEMS_DESCRIPTION
+        projectionMap[S.COLUMN_ITEMS_ICON_NAME] = "i." + S.COLUMN_ITEMS_ICON_NAME
+        projectionMap[S.COLUMN_ITEMS_ICON_COLOR] = "i." + S.COLUMN_ITEMS_ICON_COLOR
+        projectionMap[S.COLUMN_CUFFS_NUM_SLOTS] = "c." + S.COLUMN_CUFFS_NUM_SLOTS
+        projectionMap["skill_1_id"] = "s1." + S.COLUMN_SKILL_TREES_ID + " AS " + "skill_1_id"
+        projectionMap["skill_1_name"] = "s1.$column_name AS skill_1_name"
+        projectionMap["skill_1_point_value"] = "its1." + S.COLUMN_ITEM_TO_SKILL_TREE_POINT_VALUE + " AS " + "skill_1_point_value"
+        projectionMap["skill_2_id"] = "s2." + S.COLUMN_SKILL_TREES_ID + " AS " + "skill_2_id"
+        projectionMap["skill_2_name"] = "s2.$column_name AS skill_2_name"
+        projectionMap["skill_2_point_value"] = "its2." + S.COLUMN_ITEM_TO_SKILL_TREE_POINT_VALUE + " AS " + "skill_2_point_value"
+
+        //Create new querybuilder
+        val QB = SQLiteQueryBuilder()
+
+        QB.tables = S.TABLE_CUFFS + " AS c" +
+                " LEFT OUTER JOIN " + S.TABLE_ITEMS + " AS i" + " ON " + "c." +
+                S.COLUMN_CUFFS_ID + " = " + "i." + S.COLUMN_ITEMS_ID +
+
+                " LEFT OUTER JOIN " + S.TABLE_ITEM_TO_SKILL_TREE + " AS its1 " +
+                " ON " + "i." + S.COLUMN_ITEMS_ID + " = " + "its1." + S.COLUMN_ITEM_TO_SKILL_TREE_ITEM_ID +
+                " AND " + "its1." + S.COLUMN_ITEM_TO_SKILL_TREE_POINT_VALUE + " IS NOT NULL " +
+                " LEFT OUTER JOIN " + S.TABLE_SKILL_TREES + " AS s1" +
+                " ON " + "its1." + S.COLUMN_ITEM_TO_SKILL_TREE_SKILL_TREE_ID + " = " + "s1." + S.COLUMN_SKILL_TREES_ID +
+
+                " LEFT OUTER JOIN " + S.TABLE_ITEM_TO_SKILL_TREE + " AS its2 " +
+                " ON " + "i." + S.COLUMN_ITEMS_ID + " = " + "its2." + S.COLUMN_ITEM_TO_SKILL_TREE_ITEM_ID +
+                " AND " + "s1." + S.COLUMN_SKILL_TREES_ID + " != " + "its2." + S.COLUMN_ITEM_TO_SKILL_TREE_SKILL_TREE_ID +
+                " LEFT OUTER JOIN " + S.TABLE_SKILL_TREES + " AS s2" +
+                " ON " + "its2." + S.COLUMN_ITEM_TO_SKILL_TREE_SKILL_TREE_ID + " = " + "s2." + S.COLUMN_SKILL_TREES_ID
+
+        QB.setProjectionMap(projectionMap)
+        return QB
+    }
+
     /**
      * ****************************** GATHERING QUERIES *****************************************
      */
@@ -960,11 +1079,19 @@ internal class MonsterHunterDatabaseHelper constructor(ctx: Context):
     fun queryItemToSkillTreeSkillTree(id: Long, type: String): ItemToSkillTreeCursor {
 
         var queryType = ""
+        when (type) {
+            "Decoration" -> queryType = "i." + S.COLUMN_ITEMS_TYPE
+            "Cuff" -> queryType = "i." + S.COLUMN_ITEMS_TYPE
+            else -> queryType = "i." + S.COLUMN_ITEMS_TYPE
+        }
+        /*
         if (type == "Decoration") {
             queryType = "i." + S.COLUMN_ITEMS_TYPE
         } else {
             queryType = "a." + S.COLUMN_ARMOR_SLOT
         }
+        */
+
 
         val qh = QueryHelper()
         qh.Columns = null
@@ -1019,7 +1146,9 @@ internal class MonsterHunterDatabaseHelper constructor(ctx: Context):
                 " AS s " + " ON " + "itst." + S.COLUMN_ITEM_TO_SKILL_TREE_SKILL_TREE_ID + " = " + "s." + S.COLUMN_SKILL_TREES_ID +
                 " LEFT OUTER JOIN " + S.TABLE_ARMOR + " AS a" + " ON " + "i." + S.COLUMN_ITEMS_ID + " = " + "a." + S.COLUMN_ARMOR_ID +
                 " LEFT OUTER JOIN " + S.TABLE_DECORATIONS + " AS d" + " ON " + "i." + S.COLUMN_ITEMS_ID + " = " + "d." +
-                S.COLUMN_DECORATIONS_ID
+                S.COLUMN_DECORATIONS_ID +
+                " LEFT OUTER JOIN " + S.TABLE_CUFFS + " AS c" + " ON " + "i." + S.COLUMN_ITEMS_ID + " = " + "c." +
+                S.COLUMN_CUFFS_ID
 
         QB.setProjectionMap(projectionMap)
         return QB

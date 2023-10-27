@@ -30,9 +30,11 @@ class SkillDetailViewModel: ViewModel() {
      */
     private val armorSkillPointsBase = mutableListOf<ItemToSkillTree>()
     private val decorationSkillPointsBase = mutableListOf<ItemToSkillTree>()
+    private val cuffSkillPointsBase = mutableListOf<ItemToSkillTree>()
 
     val skillTreeData = MutableLiveData<SkillTree>()
     val decorationSkillPoints = MutableLiveData<List<ItemToSkillTree>>()
+    val cuffSkillPoints = MutableLiveData<List<ItemToSkillTree>>()
     val armorSkillPoints = MutableLiveData<List<ItemToSkillTree>>()
 
     private val armorSkillPointsByPart = mapOf(
@@ -58,6 +60,11 @@ class SkillDetailViewModel: ViewModel() {
             decorationSkillPointsBase.addAll(loadedDecorations.filter { it.points >= 0 })
             decorationSkillPointsBase.addAll(loadedDecorations.filter { it.points < 0 })
 
+            // load cuffs. Positive entries before negative ones
+            val loadedCuffs = dataManager.queryItemToSkillTreeSkillTree(skillTreeId, ItemType.CUFF).toList { it.itemToSkillTree }
+            cuffSkillPointsBase.addAll(loadedCuffs.filter { it.points >= 0 })
+            cuffSkillPointsBase.addAll(loadedCuffs.filter { it.points < 0 })
+
             // load armors
             armorSkillPointsBase.addAll(dataManager.queryArmorSkillTreePointsBySkillTree(skillTreeId))
 
@@ -73,6 +80,11 @@ class SkillDetailViewModel: ViewModel() {
         decorationSkillPoints.postValue(when (showPenalties) {
             true -> decorationSkillPointsBase
             false -> decorationSkillPointsBase.filter { it.points > 0 }
+        })
+
+        cuffSkillPoints.postValue(when (showPenalties) {
+            true -> cuffSkillPointsBase
+            false -> cuffSkillPointsBase.filter { it.points > 0 }
         })
 
         armorSkillPoints.postValue(when (showPenalties) {

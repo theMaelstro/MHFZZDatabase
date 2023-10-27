@@ -46,6 +46,10 @@ class SkillTreeDetailPagerActivity : BasePagerActivity() {
             SkillTreeDecorationFragment.newInstance(skillTreeId)
         }
 
+        tabs.addTab(R.string.type_cuff) {
+            SkillTreeCuffFragment.newInstance(skillTreeId)
+        }
+
         tabs.addTab(R.string.skill_tab_head) {
             SkillTreeArmorFragment.newInstance(skillTreeId, Armor.ARMOR_SLOT_HEAD)
         }

@@ -79,7 +79,7 @@ class UniversalSearchViewModel(app: Application): AndroidViewModel(app) {
 
             // prefetch items. We do this because we want to insert armor in the middle
             // To improve this, add db index to item type, but might not be necessary.
-            val types = listOf(ItemType.DECORATION, ItemType.WEAPON, ItemType.BENTO,
+            val types = listOf(ItemType.DECORATION, ItemType.CUFF, ItemType.WEAPON, ItemType.BENTO,
                     ItemType.PALICO_WEAPON, ItemType.PALICO_ARMOR,
                     ItemType.ITEM, ItemType.MATERIAL)
             val items = db.queryItemSearch(searchTerm, includeTypes=types).toList { it.item }

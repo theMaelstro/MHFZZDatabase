@@ -83,6 +83,7 @@
     <string name="type_skill_tree">Árvore de Habilidades</string>
     <string name="type_item">Item</string>
     <string name="type_bento">Bento</string>
+    <string name="type_cuff">Cuff</string>
     <string name="type_weapon">Arma</string>
     <string name="type_armor">Armadura</string>
     <string name="type_armor_set">Conjunto de Armaduras</string>
@@ -197,6 +198,7 @@
     <string name="title_combining">Criação</string>
     <string name="title_locations">Locais</string>
     <string name="title_decorations">Adornos</string>
+    <string name="title_cuffs">Skill Cuffs</string>
     <string name="title_skills">Habilidades</string>
     <string name="title_asb">Construtor de Conjuntos de Armadura</string>
     <string name="title_wishlists">Listas de Desejos</string>

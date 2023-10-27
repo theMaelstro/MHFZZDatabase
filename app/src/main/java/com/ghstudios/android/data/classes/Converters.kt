@@ -54,6 +54,7 @@ val ItemTypeConverter = Converter(
         "" to ItemType.ITEM,
         "Bento" to ItemType.BENTO,
         "Decoration" to ItemType.DECORATION,
+        "Cuff" to ItemType.CUFF,
         "Palico Weapon" to ItemType.PALICO_WEAPON,
         "Palico Armor" to ItemType.PALICO_ARMOR,
         "Weapon" to ItemType.WEAPON,

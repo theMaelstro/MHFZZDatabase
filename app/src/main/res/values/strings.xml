@@ -84,6 +84,7 @@
     <string name="type_skill_tree">Skill Tree</string>
     <string name="type_item">Item</string>
     <string name="type_bento">Bento</string>
+    <string name="type_cuff">Cuff</string>
     <string name="type_weapon">Weapon</string>
     <string name="type_armor">Armor</string>
     <string name="type_armor_set">Armor Set</string>
@@ -198,6 +199,7 @@
     <string name="title_combining">Combining</string>
     <string name="title_locations">Locations</string>
     <string name="title_decorations">Decorations</string>
+    <string name="title_cuffs">Skill Cuffs</string>
     <string name="title_skills">Skills</string>
     <string name="title_asb">Armor Set Builder</string>
     <string name="title_wishlists">Wishlists</string>

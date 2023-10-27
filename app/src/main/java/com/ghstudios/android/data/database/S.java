@@ -78,6 +78,11 @@ public class S {
 	public static final String TABLE_DECORATIONS = "decorations";
 	public static final String COLUMN_DECORATIONS_ID = "_id";
 	public static final String COLUMN_DECORATIONS_NUM_SLOTS = "num_slots";
+
+	// Cuffs
+	public static final String TABLE_CUFFS = "cuffs";
+	public static final String COLUMN_CUFFS_ID = "_id";
+	public static final String COLUMN_CUFFS_NUM_SLOTS = "num_slots";
 	
 	// Gathering
 	public static final String TABLE_GATHERING = "gathering";

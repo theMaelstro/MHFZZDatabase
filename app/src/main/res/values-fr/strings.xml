@@ -83,6 +83,7 @@
     <string name="type_skill_tree">Arbre des Talents</string>
     <string name="type_item">Objet</string>
     <string name="type_bento">Bento</string>
+    <string name="type_cuff">Cuff</string>
     <string name="type_weapon">Arme</string>
     <string name="type_armor">Armure</string>
     <string name="type_armor_set">Set d\'armure</string>
@@ -197,6 +198,7 @@
     <string name="title_combining">Combinaison</string>
     <string name="title_locations">Localisation</string>
     <string name="title_decorations">Joyaux</string>
+    <string name="title_cuffs">Skill Cuffs</string>
     <string name="title_skills">Talents</string>
     <string name="title_asb">Concepteur d\'armure</string>
     <string name="title_wishlists">Liste de Souhaits</string>

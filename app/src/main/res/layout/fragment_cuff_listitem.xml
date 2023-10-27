@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listitem"
+    style="@style/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        style="@style/main_image"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true" />
+
+    <TextView
+        android:id="@+id/item"
+        style="@style/text_medium.color_states_enabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/item_image"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:text="Trekker Jewel" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skill1"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentRight="false"
+            android:layout_gravity="center_vertical|right"
+            android:layout_toLeftOf="@+id/skill1_amt"
+            android:layout_weight=".8"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="Sleep" />
+
+        <TextView
+            android:id="@+id/skill1_amt"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight=".3"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical|right"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/skill2"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skill1_amt"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/skill2_amt"
+            android:layout_weight=".8"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="Mud/Snow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/skill2_amt"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skill1_amt"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight=".3"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical|right"
+            android:text="-1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/skill3"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skill2_amt"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/skill3_amt"
+            android:layout_weight=".8"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="Mud/Snow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/skill3_amt"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skill2_amt"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight=".3"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical|right"
+            android:text="-1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/skill4"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skill3_amt"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/skill4_amt"
+            android:layout_weight=".8"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="Mud/Snow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/skill4_amt"
+            style="@style/text_small.color_states_enabled"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skill3_amt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight=".3"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical|right"
+            android:text="-1"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
