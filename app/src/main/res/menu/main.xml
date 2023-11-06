@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.ghstudios.android.monsterhunter4udatabase.MainActivity" >
 
+    <item
+        android:id="@+id/universal_help"
+        android:icon="@drawable/ic_outline_help_outline_24"
+        android:title="@string/help"
+        app:showAsAction="ifRoom" />
+
     <item android:id="@+id/universal_search"
         android:title="@string/search"
         android:icon="@drawable/abc_ic_search_api_material"

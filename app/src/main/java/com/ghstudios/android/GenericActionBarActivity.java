@@ -27,6 +27,7 @@ import android.view.View;
 
 import com.ghstudios.android.features.bentos.list.BentoListActivity;
 import com.ghstudios.android.features.cuffs.list.CuffListActivity;
+import com.ghstudios.android.features.help.UniversalHelpActivity;
 import com.ghstudios.android.features.meta.AboutActivity;
 import com.ghstudios.android.features.monsters.list.MonsterListPagerActivity;
 import com.ghstudios.android.features.meta.PreferencesActivity;
@@ -317,6 +318,12 @@ public abstract class GenericActionBarActivity extends AppCompatActivity
             case R.id.universal_search:
                 Intent startSearch = new Intent(GenericActionBarActivity.this, UniversalSearchActivity.class);
                 startActivity(startSearch);
+                return true;
+
+            case R.id.universal_help:
+                Log.d("TEST","Does it work?");
+                Intent openHelp = new Intent(GenericActionBarActivity.this, UniversalHelpActivity.class);
+                startActivity(openHelp);
                 return true;
 
             default:

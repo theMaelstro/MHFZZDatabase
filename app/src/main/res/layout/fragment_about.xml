@@ -81,6 +81,13 @@
             <com.ghstudios.android.components.IconLabelTextCell
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:tag="https://trello.com/b/Q1aZg9lM/mhfzz-database-roadmap"
+
+                app:labelText="App Trello Board" />
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:iconSrc="@drawable/ic_github"
                 app:labelText="Github"
                 android:tag="https://github.com/theMaelstro"/>

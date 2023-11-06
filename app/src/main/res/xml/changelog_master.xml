@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
+    <release version="1.1.0" versioncode="22">
+        <change>Fixed G Hiden Stone Quests not showing up in G Special tab.</change>
+        <change>Added new mixed element icons (silversoulart).</change>
+        <change>Added missing monster icons (silversoulart).</change>
+        <change>Added custom icons for extreme monster variants (silversoulart).</change>
+        <change>Added Universal Help button.</change>
+        <change>Added elements guide (Universal Help).</change>
+    </release>
     <release version="1.0.8" versioncode="21">
         <change>Added Skill Cuffs (No ASB Functionality).</change>
         <change>Added Official App discord link.</change>

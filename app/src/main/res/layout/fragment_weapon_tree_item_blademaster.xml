@@ -67,62 +67,62 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_below="@+id/item3"
-            style="@style/list_sub_item"
             android:id="@+id/bottom_layout"
+            style="@style/list_sub_item"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="12dp"
-            android:layout_width="fill_parent">
+            android:layout_below="@+id/item3"
+            android:paddingLeft="12dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DMG: 7777"
                 android:id="@+id/attack_text"
                 style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="left"
+                android:text="DMG: 7777"
                 android:textSize="12sp" />
 
             <TextView
-                android:layout_width="44dp"
-                android:layout_height="wrap_content"
-                android:text="OOO"
                 android:id="@+id/slots_text"
                 style="@style/text_small"
-                android:gravity="right|top"
-                android:textSize="14sp"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_weight="1"
-                android:layout_alignParentRight="true" />
+                android:gravity="right|top"
+                android:text="OOO"
+                android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/defense_text"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
-                android:text="DEF: 50"
-                android:id="@+id/defense_text"
-                android:textSize="12sp"
+                android:layout_toLeftOf="@+id/affinity_text"
                 android:layout_weight="1"
-                android:layout_toLeftOf="@+id/affinity_text" />
+                android:text="DEF: 50"
+                android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/affinity_text"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
-                android:text="-25/40%"
-                android:id="@+id/affinity_text"
-                android:gravity="right|top"
                 android:layout_alignParentRight="false"
-                android:textSize="12sp"
-                android:layout_toLeftOf="@+id/slots_text" />
+                android:layout_toLeftOf="@+id/slots_text"
+                android:gravity="right|top"
+                android:text="-25/40%"
+                android:textSize="12sp" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="("
                 android:id="@+id/awaken_text"
                 style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
-                android:textSize="12sp"
+                android:layout_toRightOf="@+id/attack_text"
                 android:gravity="right"
-                android:layout_toRightOf="@+id/attack_text" />
+                android:text="("
+                android:textSize="12sp" />
 
             <com.ghstudios.android.components.FixedImageView
                 android:id="@+id/element_image"
@@ -130,68 +130,72 @@
                 android:layout_toRightOf="@+id/awaken_text" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="350)"
                 android:id="@+id/element_text"
                 style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
                 android:layout_marginRight="4dp"
-                android:textSize="12sp"
-                android:layout_toRightOf="@+id/element_image" />
+                android:layout_toRightOf="@+id/element_image"
+                android:text="350)"
+                android:textSize="12sp" />
 
             <com.ghstudios.android.components.FixedImageView
-                style="@style/tiny_image"
                 android:id="@+id/element_image2"
+                style="@style/tiny_image"
                 android:layout_toRightOf="@+id/element_text" />
 
             <TextView
+                android:id="@+id/element_text2"
                 style="@style/text_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/element_text2"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/element_image2"
                 android:text="350"
-                android:textSize="12sp"
-                android:layout_toRightOf="@+id/element_image2" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/special_text"
                 style="@style/text_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NOTES: "
-                android:textSize="12sp"
+                android:layout_alignWithParentIfMissing="true"
                 android:layout_below="@+id/attack_text"
                 android:layout_alignParentLeft="false"
-                android:visibility="gone"
-                android:layout_marginBottom="4dp"
                 android:layout_alignParentRight="false"
-                android:layout_alignWithParentIfMissing="true"
-                android:layout_toLeftOf="@+id/note_image_1" />
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/note_image_1"
+                android:text="NOTES: "
+                android:textSize="12sp"
+                android:visibility="gone" />
 
             <com.ghstudios.android.components.FixedImageView
                 android:id="@+id/note_image_1"
                 style="@style/tiny_image"
                 android:layout_below="@+id/attack_text"
-                android:visibility="gone"
-                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="4dp"
-                android:layout_toLeftOf="@+id/note_image_2" />
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/note_image_2"
+                android:visibility="gone" />
 
             <com.ghstudios.android.components.FixedImageView
                 android:id="@+id/note_image_2"
                 style="@style/tiny_image"
                 android:layout_alignTop="@+id/note_image_1"
-                android:visibility="gone"
                 android:layout_marginBottom="4dp"
-                android:layout_toLeftOf="@+id/note_image_3" />
+                android:layout_toLeftOf="@+id/note_image_3"
+                android:visibility="gone" />
 
             <com.ghstudios.android.components.FixedImageView
                 android:id="@+id/note_image_3"
                 style="@style/tiny_image"
                 android:layout_alignTop="@+id/note_image_2"
-                android:visibility="gone"
+                android:layout_alignParentRight="true"
                 android:layout_marginBottom="4dp"
-                android:layout_alignParentRight="true" />
+                android:visibility="gone" />
 
             <View
                 android:id="@+id/arrow"

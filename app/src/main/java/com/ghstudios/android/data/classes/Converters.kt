@@ -19,6 +19,7 @@ fun getElementFromString(elementStr: String?) = when(elementStr ?: "") {
     "Emperors Roar" -> ElementStatus.EMPERORSROAR
     "Frozen Seraphim" -> ElementStatus.FROZENSERAPHIM
     "Kanade" -> ElementStatus.KANADE
+    "Music" -> ElementStatus.MUSIC
     "Light" -> ElementStatus.LIGHT
     "Sound" -> ElementStatus.SOUND
     "Tenshou" -> ElementStatus.TENSHOU

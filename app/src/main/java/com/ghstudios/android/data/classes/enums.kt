@@ -14,6 +14,7 @@ enum class ElementStatus {
     DARKNESS,
     EMPERORSROAR,
     FROZENSERAPHIM,
+    MUSIC,
     KANADE,
     LIGHT,
     SOUND,
