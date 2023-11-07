@@ -3,6 +3,7 @@
     <string name="app_name">MHFZZ Database</string>
     <string name="app_name_launcher">MHFZZDB</string>
     <string name="search">Rechercher</string>
+	<string name="help">Help</string>									 
     <string name="search_hint">Rechercher la Base de Donnée</string>
     <string name="filter_hint">Filtrer…</string>
     <string name="cancel">Annuler</string>
@@ -45,7 +46,6 @@
     <string name="about_title_credits_mhgen">Crédits (MHGen)</string>
     <string name="about_title_credits_data_support">Crédits (Data Support)</string>
     <string name="about_title_credits_data_sources">Crédits (Data Sources)</string>
-
     <string name="about_title_credits_app_translation">Crédits (App Translations)</string>
     <string name="about_title_credits_translation">Crédits (Sources Translations)</string>
 
@@ -583,6 +583,56 @@
     <!-- Locations -->
     <string name="location_detail_tab_map">Map</string>
 
+	<!-- Help Pages -->
+    <string name="help_element_fire">Fire</string>
+    <string name="help_element_water">Water</string>
+    <string name="help_element_thunder">Thunder</string>
+    <string name="help_element_ice">Ice</string>
+    <string name="help_element_dragon">Dragon</string>
+    <string name="help_element_black_flame">Black Flame</string>
+    <string name="help_element_blaze">Blaze</string>
+    <string name="help_element_burning_zero">Burning Zero</string>
+    <string name="help_element_crimson_demon">Crimson Demon</string>
+    <string name="help_element_darkness">Darkness</string>
+    <string name="help_element_emperors_roar">Emperors Roar</string>
+    <string name="help_element_frozen_seraphim">Frozen Seraphim</string>
+    <string name="help_element_music">Music</string>
+    <string name="help_element_light">Light</string>
+    <string name="help_element_sound">Sound</string>
+    <string name="help_element_tenshou">Tenshou</string>
+    <string name="help_element_thunder_pole">Thunder Pole</string>
+    <string name="help_element_wind">Wind</string>
+    <string name="help_element_poison">Poison</string>
+    <string name="help_element_paralysis">Paralysis</string>
+    <string name="help_element_sleep">Sleep</string>
+    <string name="help_element_blast">Blast</string>
+
+    <string name="help_element_fire_desc">Fire</string>
+    <string name="help_element_water_desc">Water</string>
+    <string name="help_element_thunder_desc">Thunder</string>
+    <string name="help_element_ice_desc">Ice</string>
+    <string name="help_element_dragon_desc">Dragon</string>
+    <string name="help_element_black_flame_desc">The fire burns long after the host\'s demise.</string>
+    <string name="help_element_blaze_desc">Flames bolstered by the power of dragon element.</string>
+    <string name="help_element_burning_zero_desc">The burning fury of fire, and the freezing tranquility of ice.</string>
+    <string name="help_element_crimson_demon_desc">Fueled by a millennium of hatred.</string>
+    <string name="help_element_darkness_desc">Born in complete absence of light.</string>
+    <string name="help_element_emperors_roar_desc">Struck from the ancestor of all dragons.</string>
+    <string name="help_element_frozen_seraphim_desc">A fiery seraph sealed in a prison of ice.</string>
+    <string name="help_element_music_desc">A cold song with the clarity of water that fills mind.</string>
+    <string name="help_element_light_desc">A sickly pale glow emanates from within.</string>
+    <string name="help_element_sound_desc">Makes a noise effective against dragons and fire.</string>
+    <string name="help_element_tenshou_desc">Wrath of heaven itself.</string>
+    <string name="help_element_thunder_pole_desc">Magnetic energy strong enough to knock down flying dragon.</string>
+    <string name="help_element_wind_desc">A golden wind that engulfs everything.</string>
+    <string name="help_element_poison_desc">Poison</string>
+    <string name="help_element_paralysis_desc">Paralysis</string>
+    <string name="help_element_sleep_desc">Sleep</string>
+    <string name="help_element_blast_desc">Blast</string>
+
+    <string name="help_header_combined">Combined Elements</string>
+    <string name="help_header_base">Base Elements</string>
+    <string name="help_header_ailments">Ailments</string>
     <string name="talisman_full_name">%s Talisman</string>
     <string-array name="talisman_names">
         <item>Pawn</item>
