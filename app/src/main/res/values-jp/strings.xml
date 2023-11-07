@@ -3,101 +3,101 @@
 
     <string name="app_name">MHFZZ Database</string>
     <string name="app_name_launcher">MHFZZDB</string>
-    <string name="search">Search</string>
-    <string name="help">Help</string>
-    <string name="search_hint">Search Database</string>
-    <string name="filter_hint">Filter…</string>
-    <string name="cancel">Cancel</string>
-    <string name="delete">Delete</string>
-    <string name="copy">Copy</string>
+    <string name="search">検索</string>
+    <string name="help">ヘルプ</string>
+    <string name="search_hint">データベース検索</string>
+    <string name="filter_hint">フィルタ…</string>
+    <string name="cancel">取消</string>
+    <string name="delete">削除</string>
+    <string name="copy">コピー</string>
     <string name="submit">Submit</string>
-    <string name="undo">Undo</string>
+    <string name="undo">元に戻す</string>
 
-    <string name="about">About</string>
-    <string name="about_version">Version %s</string>
+    <string name="about">このアプリについて</string>
+    <string name="about_version">バージョン %s</string>
     <string name="about_message">
-        Gathering Hall Studios is an open source team of designers and developers
-        dedicated to building high-quality apps for the Monster Hunter series.
-        Contact them at contact@gatheringhallstudios.com or visit their Discord!
+        Gathering Hall Studios はモンスターハンターシリーズの為のアプリを開発すること
+        を目的としたオープンソースチームです。contact@gatheringhallstudiosもしくは
+        Discordでご連絡ください。
     </string>
 
-    <string name="about_artist">Artist</string>
-    <string name="about_global">Global</string>
-    <string name="about_europe">Europe</string>
-    <string name="about_channel">Channel</string>
-    <string name="about_website">Website</string>
-    <string name="about_source">Source</string>
+    <string name="about_artist">イラストレーター</string>
+    <string name="about_global">グローバル</string>
+    <string name="about_europe">欧州</string>
+    <string name="about_channel">チャンネル</string>
+    <string name="about_website">ウェブサイト</string>
+    <string name="about_source">ソース</string>
 
-    <string name="about_language_en">English</string>
-    <string name="about_language_fr">French</string>
-    <string name="about_language_de">German</string>
-    <string name="about_language_it">Italian</string>
-    <string name="about_language_pt">Portuguese</string>
+    <string name="about_language_en">英語</string>
+    <string name="about_language_fr">フランス語</string>
+    <string name="about_language_de">ドイツ語</string>
+    <string name="about_language_it">イタリア語</string>
+    <string name="about_language_pt">ポルトガル語</string>
 
-    <string name="about_japanese_wiki">Japanese Wiki</string>
-    <string name="about_asb">Armor Set Builder</string>
+    <string name="about_japanese_wiki">日本語Wiki</string>
+    <string name="about_asb">装備シミュレーター</string>
 
-    <string name="about_title_links_mael">Links (MAEL)</string>
-    <string name="about_title_links_ghstudios">Links (GHStudios)</string>
-    <string name="about_title_libraries">Open Source Libraries</string>
+    <string name="about_title_links_mael">リンク (MAEL)</string>
+    <string name="about_title_links_ghstudios">リンク (GHStudios)</string>
+    <string name="about_title_libraries">オープンソースライブラリ</string>
 
-    <string name="about_title_credits_mhfzz">Credits (MHFZZ)</string>
-    <string name="about_title_credits_mhgu">Credits (MHGU)</string>
-    <string name="about_title_credits_mhgen">Credits (MHGen)</string>
-    <string name="about_title_credits_data_support">Credits (Data Support)</string>
-    <string name="about_title_credits_data_sources">Credits (Data Sources)</string>
-    <string name="about_title_credits_app_translation">Credits (App Translations)</string>
-    <string name="about_title_credits_translation">Credits (Sources Translations)</string>
+    <string name="about_title_credits_mhfzz">謝辞 (MHFZZ)</string>
+    <string name="about_title_credits_mhgu">謝辞 (MHXX)</string>
+    <string name="about_title_credits_mhgen">謝辞 (MHX)</string>
+    <string name="about_title_credits_data_support">謝辞 (データサポート)</string>
+    <string name="about_title_credits_data_sources">謝辞 (データソース)</string>
+    <string name="about_title_credits_app_translation">謝辞 (アプリ翻訳)</string>
+    <string name="about_title_credits_translation">謝辞 (ソース翻訳)</string>
 
-    <string name="about_title_ghstudios">About Gathering Hall Studios</string>
-    <string name="about_title_community">Community</string>
+    <string name="about_title_ghstudios">Gathering Hall Studiosについて</string>
+    <string name="about_title_community">コミュニティ</string>
 
     <string name="value_zenny">%dz</string>
 
-    <string name="placeholder_unknown">Unknown</string>
+    <string name="placeholder_unknown">不明</string>
     <string name="filter_final_option">Final Only</string>
     <string name="empty_message">No Data</string>
-    <string name="list_empty_message">Insufficient materials.</string>
+    <string name="list_empty_message">素材が不足しています</string>
 
-    <string name="dialog_message_delete">\"%s\" will be deleted.</string>
-    <string name="dialog_message_delete_multi">These %d items will be deleted.</string>
-    <string name="dialog_message_copy">\"%s\" will be duplicated.</string>
-    <string name="dialog_message_copy_multi">These %d items will be duplicated.</string>
+    <string name="dialog_message_delete">\"%s\" が削除されます</string>
+    <string name="dialog_message_delete_multi">これら %d 個のアイテムが削除されます</string>
+    <string name="dialog_message_copy">\"%s\" が複製されます</string>
+    <string name="dialog_message_copy_multi">これら %d 個のアイテムが複製されます.</string>
 
     <!-- CONFIRM EXIT -->
-    <string name="exit_title">Abandon Quest</string>
-    <string name="exit_dialog">Stop the Quest and return to town?</string>
-    <string name="exit_confirm">Yes</string>
-    <string name="exit_cancel">No</string>
+    <string name="exit_title">クエストリタイア</string>
+    <string name="exit_dialog">クエストを中断して町に戻りますか?</string>
+    <string name="exit_confirm">はい</string>
+    <string name="exit_cancel">いいえ</string>
 
     <!-- CHANGELOG DIALOG -->
-    <string name="changelog_full_title">Change Log</string>
-    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_full_title">更新履歴</string>
+    <string name="changelog_title">更新内容</string>
     <string name="changelog_ok_button">OK</string>
-    <string name="changelog_show_full">More…</string>
+    <string name="changelog_show_full">もっと見る</string>
 
     <!-- Various data types (for search results and things like that) -->
     <string name="type_location">Location</string>
-    <string name="type_monster">Monster</string>
-    <string name="type_quest">Quest</string>
-    <string name="type_skill_tree">Skill Tree</string>
-    <string name="type_item">Item</string>
-    <string name="type_bento">Bento</string>
-    <string name="type_cuff">Cuff</string>
-    <string name="type_weapon">Weapon</string>
-    <string name="type_armor">Armor</string>
-    <string name="type_armor_set">Armor Set</string>
-    <string name="type_armor_set_gunner">Armor Set (Gunner)</string>
-    <string name="type_armor_set_blade">Armor Set (Blade)</string>
-    <string name="type_decoration">Decoration</string>
-    <string name="type_palico_weapon">Palico Weapon</string>
-    <string name="type_palico_armor">Palico Armor</string>
-    <string name="type_material">Material</string>
+    <string name="type_monster">モンスター</string>
+    <string name="type_quest">クエスト</string>
+    <string name="type_skill_tree">スキルツリー</string>
+    <string name="type_item">アイテム</string>
+    <string name="type_bento">狩人弁当</string>
+    <string name="type_cuff">スキルカフ</string>
+    <string name="type_weapon">武器</string>
+    <string name="type_armor">防具</string>
+    <string name="type_armor_set">装備</string>
+    <string name="type_armor_set_gunner">装備 (ガンナー)</string>
+    <string name="type_armor_set_blade">Armor Set (剣士)</string>
+    <string name="type_decoration">装飾品</string>
+    <string name="type_palico_weapon">パートニャー武器</string>
+    <string name="type_palico_armor">パートニャー防具</string>
+    <string name="type_material">素材</string>
     <string name="type_hub_village">Unimplemented</string>
-    <string name="type_hub_hunter_quests">Hunter</string>
-    <string name="type_hub_g_hunter_quests">G Hunter</string>
-    <string name="type_hub_special_quests">Special</string>
-    <string name="type_hub_g_special_quests">G Special</string>
+    <string name="type_hub_hunter_quests">HR</string>
+    <string name="type_hub_g_hunter_quests">G級</string>
+    <string name="type_hub_special_quests">特殊</string>
+    <string name="type_hub_g_special_quests">G級特殊</string>
     <string name="type_hub_conquest">Conquest</string>
     <string name="type_hub_other">Other</string>
     <string name="type_hub_zenith">Zenith</string>
