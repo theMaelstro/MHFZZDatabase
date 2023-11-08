@@ -3,147 +3,147 @@
 
     <string name="app_name">MHFZZ Database</string>
     <string name="app_name_launcher">MHFZZDB</string>
-    <string name="search">Search</string>
-    <string name="help">Help</string>
-    <string name="search_hint">Search Database</string>
-    <string name="filter_hint">Filter…</string>
-    <string name="cancel">Cancel</string>
-    <string name="delete">Delete</string>
-    <string name="copy">Copy</string>
+    <string name="search">検索</string>
+    <string name="help">ヘルプ</string>
+    <string name="search_hint">データベース検索</string>
+    <string name="filter_hint">フィルタ…</string>
+    <string name="cancel">取消</string>
+    <string name="delete">削除</string>
+    <string name="copy">コピー</string>
     <string name="submit">Submit</string>
-    <string name="undo">Undo</string>
+    <string name="undo">元に戻す</string>
 
-    <string name="about">About</string>
-    <string name="about_version">Version %s</string>
+    <string name="about">このアプリについて</string>
+    <string name="about_version">バージョン %s</string>
     <string name="about_message">
-        Gathering Hall Studios is an open source team of designers and developers
-        dedicated to building high-quality apps for the Monster Hunter series.
-        Contact them at contact@gatheringhallstudios.com or visit their Discord!
+        Gathering Hall Studiosはモンスターハンターシリーズの為のアプリを開発すること
+        を目的としたデザイナー、デベロッパー陣によるオープンソースチームです。
+        contact@gatheringhallstudiosもしくはDiscordでご連絡ください。
     </string>
 
-    <string name="about_artist">Artist</string>
-    <string name="about_global">Global</string>
-    <string name="about_europe">Europe</string>
-    <string name="about_channel">Channel</string>
-    <string name="about_website">Website</string>
-    <string name="about_source">Source</string>
+    <string name="about_artist">イラストレーター</string>
+    <string name="about_global">グローバル</string>
+    <string name="about_europe">欧州</string>
+    <string name="about_channel">チャンネル</string>
+    <string name="about_website">ウェブサイト</string>
+    <string name="about_source">ソース</string>
 
-    <string name="about_language_en">English</string>
-    <string name="about_language_fr">French</string>
-    <string name="about_language_de">German</string>
-    <string name="about_language_it">Italian</string>
-    <string name="about_language_pt">Portuguese</string>
+    <string name="about_language_en">英語</string>
+    <string name="about_language_fr">フランス語</string>
+    <string name="about_language_de">ドイツ語</string>
+    <string name="about_language_it">イタリア語</string>
+    <string name="about_language_pt">ポルトガル語</string>
 
-    <string name="about_japanese_wiki">Japanese Wiki</string>
-    <string name="about_asb">Armor Set Builder</string>
+    <string name="about_japanese_wiki">日本語Wiki</string>
+    <string name="about_asb">装備シミュレーター</string>
 
-    <string name="about_title_links_mael">Links (MAEL)</string>
-    <string name="about_title_links_ghstudios">Links (GHStudios)</string>
-    <string name="about_title_libraries">Open Source Libraries</string>
+    <string name="about_title_links_mael">リンク (MAEL)</string>
+    <string name="about_title_links_ghstudios">リンク (GHStudios)</string>
+    <string name="about_title_libraries">オープンソースライブラリ</string>
 
-    <string name="about_title_credits_mhfzz">Credits (MHFZZ)</string>
-    <string name="about_title_credits_mhgu">Credits (MHGU)</string>
-    <string name="about_title_credits_mhgen">Credits (MHGen)</string>
-    <string name="about_title_credits_data_support">Credits (Data Support)</string>
-    <string name="about_title_credits_data_sources">Credits (Data Sources)</string>
-    <string name="about_title_credits_app_translation">Credits (App Translations)</string>
-    <string name="about_title_credits_translation">Credits (Sources Translations)</string>
+    <string name="about_title_credits_mhfzz">謝辞 (MHFZZ)</string>
+    <string name="about_title_credits_mhgu">謝辞 (MHGU)</string>
+    <string name="about_title_credits_mhgen">謝辞 (MHGen)</string>
+    <string name="about_title_credits_data_support">謝辞 (データサポート)</string>
+    <string name="about_title_credits_data_sources">謝辞 (データソース)</string>
+    <string name="about_title_credits_app_translation">謝辞 (アプリ翻訳)</string>
+    <string name="about_title_credits_translation">謝辞 (ソース翻訳)</string>
 
-    <string name="about_title_ghstudios">About Gathering Hall Studios</string>
-    <string name="about_title_community">Community</string>
+    <string name="about_title_ghstudios">Gathering Hall Studiosについて</string>
+    <string name="about_title_community">コミュニティ</string>
 
     <string name="value_zenny">%dz</string>
 
-    <string name="placeholder_unknown">Unknown</string>
-    <string name="filter_final_option">Final Only</string>
+    <string name="placeholder_unknown">不明</string>
+    <string name="filter_final_option">終端のみ</string>
     <string name="empty_message">No Data</string>
-    <string name="list_empty_message">Insufficient materials.</string>
+    <string name="list_empty_message">素材が不足しています</string>
 
-    <string name="dialog_message_delete">\"%s\" will be deleted.</string>
-    <string name="dialog_message_delete_multi">These %d items will be deleted.</string>
-    <string name="dialog_message_copy">\"%s\" will be duplicated.</string>
-    <string name="dialog_message_copy_multi">These %d items will be duplicated.</string>
+    <string name="dialog_message_delete">\"%s\"が削除されます</string>
+    <string name="dialog_message_delete_multi">これら%d個のアイテムが削除されます</string>
+    <string name="dialog_message_copy">\"%s\" が複製されます</string>
+    <string name="dialog_message_copy_multi">これら%d個のアイテムが複製されます.</string>
 
     <!-- CONFIRM EXIT -->
-    <string name="exit_title">Abandon Quest</string>
-    <string name="exit_dialog">Stop the Quest and return to town?</string>
-    <string name="exit_confirm">Yes</string>
-    <string name="exit_cancel">No</string>
+    <string name="exit_title">クエストリタイア</string>
+    <string name="exit_dialog">クエストを中断して町に戻りますか?</string>
+    <string name="exit_confirm">はい</string>
+    <string name="exit_cancel">いいえ</string>
 
     <!-- CHANGELOG DIALOG -->
-    <string name="changelog_full_title">Change Log</string>
-    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_full_title">更新履歴</string>
+    <string name="changelog_title">更新内容</string>
     <string name="changelog_ok_button">OK</string>
-    <string name="changelog_show_full">More…</string>
+    <string name="changelog_show_full">もっと見る</string>
 
     <!-- Various data types (for search results and things like that) -->
-    <string name="type_location">Location</string>
-    <string name="type_monster">Monster</string>
-    <string name="type_quest">Quest</string>
-    <string name="type_skill_tree">Skill Tree</string>
-    <string name="type_item">Item</string>
-    <string name="type_bento">Bento</string>
-    <string name="type_cuff">Cuff</string>
-    <string name="type_weapon">Weapon</string>
-    <string name="type_armor">Armor</string>
-    <string name="type_armor_set">Armor Set</string>
-    <string name="type_armor_set_gunner">Armor Set (Gunner)</string>
-    <string name="type_armor_set_blade">Armor Set (Blade)</string>
-    <string name="type_decoration">Decoration</string>
-    <string name="type_palico_weapon">Palico Weapon</string>
-    <string name="type_palico_armor">Palico Armor</string>
-    <string name="type_material">Material</string>
-    <string name="type_hub_village">Unimplemented</string>
-    <string name="type_hub_hunter_quests">Hunter</string>
-    <string name="type_hub_g_hunter_quests">G Hunter</string>
-    <string name="type_hub_special_quests">Special</string>
-    <string name="type_hub_g_special_quests">G Special</string>
-    <string name="type_hub_conquest">Conquest</string>
-    <string name="type_hub_other">Other</string>
-    <string name="type_hub_zenith">Zenith</string>
-    <string name="type_hub_caravan">Caravan</string>
+    <string name="type_location">フィールド</string>
+    <string name="type_monster">モンスター</string>
+    <string name="type_quest">クエスト</string>
+    <string name="type_skill_tree">スキル一覧</string>
+    <string name="type_item">アイテム</string>
+    <string name="type_bento">狩人弁当</string>
+    <string name="type_cuff">スキルカフ</string>
+    <string name="type_weapon">武器</string>
+    <string name="type_armor">防具</string>
+    <string name="type_armor_set">装備</string>
+    <string name="type_armor_set_gunner">装備 (ガンナー)</string>
+    <string name="type_armor_set_blade">装備 (剣士)</string>
+    <string name="type_decoration">装飾品</string>
+    <string name="type_palico_weapon">パートニャー武器</string>
+    <string name="type_palico_armor">パートニャー防具</string>
+    <string name="type_material">素材</string>
+    <string name="type_hub_village">未対応</string>
+    <string name="type_hub_hunter_quests">HR</string>
+    <string name="type_hub_g_hunter_quests">G級</string>
+    <string name="type_hub_special_quests">特別</string>
+    <string name="type_hub_g_special_quests">G級特別</string>
+    <string name="type_hub_conquest">極征・至天</string>
+    <string name="type_hub_other">その他</string>
+    <string name="type_hub_zenith">辿異</string>
+    <string name="type_hub_caravan">キャラバン</string>
     <string name="type_hub_placetwo">Place Two</string>
     <string name="type_hub_placethree">Place Three</string>
     <string name="type_hub_placefour">Place Four</string>
-    <string name="type_hub_guild">Guild</string>
-    <string name="type_hub_event">Event</string>
-    <string name="type_hub_arena">Arena</string>
-    <string name="type_hub_permit">Permit</string>
-    <string name="type_weapon_greatsword">Great Sword</string>
-    <string name="type_weapon_longsword">Long Sword</string>
-    <string name="type_weapon_tonfa">Tonfa</string>
-    <string name="type_weapon_magnetspike">Magnet Spike</string>
-    <string name="type_weapon_swordandshield">Sword and Shield</string>
-    <string name="type_weapon_dualblades">Dual Blades</string>
-    <string name="type_weapon_hammer">Hammer</string>
-    <string name="type_weapon_huntinghorn">Hunting Horn</string>
-    <string name="type_weapon_lance">Lance</string>
-    <string name="type_weapon_gunlance">Gunlance</string>
-    <string name="type_weapon_switchaxe">Switch Axe</string>
-    <string name="type_weapon_chargeblade">Charge Blade</string>
-    <string name="type_weapon_insectglaive">Insect Glaive</string>
-    <string name="type_weapon_lightbowgun">Light Bowgun</string>
-    <string name="type_weapon_heavybowgun">Heavy Bowgun</string>
-    <string name="type_weapon_bow">Bow</string>
+    <string name="type_hub_guild">ギルド</string>
+    <string name="type_hub_event">イベント</string>
+    <string name="type_hub_arena">闘技場</string>
+    <string name="type_hub_permit">許可証</string>
+    <string name="type_weapon_greatsword">大剣</string>
+    <string name="type_weapon_longsword">太刀</string>
+    <string name="type_weapon_tonfa">穿龍棍</string>
+    <string name="type_weapon_magnetspike">マグネットスパイク</string>
+    <string name="type_weapon_swordandshield">片手剣</string>
+    <string name="type_weapon_dualblades">双剣</string>
+    <string name="type_weapon_hammer">ハンマー</string>
+    <string name="type_weapon_huntinghorn">狩猟笛</string>
+    <string name="type_weapon_lance">ランス</string>
+    <string name="type_weapon_gunlance">ガンランス</string>
+    <string name="type_weapon_switchaxe">スラッシュアックス</string>
+    <string name="type_weapon_chargeblade">チャージアックス</string>
+    <string name="type_weapon_insectglaive">操虫棍</string>
+    <string name="type_weapon_lightbowgun">ライトボウガン</string>
+    <string name="type_weapon_heavybowgun">ヘビィボウガン</string>
+    <string name="type_weapon_bow">弓</string>
 
-    <string name="palicos">Palicos</string>
-    <string name="combining">Combining</string>
-    <string name="skills">Skills</string>
-    <string name="recipes">Recipes</string>
+    <string name="palicos">パートニャー</string>
+    <string name="combining">調合</string>
+    <string name="skills">スキル</string>
+    <string name="recipes">調合レシピ</string>
 
     <string name="format_plus">%1$+d</string>
     <string name="skill_points">%s %+d</string>
     <string name="skill_points_joined">%s / %s</string>
 
     <!-- value strings -->
-    <string name="value_rare">Rare %s</string>
+    <string name="value_rare">レア度 %s</string>
 
     <!-- Generic strings -->
-    <string name="rank_ex">Training</string>
-    <string name="rank_lr">Low Rank</string>
-    <string name="rank_hr">High Rank</string>
-    <string name="rank_gou">Gou Rank</string>
-    <string name="rank_g">G Rank</string>
+    <string name="rank_ex">訓練</string>
+    <string name="rank_lr">下級</string>
+    <string name="rank_hr">上級</string>
+    <string name="rank_gou">凄腕</string>
+    <string name="rank_g">G級</string>
     <string name="rank_z1">Z★1</string>
     <string name="rank_z2">Z★2</string>
     <string name="rank_z3">Z★3</string>
@@ -151,86 +151,86 @@
     <string name="rank_any">Any</string>
     
     <!-- Ailments -->
-    <string name="ailment_roar_small">Small Roar</string>
-    <string name="ailment_roar_large">Large Roar</string>
-    <string name="ailment_roar_small_special">Small Special Roar</string>
-    <string name="ailment_roar_special">Special Roar</string>
-    <string name="ailment_wind_small">Small Wind Pressure</string>
-    <string name="ailment_wind_large">Large Wind Pressure</string>
-    <string name="ailment_wind_dragon">Dragon Wind Pressure</string>
-    <string name="ailment_tremor">Tremor</string>
-    <string name="ailment_fire">Fireblight</string>
-    <string name="ailment_water">Waterblight</string>
-    <string name="ailment_thunder">Thunderblight</string>
-    <string name="ailment_ice">Iceblight</string>
-    <string name="ailment_dragon">Dragonblight</string>
-    <string name="ailment_blast">Blastblight</string>
-    <string name="ailment_bleed">Bleeding</string>
-    <string name="ailment_poison">Poison</string>
-    <string name="ailment_poison_noxious">Noxious Poison</string>
-    <string name="ailment_poison_deadly">Deadly Poison</string>
-    <string name="ailment_sleep">Sleep</string>
-    <string name="ailment_paralysis">Paralysis</string>
-    <string name="ailment_stun">Stun</string>
-    <string name="ailment_snowman">Snowman</string>
-    <string name="ailment_muddy">Muddy</string>
-    <string name="ailment_bubbles">Bubbles</string>
-    <string name="ailment_boned">Boned</string>
-    <string name="ailment_mucus">Mucus</string>
-    <string name="ailment_soiled">Soiled</string>
-    <string name="ailment_environmental">Environmental</string>
-    <string name="ailment_defensedown">Defense Down</string>
-    <string name="ailment_frenzy">Frenzy Virus</string>
-    <string name="ailment_confusion">Confusion</string>
+    <string name="ailment_roar_small">咆哮【小】</string>
+    <string name="ailment_roar_large">咆哮【大】</string>
+    <string name="ailment_roar_small_special">大咆哮【小】</string>
+    <string name="ailment_roar_special">大咆哮</string>
+    <string name="ailment_wind_small">風圧【小】</string>
+    <string name="ailment_wind_large">風圧【大】</string>
+    <string name="ailment_wind_dragon">龍風圧</string>
+    <string name="ailment_tremor">震動</string>
+    <string name="ailment_fire">火属性やられ</string>
+    <string name="ailment_water">水属性やられ</string>
+    <string name="ailment_thunder">雷属性属性やられ</string>
+    <string name="ailment_ice">氷属性やられ</string>
+    <string name="ailment_dragon">氷属性やられ</string>
+    <string name="ailment_blast">爆破やられ</string>
+    <string name="ailment_bleed">出血</string>
+    <string name="ailment_poison">毒</string>
+    <string name="ailment_poison_noxious">猛毒</string>
+    <string name="ailment_poison_deadly">劇毒</string>
+    <string name="ailment_sleep">睡眠</string>
+    <string name="ailment_paralysis">麻痺</string>
+    <string name="ailment_stun">スタン</string>
+    <string name="ailment_snowman">雪だるま</string>
+    <string name="ailment_muddy">泥まみれ</string>
+    <string name="ailment_bubbles">泡まみれ</string>
+    <string name="ailment_boned">骨まみれ</string>
+    <string name="ailment_mucus">粘液まみれ</string>
+    <string name="ailment_soiled">悪臭</string>
+    <string name="ailment_environmental">環境</string>
+    <string name="ailment_defensedown">防御力DOWN</string>
+    <string name="ailment_frenzy">狂竜ウイルス</string>
+    <string name="ailment_confusion">混乱</string>
 
     <!-- Drawer items -->
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">ナビゲーションドロワーを開く</string>
+    <string name="drawer_close">ナビゲーションドロワーを閉じる</string>
 
-    <string name="title_monsters">Monsters</string>
-    <string name="title_weapons">Weapons</string>
-    <string name="title_armor">Armor</string>
-    <string name="title_armor_sets">Armor Sets</string>
-    <string name="title_quests">Quests</string>
-    <string name="title_items">Items</string>
-    <string name="title_bentos">Bento</string>
-    <string name="title_palicos">Palicos</string>
-    <string name="title_combining">Combining</string>
-    <string name="title_locations">Locations</string>
-    <string name="title_decorations">Decorations</string>
-    <string name="title_cuffs">Skill Cuffs</string>
-    <string name="title_skills">Skills</string>
-    <string name="title_asb">Armor Set Builder</string>
-    <string name="title_wishlists">Wishlists</string>
-    <string name="title_talismans">Talismans</string>
+    <string name="title_monsters">モンスター</string>
+    <string name="title_weapons">武器</string>
+    <string name="title_armor">防具</string>
+    <string name="title_armor_sets">装備</string>
+    <string name="title_quests">クエスト</string>
+    <string name="title_items">アイテム</string>
+    <string name="title_bentos">狩人弁当</string>
+    <string name="title_palicos">パートニャー</string>
+    <string name="title_combining">調合</string>
+    <string name="title_locations">フィールド</string>
+    <string name="title_decorations">装飾品</string>
+    <string name="title_cuffs">スキルカフ</string>
+    <string name="title_skills">スキル</string>
+    <string name="title_asb">マイセット</string>
+    <string name="title_wishlists">ウィッシュリスト</string>
+    <string name="title_talismans">護石</string>
 
-    <string name="drawer_group_other">Other</string>
-    <string name="drawer_preferences">Settings</string>
-    <string name="drawer_feedback">Send Feedback</string>
-    <string name="drawer_changelog">Change Log</string>
+    <string name="drawer_group_other">その他</string>
+    <string name="drawer_preferences">設定</string>
+    <string name="drawer_feedback">フィードバックを送信</string>
+    <string name="drawer_changelog">更新履歴</string>
 
-    <string name="logo_description">Logo</string>
+    <string name="logo_description">ロゴ</string>
 
     <!-- Standard Menu Options -->
-    <string name="option_wishlist_add">Create Wishlist</string>
-    <string name="option_wishlist_delete">Delete wishlist</string>
-    <string name="option_wishlist_copy">Copy wishlist</string>
-    <string name="option_wishlist_rename">Rename wishlist</string>
-    <string name="option_wishlist_edit">Edit wishlist</string>
-    <string name="option_wishlist_data_add">Add to wishlist</string>
-    <string name="option_wishlist_data_edit">Edit quantity</string>
-    <string name="option_wishlist_data_delete">Delete from wishlist</string>
+    <string name="option_wishlist_add">ウィッシュリスト作成</string>
+    <string name="option_wishlist_delete">ウィッシュリスト削除</string>
+    <string name="option_wishlist_copy">ウィッシュリストコピー</string>
+    <string name="option_wishlist_rename">ウィッシュリスト改名</string>
+    <string name="option_wishlist_edit">ウィッシュリスト編集</string>
+    <string name="option_wishlist_data_add">ウィッシュリストに追加</string>
+    <string name="option_wishlist_data_edit">数量変更</string>
+    <string name="option_wishlist_data_delete">ウィッシュリストから削除</string>
 
     <!-- Page titles -->
-    <string name="title_search">Search item</string>
-    <string name="title_preferences">Settings</string>
+    <string name="title_search">アイテムを検索</string>
+    <string name="title_preferences">設定</string>
     <string name="monster_image">monster_image</string>
     <string name="monster_damage">monster_damage</string>
-    <string name="arena_quests">Arena Quests</string>
-    <string name="wishlist">Wishlists</string>
+    <string name="arena_quests">闘技場クエスト</string>
+    <string name="wishlist">ウィッシュリスト</string>
 
-    <string name="dialog_armor_filter_title">Filter</string>
-    <string name="armor_filter_label_rank">Rank</string>
+    <string name="dialog_armor_filter_title">フィルター</string>
+    <string name="armor_filter_label_rank">ランク</string>
 
     <!--
     Unicode Black Circle \u25CF
@@ -239,252 +239,252 @@
     -->
 
     <!-- Setting names -->
-    <string name="preference_app_language">App Language</string>
+    <string name="preference_app_language">アプリ言語</string>
     <string name="preference_app_language_description">
-        Use %s as the app language.
-        \nDefault will use your system setting if a translation exists, or english if not available.
-        Requires a restart.
+        %sをアプリ言語として使用する。
+        \nDefault は翻訳版が存在する場合システム言語を使用します、存在しない場合は英語を使用します。
+        再起動が必要です。
     </string>
     <string name="preference_app_language_description_disabled">
-        App language cannot be overwritten in your android version.
+        使用中のAndroidバージョンではアプリ言語を上書きできません。
     </string>
-    <string name="preference_data_language">Data Language (BETA)</string>
+    <string name="preference_data_language">データ言語 (BETA)</string>
     <string name="preference_data_language_description">
-        Show in-game data using %s.
-        \nDefault tries to use the app language if available.
+        ゲーム内のデータを%sで表示する。
+        \nDefault は可能な場合システム言語を使用します。
     </string>
-    <string name="preference_dark_mode">Theme (BETA)</string>
+    <string name="preference_dark_mode">テーマ (BETA)</string>
     <string name="preference_dark_mode_description">
-        Toggle dark mode.
+        ダークモードを起動。
     </string>
-    <string name="preference_dark">Dark</string>
-    <string name="preference_light">Light (Default)</string>
-    <string name="preference_language_default">Default</string>
-    <string name="preference_japanese">Show Japanese</string>
+    <string name="preference_dark">ダーク</string>
+    <string name="preference_light">ライト (デフォルト)</string>
+    <string name="preference_language_default">デフォルト</string>
+    <string name="preference_japanese">日本語で表示</string>
     <string name="preference_japanese_description">
-        Show Japanese names alongside english ones.
+        日本語の名前を英語と併記する。
     </string>
 
-    <string name="preference_bloated">Display Bloated Base Damage</string>
-    <string name="preference_bloated_description">Toggle weapon base damage bloated value multiplier.</string>
+    <string name="preference_bloated">表示攻撃力を表示</string>
+    <string name="preference_bloated_description">武器倍率に武器係数をかけた値を表示</string>
 
-    <string name="preference_true_raw">Display Element Raw Damage</string>
-    <string name="preference_true_raw_description">Toggle weapon element damage true raw value.</string>
+    <string name="preference_true_raw">実属性値を表示</string>
+    <string name="preference_true_raw_description">武器の実属性値を表示</string>
 
     <!-- Monsters -->
-    <string name="monster_class_small">Small</string>
-    <string name="monster_class_large">Large</string>
-    <string name="monster_class_deviant">Zenith</string>
-    <string name="monster_class_extreme">Musou</string>
-    <string name="monster_class_type">Type</string>
+    <string name="monster_class_small">小型</string>
+    <string name="monster_class_large">大型</string>
+    <string name="monster_class_deviant">辿異</string>
+    <string name="monster_class_extreme">無双</string>
+    <string name="monster_class_type">種族</string>
 
-    <string name="monster_class_type_brute_wyvern">Brute Wyvern</string>
-    <string name="monster_class_type_flying_wyvern">Flying Wyvern</string>
-    <string name="monster_class_type_carapaceon">Carapaceon</string>
-    <string name="monster_class_type_leviathan">Leviathan</string>
-    <string name="monster_class_type_pelagus">Pelagus</string>
-    <string name="monster_class_type_piscine_wyvern">Piscine Wyvern</string>
-    <string name="monster_class_type_bird_wyvern">Bird Wyvern</string>
-    <string name="monster_class_type_fanged_wyvern">Fanged Wyvern</string>
-    <string name="monster_class_type_elder_dragon">Elder Dragon</string>
-    <string name="monster_class_type_herbivore">Herbivore</string>
-    <string name="monster_class_type_lynian">Lynian</string>
-    <string name="monster_class_type_neopteron">Neopteron</string>
-    <string name="monster_class_type_snake_wyvern">Snake Wyvern</string>
-    <string name="monster_class_type_unknown">Unknown</string>
+    <string name="monster_class_type_brute_wyvern">獣竜種</string>
+    <string name="monster_class_type_flying_wyvern">飛竜種</string>
+    <string name="monster_class_type_carapaceon">甲殻種</string>
+    <string name="monster_class_type_leviathan">海竜種</string>
+    <string name="monster_class_type_pelagus">牙獣種</string>
+    <string name="monster_class_type_piscine_wyvern">魚竜種</string>
+    <string name="monster_class_type_bird_wyvern">鳥竜種</string>
+    <string name="monster_class_type_fanged_wyvern">牙竜種</string>
+    <string name="monster_class_type_elder_dragon">古龍種</string>
+    <string name="monster_class_type_herbivore">草食種</string>
+    <string name="monster_class_type_lynian">獣人種</string>
+    <string name="monster_class_type_neopteron">甲虫種</string>
+    <string name="monster_class_type_snake_wyvern">蛇竜種</string>
+    <string name="monster_class_type_unknown">分類不明</string>
 
-    <string name="monster_detail_tab_summary">Summary</string>
-    <string name="monster_detail_tab_damage">Damage</string>
-    <string name="monster_summary_weaknesses">Weaknesses</string>
-    <string name="monster_ailments">Ailments</string>
-    <string name="monster_habitats">Habitats</string>
-    <string name="monster_damage_area">Area</string>
-    <string name="monster_status_icon">Status</string>
-    <string name="monster_status_initial">Initial</string>
-    <string name="monster_status_increase">Increase</string>
-    <string name="monster_status_max">Max</string>
-    <string name="monster_status_duration">Duration</string>
-    <string name="monster_status_damage">Damage</string>
+    <string name="monster_detail_tab_summary">概要</string>
+    <string name="monster_detail_tab_damage">肉質</string>
+    <string name="monster_summary_weaknesses">弱点</string>
+    <string name="monster_ailments">状態異常</string>
+    <string name="monster_habitats">生息地</string>
+    <string name="monster_damage_area">部位</string>
+    <string name="monster_status_icon">属性</string>
+    <string name="monster_status_initial">耐性値</string>
+    <string name="monster_status_increase">耐性上昇</string>
+    <string name="monster_status_max">最大値</string>
+    <string name="monster_status_duration">効果時間</string>
+    <string name="monster_status_damage">ダメージ</string>
 
     <!-- Bentos -->
-    <string name="bento_ingredients">Ingredients</string>
-    <string name="bento_effects">Effects</string>
-    <string name="bento_health">Health</string>
-    <string name="bento_stamina">Stamina</string>
+    <string name="bento_ingredients">食材</string>
+    <string name="bento_effects">効果</string>
+    <string name="bento_health">体力</string>
+    <string name="bento_stamina">スタミナ</string>
 
     <!-- Items -->
-    <string name="item_detail_tab_detail">Detail</string>
-    <string name="item_detail_tab_usage">Usage</string>
-    <string name="item_rarity">Rare</string>
-    <string name="item_carry_max">Carry Max:</string>
-    <string name="item_buy">Buy Price</string>
-    <string name="item_sell">Sell Price</string>
-    <string name="item_sell_label">Sell Price:</string> <!-- variation with : after -->
-    <string name="item_description">Description</string>
-    <string name="item_combinations">Combinations</string>
-    <string name="item_crafting">Crafting</string>
-    <string name="item_combination_yield">Yields</string>
-    <string name="item_gather_fixed">[Fixed]</string>
-    <string name="item_gather_common">[Common]</string>
-    <string name="item_gather_rare">[Rare]</string>
-    <string name="item_gather_summer">[Summer]</string>
-    <string name="item_gather_breeding">[Breeding]</string>
-    <string name="item_gather_winter">[Winter]</string>
-    <string name="item_gather_day">[D]</string>
-    <string name="item_gather_night">[N]</string>
+    <string name="item_detail_tab_detail">詳細</string>
+    <string name="item_detail_tab_usage">用途</string>
+    <string name="item_rarity">レア度</string>
+    <string name="item_carry_max">ポーチ上限:</string>
+    <string name="item_buy">買値</string>
+    <string name="item_sell">売値</string>
+    <string name="item_sell_label">売値:</string> <!-- variation with : after -->
+    <string name="item_description">説明</string>
+    <string name="item_combinations">調合</string>
+    <string name="item_crafting">生産</string>
+    <string name="item_combination_yield">調合数</string>
+    <string name="item_gather_fixed">[固定]</string>
+    <string name="item_gather_common">[コモン]</string>
+    <string name="item_gather_rare">[レア]</string>
+    <string name="item_gather_summer">[温暖期]</string>
+    <string name="item_gather_breeding">[繁殖期]</string>
+    <string name="item_gather_winter">[寒冷期]</string>
+    <string name="item_gather_day">[昼]</string>
+    <string name="item_gather_night">[夜]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
-    <string name="gather_site_bug">Bug</string>
-    <string name="gather_site_gather">Gather</string>
-    <string name="gather_site_mine">Mine</string>
-    <string name="gather_site_fishing_none">Fishing (No Bait)</string>
-    <string name="gather_site_fishing_burst">Fishing (Burst Bait)</string>
-    <string name="gather_site_fishing_goldenfish">Fishing (Goldenfish Bait)</string>
-    <string name="gather_site_fishing_megafly">Fishing (Mega Fishing Fly)</string>
-    <string name="gather_site_fishing_sushi">Fishing (Sushifish Bait)</string>
+    <string name="gather_site_bug">虫取り</string>
+    <string name="gather_site_gather">採取</string>
+    <string name="gather_site_mine">採掘</string>
+    <string name="gather_site_fishing_none">釣り (釣り餌無し)</string>
+    <string name="gather_site_fishing_burst">釣り (バクダンゴ)</string>
+    <string name="gather_site_fishing_goldenfish">釣り (黄金ダンゴ)</string>
+    <string name="gather_site_fishing_megafly">釣り (釣りフィーバエ)</string>
+    <string name="gather_site_fishing_sushi">釣り (サシミダンゴ)</string>
 
     <!-- Skill detail -->
-    <string name="skill_tab_detail">Detail</string>
-    <string name="skill_tab_head">Head</string>
-    <string name="skill_tab_body">Body</string>
-    <string name="skill_tab_arms">Arms</string>
-    <string name="skill_tab_waist">Waist</string>
-    <string name="skill_tab_legs">Legs</string>
-    <string name="skill_show_penalties">Show Penalties</string>
+    <string name="skill_tab_detail">詳細</string>
+    <string name="skill_tab_head">頭</string>
+    <string name="skill_tab_body">胴</string>
+    <string name="skill_tab_arms">腕</string>
+    <string name="skill_tab_waist">腰</string>
+    <string name="skill_tab_legs">脚</string>
+    <string name="skill_show_penalties">ペナルティ表示</string>
 
     <!-- Equipment -->
-    <string name="equipment_defense">Defense</string>
-    <string name="equipment_slots">Slots</string>
+    <string name="equipment_defense">防御</string>
+    <string name="equipment_slots">スロット</string>
 
     <!-- Armor -->
-    <string name="armor_part">Part</string>
-    <string name="armor_type_both">Any</string>
-    <string name="armor_type_blade">Blademaster</string>
-    <string name="armor_type_gunner">Gunner</string>
-    <string name="armor_type_blade_short">Blade</string>
-    <string name="armor_type_gunner_short">Gunner</string>
-    <string name="armor_title_set">Set</string>
-    <string name="armor_res_fire">Fire Res:</string>
-    <string name="armor_res_water">Water Res:</string>
-    <string name="armor_res_thunder">Thunder Res:</string>
-    <string name="armor_res_ice">Ice Res:</string>
-    <string name="armor_res_dragon">Dragon Res:</string>
+    <string name="armor_part">部位</string>
+    <string name="armor_type_both">共用</string>
+    <string name="armor_type_blade">剣士</string>
+    <string name="armor_type_gunner">ガンナー</string>
+    <string name="armor_type_blade_short">剣</string>
+    <string name="armor_type_gunner_short">銃</string>
+    <string name="armor_title_set">一式</string>
+    <string name="armor_res_fire">火耐性:</string>
+    <string name="armor_res_water">水耐性:</string>
+    <string name="armor_res_thunder">雷耐性:</string>
+    <string name="armor_res_ice">氷耐性:</string>
+    <string name="armor_res_dragon">竜耐性:</string>
 
     <!-- Weapons -->
-    <string name="weapon_detail_tab_detail">Detail</string>
-    <string name="weapon_detail_tab_melodies">Melodies</string>
-    <string name="weapon_detail_tab_family">Family</string>
-    <string name="weapon_tree_origin">Origin</string>
-    <string name="weapon_tree_family">Family</string>
-    <string name="weapon_tree_side_branches">Branches</string>
-    <string name="weapon_tree_final">Final (All Branches)</string>
+    <string name="weapon_detail_tab_detail">詳細</string>
+    <string name="weapon_detail_tab_melodies">旋律</string>
+    <string name="weapon_detail_tab_family">系統</string>
+    <string name="weapon_tree_origin">起点</string>
+    <string name="weapon_tree_family">系統</string>
+    <string name="weapon_tree_side_branches">派生</string>
+    <string name="weapon_tree_final">最終 (全派生)</string>
 
-    <string name="equipment_reach">Reach</string>
-    <string name="reach_vshort">V. Short</string>
-    <string name="reach_short">Short</string>
-    <string name="reach_medium">Medium</string>
-    <string name="reach_long">Long</string>
-    <string name="reach_vlong">V. Long</string>
+    <string name="equipment_reach">リーチ</string>
+    <string name="reach_vshort">極短</string>
+    <string name="reach_short">短</string>
+    <string name="reach_medium">中</string>
+    <string name="reach_long">長</string>
+    <string name="reach_vlong">極長</string>
 
-    <string name="phial_power">Power</string>
-    <string name="phial_poison">Poison</string>
-    <string name="phial_paralysis">Paralysis</string>
-    <string name="phial_exhaust">Exhaust</string>
-    <string name="phial_dragon">Dragon</string>
-    <string name="phial_impact">Impact</string>
-    <string name="phial_element">Element</string>
-    <string name="phial_status">Status</string>
-    <string name="phial_stun">Stun</string>
-    <string name="shelling_wide">Wide</string>
-    <string name="shelling_long">Long</string>
-    <string name="shelling_normal">Normal</string>
-    <string name="shot_normal">Normal</string>
-    <string name="shot_pierce">Pierce</string>
-    <string name="shot_pellet">Pellet</string>
-    <string name="shot_crag">Crag</string>
-    <string name="shot_clust">Clust</string>
-    <string name="shot_poison">Poison</string>
-    <string name="shot_paralysis">Paralysis</string>
-    <string name="shot_sleep">Sleep</string>
-    <string name="shot_exhaust">Exhaust</string>
-    <string name="shot_recovery">Recovery</string>
-    <string name="shot_fire">Fire</string>
-    <string name="shot_water">Water</string>
-    <string name="shot_thunder">Thunder</string>
-    <string name="shot_ice">Ice</string>
-    <string name="shot_dragon">Dragon</string>
-    <string name="shot_tranq">Tranq</string>
-    <string name="shot_paint">Paint</string>
-    <string name="shot_demon">Demon</string>
-    <string name="shot_armor">Armor</string>
-    <string name="coating_power">Power</string>
-    <string name="coating_explosive">Explosive</string>
-    <string name="coating_impact">Impact</string>
-    <string name="coating_elemental">Elem Up</string>
+    <string name="phial_power">強撃</string>
+    <string name="phial_poison">毒</string>
+    <string name="phial_paralysis">麻痺</string>
+    <string name="phial_exhaust">減気</string>
+    <string name="phial_dragon">滅龍</string>
+    <string name="phial_impact">榴弾</string>
+    <string name="phial_element">強属性</string>
+    <string name="phial_status">強異常</string>
+    <string name="phial_stun">スタン</string>
+    <string name="shelling_wide">拡散</string>
+    <string name="shelling_long">放射</string>
+    <string name="shelling_normal">通常</string>
+    <string name="shot_normal">通常</string>
+    <string name="shot_pierce">貫通</string>
+    <string name="shot_pellet">散弾</string>
+    <string name="shot_crag">徹甲</string>
+    <string name="shot_clust">拡散</string>
+    <string name="shot_poison">毒弾</string>
+    <string name="shot_paralysis">麻痺</string>
+    <string name="shot_sleep">睡眠</string>
+    <string name="shot_exhaust">減気</string>
+    <string name="shot_recovery">回復</string>
+    <string name="shot_fire">火炎</string>
+    <string name="shot_water">水冷</string>
+    <string name="shot_thunder">雷撃</string>
+    <string name="shot_ice">氷結</string>
+    <string name="shot_dragon">滅龍</string>
+    <string name="shot_tranq">捕獲</string>
+    <string name="shot_paint">ぺ弾</string>
+    <string name="shot_demon">鬼人</string>
+    <string name="shot_armor">硬化硬化</string>
+    <string name="coating_power">強撃</string>
+    <string name="coating_explosive">爆撃</string>
+    <string name="coating_impact">打撃</string>
+    <string name="coating_elemental">属性強化</string>
     <string name="coating_lv1">Lv1</string>
     <string name="coating_lv2">Lv2</string>
     <string name="coating_lv3">Lv3</string>
     <string name="coating_lv4">Lv4</string>
-    <string name="coating_closerange">C. Range</string>
-    <string name="coating_poison">Poison</string>
-    <string name="coating_paralysis">Paralysis</string>
-    <string name="coating_sleep">Sleep</string>
-    <string name="coating_exhaust">Exhaust</string>
-    <string name="coating_blast">Blast</string>
-    <string name="coating_paint">Paint</string>
-    <string name="bow_charge_rapid">Rapid</string>
-    <string name="bow_charge_pierce">Pierce</string>
-    <string name="bow_charge_spread">Spread</string>
-    <string name="bow_charge_heavy">Heavy</string>
+    <string name="coating_closerange">接撃</string>
+    <string name="coating_poison">毒</string>
+    <string name="coating_paralysis">麻痺</string>
+    <string name="coating_sleep">睡眠</string>
+    <string name="coating_exhaust">減気</string>
+    <string name="coating_blast">爆破</string>
+    <string name="coating_paint">ペイント</string>
+    <string name="bow_charge_rapid">連射</string>
+    <string name="bow_charge_pierce">貫通</string>
+    <string name="bow_charge_spread">拡散</string>
+    <string name="bow_charge_heavy">重射</string>
     <string name="bow_charge_format">%s %d</string>
     <string name="bow_charge_format_locked">(%s %d)</string>
 
-    <string name="weapon_attack">Attack</string>
-    <string name="weapon_affinity">Affinity</string>
-    <string name="weapon_sharpness">Sharpness</string>
-    <string name="weapon_notes">Notes</string>
-    <string name="weapon_phial_type">Phial</string>
-    <string name="weapon_shelling">Shelling</string>
-    <string name="weapon_upgrade">Upgrade</string>
-    <string name="weapon_create">Create</string>
-    <string name="weapon_charges">Charges</string>
-    <string name="weapon_arc">Arc</string>
-    <string name="weapon_recoil">Recoil</string>
-    <string name="weapon_reload">Reload</string>
-    <string name="weapon_deviation">Velocity</string>
-    <string name="weapon_coatings">Coatings</string>
-    <string name="weapon_ammo">Ammo</string>
+    <string name="weapon_attack">攻撃力</string>
+    <string name="weapon_affinity">会心率</string>
+    <string name="weapon_sharpness">切れ味</string>
+    <string name="weapon_notes">メモ</string>
+    <string name="weapon_phial_type">ビン</string>
+    <string name="weapon_shelling">砲撃タイプ</string>
+    <string name="weapon_upgrade">強化</string>
+    <string name="weapon_create">生産</string>
+    <string name="weapon_charges">溜め段階</string>
+    <string name="weapon_arc">曲射</string>
+    <string name="weapon_recoil">反動</string>
+    <string name="weapon_reload">装填</string>
+    <string name="weapon_deviation">弾速</string>
+    <string name="weapon_coatings">ビン</string>
+    <string name="weapon_ammo">弾種</string>
     <string name="weapon_internal_row" translatable="false">%s • %s • %s</string>
     <string name="weapon_rapid_row" translatable="false">%s</string>
     <!--
     <string name="weapon_rapid_row" translatable="false">%s • %s • %s%% • %s</string>
     -->
     <string name="weapon_siege_row" translatable="false">%s • %s</string>
-    <string name="weapon_melody_duration">DUR: %s</string>
-    <string name="weapon_melody_extension">EXT: %s</string>
+    <string name="weapon_melody_duration">持続: %s</string>
+    <string name="weapon_melody_extension">延長: %s</string>
 
     <!-- Palicos -->
-    <string name="palico_equipment_tab_detail">Detail</string>
-    <string name="palico_equipment_tab_components">Components</string>
+    <string name="palico_equipment_tab_detail">詳細</string>
+    <string name="palico_equipment_tab_components">素材</string>
 
     <!-- Wishlist stuff -->
-    <string name="wishlist_name_hint">Wishlist Name</string>
-    <string name="wishlist_quantity_label">Quantity:</string>
-    <string name="wishlist_quantity_hint">Quantity</string>
-    <string name="wishlist_add_title">Add to which wishlist?</string>
-    <string name="wishlist_add_set_title">Add armorset to which wishlist?</string>
-    <string name="wishlist_add_success">Added to %s wishlist</string>
-    <string name="wishlist_text_total">Total cost</string>
-    <string name="wishlist_error_name_required">Wishlist name is required</string>
-    <string name="wishlist_error_quantity_required">Quantity is required</string>
-    <string name="wishlist_error_quantity_invalid">Quantity is out of bounds</string>
-    <string name="wishlist_error_unknown">Unexpected error</string>
-    <string name="wishlist_tab_wishlist">Wishlist</string>
-    <string name="wishlist_tab_materials">Materials</string>
+    <string name="wishlist_name_hint">ウィッシュリスト名</string>
+    <string name="wishlist_quantity_label">数量:</string>
+    <string name="wishlist_quantity_hint">数量</string>
+    <string name="wishlist_add_title">どのウィッシュリストに追加しますか?</string>
+    <string name="wishlist_add_set_title">装備をどのウィッシュリストに追加しますか?</string>
+    <string name="wishlist_add_success">%sをウィッシュリストに追加しました</string>
+    <string name="wishlist_text_total">累計コスト</string>
+    <string name="wishlist_error_name_required">ウィッシュリストに名前が必要です</string>
+    <string name="wishlist_error_quantity_required">数量を指定してください</string>
+    <string name="wishlist_error_quantity_invalid">数量が範囲外です</string>
+    <string name="wishlist_error_unknown">不明なエラー</string>
+    <string name="wishlist_tab_wishlist">ウィッシュリスト</string>
+    <string name="wishlist_tab_materials">必要素材</string>
 
-    <string name="wishlist_created">Created wishlist %s</string>
-    <string name="wishlist_add_item">Added %s</string>
-    <string name="wishlist_renamed">Renamed to %s</string>
-    <string name="wishlist_deleted">Wishlist Deleted</string>
+    <string name="wishlist_created">ウィッシュリスト「%s」を作成しました</string>
+    <string name="wishlist_add_item">%sを追加しました</string>
+    <string name="wishlist_renamed">%sへ名前を変更しました</string>
+    <string name="wishlist_deleted">ウィッシュリストを削除しました</string>
 
     <string name="no_slots" translatable="false">―――</string>
     <string name="one_slot" translatable="false">○――</string>
@@ -497,122 +497,122 @@
 
 
     <!-- Armor Set Builder Stuff !-->
-    <string name="dialog_title_add_asb_set">New Set</string>
-    <string name="dialog_title_edit_asb_set">Edit Set</string>
-    <string name="asb_dialog_name_hint">Set Name</string>
-    <string name="asb_dialog_rank">Rank</string>
-    <string name="asb_dialog_hunter_type">Hunter Type</string>
-    <string name="asb_context_action_delete">Delete</string>
-    <string name="asb_context_action_edit_data">Edit Data</string>
-    <string name="asb_context_action_copy">Copy</string>
+    <string name="dialog_title_add_asb_set">新規作成</string>
+    <string name="dialog_title_edit_asb_set">マイセット編集</string>
+    <string name="asb_dialog_name_hint">マイセット名</string>
+    <string name="asb_dialog_rank">ランク</string>
+    <string name="asb_dialog_hunter_type">職業</string>
+    <string name="asb_context_action_delete">削除</string>
+    <string name="asb_context_action_edit_data">データ編集</string>
+    <string name="asb_context_action_copy">コピー</string>
 
-    <string name="activity_asb">Armor Set Builder</string>
-    <string name="asb_tab_equipment">Equipment</string>
-    <string name="asb_title_select_armor">Select Armor</string>
-    <string name="asb_title_select_head">Select Head</string>
-    <string name="asb_title_select_body">Select Body</string>
-    <string name="asb_title_select_arms">Select Arms</string>
-    <string name="asb_title_select_waist">Select Waist</string>
-    <string name="asb_title_select_legs">Select Legs</string>
-    <string name="asb_title_armor_all">All</string>
+    <string name="activity_asb">マイセット</string>
+    <string name="asb_tab_equipment">装備</string>
+    <string name="asb_title_select_armor">防具選択</string>
+    <string name="asb_title_select_head">頭部選択</string>
+    <string name="asb_title_select_body">胴部選択</string>
+    <string name="asb_title_select_arms">腕部選択</string>
+    <string name="asb_title_select_waist">腰部選択</string>
+    <string name="asb_title_select_legs">脚部選択</string>
+    <string name="asb_title_armor_all">全て</string>
 
-    <string name="asb_empty_slot">Empty slot</string>
-    <string name="asb_no_slots">No slots</string>
-    <string name="asb_action_select">Select</string>
-    <string name="asb_action_add">Add</string>
-    <string name="asb_action_remove">Remove</string>
-    <string name="asb_action_edit">Edit</string>
-    <string name="asb_result_set_deleted">Armor Set Deleted</string>
-    <string name="asb_result_talisman_deleted">Talisman Deleted</string>
+    <string name="asb_empty_slot">空スロット</string>
+    <string name="asb_no_slots">スロット無し</string>
+    <string name="asb_action_select">選択</string>
+    <string name="asb_action_add">追加</string>
+    <string name="asb_action_remove">外す</string>
+    <string name="asb_action_edit">編集</string>
+    <string name="asb_result_set_deleted">マイセットを削除しました</string>
+    <string name="asb_result_talisman_deleted">護石を削除しました</string>
 
-    <string name="option_asb_set_add">New Set</string>
-    <string name="option_asb_edit">Edit Set</string>
-    <string name="option_asb_delete">Delete Set</string>
+    <string name="option_asb_set_add">新マイセット</string>
+    <string name="option_asb_edit">マイセット編集</string>
+    <string name="option_asb_delete">マイセット削除</string>
 
-    <string name="asb_dialog_talisman_title">Talisman</string>
-    <string name="asb_talisman_skill">Skill %d</string>
-    <string name="asb_talisman_skill_1">Skill 1</string>
-    <string name="asb_talisman_skill_2">Skill 2</string>
+    <string name="asb_dialog_talisman_title">護石</string>
+    <string name="asb_talisman_skill">スキル %d</string>
+    <string name="asb_talisman_skill_1">スキル 1</string>
+    <string name="asb_talisman_skill_2">スキル 2</string>
 
-    <string name="asb_none">(None)</string>
-    <string name="asb_skill_tree">Skill Tree</string>
-    <string name="asb_skill_points_total">Total</string>
+    <string name="asb_none">(なし)</string>
+    <string name="asb_skill_tree">スキル一覧</string>
+    <string name="asb_skill_points_total">合計</string>
 
-    <string name="asb_dialog_title_delete_set">Delete this set?</string>
-    <string name="asb_dialog_title_delete_set_multi">Delete sets?</string>
-    <string name="asb_dialog_title_copy_set">Copy this set?</string>
-    <string name="asb_dialog_title_copy_set_multi">Copy sets?</string>
-    <string name="monster_normal_state">Normal State</string>
+    <string name="asb_dialog_title_delete_set">マイセットを削除しますか?</string>
+    <string name="asb_dialog_title_delete_set_multi">選択した全てのマイセットを削除しますか?</string>
+    <string name="asb_dialog_title_copy_set">マイセットをコピーしますか?</string>
+    <string name="asb_dialog_title_copy_set_multi">選択した全てのマイセットをコピーしますか?</string>
+    <string name="monster_normal_state">通常状態</string>
 
-    <string name="asb_weapon_slots_none">Weapon (No Slots)</string>
-    <string name="asb_weapon_slots_one">Weapon (One Slots)</string>
-    <string name="asb_weapon_slots_two">Weapon (Two Slots)</string>
-    <string name="asb_weapon_slots_three">Weapon (Three Slots)</string>
+    <string name="asb_weapon_slots_none">武器 (スロット無し)</string>
+    <string name="asb_weapon_slots_one">武器 (スロット1)</string>
+    <string name="asb_weapon_slots_two">武器 (スロット2)</string>
+    <string name="asb_weapon_slots_three">武器 (スロット3)</string>
 
     <!-- Bowgun strings -->
-    <string name="siege_mode">Siege Mode</string>
+    <string name="siege_mode">しゃがみ撃ち</string>
     <string name="ammo_divider">" • "</string>
-    <string name="rapid_fire_short_wait">Short</string>
-    <string name="rapid_fire_medium_wait">Medium</string>
-    <string name="rapid_fire_long_wait">Long</string>
-    <string name="rapid_fire_very_long_wait">Very Long</string>
-    <string name="ammo_none">(None)</string>
-    <string name="internal_ammo">Internal Ammo</string>
-    <string name="rapid_fire">Rapid Fire</string>
+    <string name="rapid_fire_short_wait">小</string>
+    <string name="rapid_fire_medium_wait">中</string>
+    <string name="rapid_fire_long_wait">大</string>
+    <string name="rapid_fire_very_long_wait">最大</string>
+    <string name="ammo_none">(なし)</string>
+    <string name="internal_ammo">内臓弾</string>
+    <string name="rapid_fire">速射</string>
 
     <!-- Quest Detail -->
-    <string name="quest_detail_tab_detail">Detail</string>
-    <string name="quest_detail_tab_rewards">Rewards</string>
-    <string name="quest_detail_reward">Reward</string>
+    <string name="quest_detail_tab_detail">詳細</string>
+    <string name="quest_detail_tab_rewards">報酬</string>
+    <string name="quest_detail_reward">報酬</string>
     <string name="quest_detail_hrp">HRP</string>
-    <string name="quest_detail_fee">Fee</string>
-    <string name="quest_detail_goal">Goal</string>
-    <string name="quest_detail_subquest_a">Subquest A</string>
-    <string name="quest_detail_subquest_reward_a">Subquest A Reward</string>
-    <string name="quest_detail_subquest_hrp_a">Subquest A HRP</string>
-    <string name="quest_detail_subquest_b">Subquest B</string>
-    <string name="quest_detail_subquest_reward_b">Subquest B Reward</string>
-    <string name="quest_detail_subquest_hrp_b">Subquest B HRP</string>
-    <string name="quest_detail_hirer">Commissioned By</string>
-    <string name="quest_detail_description">Description</string>
-    <string name="unstable">Unstable</string>
-    <string name="hyper">Hyper</string>
-    <string name="key">Key</string>
-    <string name="urgent">Urgent</string>
-    <string name="armor_pieces">Armor Pieces</string>
+    <string name="quest_detail_fee">契約金</string>
+    <string name="quest_detail_goal">目的</string>
+    <string name="quest_detail_subquest_a">サブターゲット A</string>
+    <string name="quest_detail_subquest_reward_a">サブターゲット A 報酬</string>
+    <string name="quest_detail_subquest_hrp_a">サブターゲット A HRP</string>
+    <string name="quest_detail_subquest_b">サブターゲット B</string>
+    <string name="quest_detail_subquest_reward_b">サブターゲット B 報酬</string>
+    <string name="quest_detail_subquest_hrp_b">サブターゲット B HRP</string>
+    <string name="quest_detail_hirer">依頼主</string>
+    <string name="quest_detail_description">説明</string>
+    <string name="unstable">不安定</string>
+    <string name="hyper">獰猛化</string>
+    <string name="key">キー</string>
+    <string name="urgent">緊急</string>
+    <string name="armor_pieces">貸与防具</string>
 
     <!-- Locations -->
-    <string name="location_detail_tab_map">Map</string>
+    <string name="location_detail_tab_map">地図</string>
 
     <!-- Help Pages -->
-    <string name="help_element_fire">Fire</string>
-    <string name="help_element_water">Water</string>
-    <string name="help_element_thunder">Thunder</string>
-    <string name="help_element_ice">Ice</string>
-    <string name="help_element_dragon">Dragon</string>
-    <string name="help_element_black_flame">Black Flame</string>
-    <string name="help_element_blaze">Blaze</string>
-    <string name="help_element_burning_zero">Burning Zero</string>
-    <string name="help_element_crimson_demon">Crimson Demon</string>
-    <string name="help_element_darkness">Darkness</string>
-    <string name="help_element_emperors_roar">Emperors Roar</string>
-    <string name="help_element_frozen_seraphim">Frozen Seraphim</string>
-    <string name="help_element_music">Music</string>
-    <string name="help_element_light">Light</string>
-    <string name="help_element_sound">Sound</string>
-    <string name="help_element_tenshou">Tenshou</string>
-    <string name="help_element_thunder_pole">Thunder Pole</string>
-    <string name="help_element_wind">Wind</string>
-    <string name="help_element_poison">Poison</string>
-    <string name="help_element_paralysis">Paralysis</string>
-    <string name="help_element_sleep">Sleep</string>
-    <string name="help_element_blast">Blast</string>
+    <string name="help_element_fire">火</string>
+    <string name="help_element_water">水</string>
+    <string name="help_element_thunder">雷</string>
+    <string name="help_element_ice">氷</string>
+    <string name="help_element_dragon">龍</string>
+    <string name="help_element_black_flame">黒焔</string>
+    <string name="help_element_blaze">炎</string>
+    <string name="help_element_burning_zero">灼零</string>
+    <string name="help_element_crimson_demon">紅魔</string>
+    <string name="help_element_darkness">闇</string>
+    <string name="help_element_emperors_roar">皇鳴</string>
+    <string name="help_element_frozen_seraphim">熾凍</string>
+    <string name="help_element_music">奏</string>
+    <string name="help_element_light">光</string>
+    <string name="help_element_sound">響</string>
+    <string name="help_element_tenshou">天翔</string>
+    <string name="help_element_thunder_pole">雷極</string>
+    <string name="help_element_wind">風</string>
+    <string name="help_element_poison">毒</string>
+    <string name="help_element_paralysis">麻痺</string>
+    <string name="help_element_sleep">睡眠</string>
+    <string name="help_element_blast">爆破</string>
 
-    <string name="help_element_fire_desc">Fire</string>
-    <string name="help_element_water_desc">Water</string>
-    <string name="help_element_thunder_desc">Thunder</string>
-    <string name="help_element_ice_desc">Ice</string>
-    <string name="help_element_dragon_desc">Dragon</string>
+    <string name="help_element_fire_desc">火</string>
+    <string name="help_element_water_desc">水</string>
+    <string name="help_element_thunder_desc">雷</string>
+    <string name="help_element_ice_desc">氷</string>
+    <string name="help_element_dragon_desc">龍</string>
     <string name="help_element_black_flame_desc">The fire burns long after the host\'s demise.</string>
     <string name="help_element_blaze_desc">Flames bolstered by the power of dragon element.</string>
     <string name="help_element_burning_zero_desc">The burning fury of fire, and the freezing tranquility of ice.</string>
@@ -626,29 +626,29 @@
     <string name="help_element_tenshou_desc">Wrath of heaven itself.</string>
     <string name="help_element_thunder_pole_desc">Magnetic energy strong enough to knock down flying dragon.</string>
     <string name="help_element_wind_desc">A golden wind that engulfs everything.</string>
-    <string name="help_element_poison_desc">Poison</string>
-    <string name="help_element_paralysis_desc">Paralysis</string>
-    <string name="help_element_sleep_desc">Sleep</string>
-    <string name="help_element_blast_desc">Blast</string>
+    <string name="help_element_poison_desc">毒</string>
+    <string name="help_element_paralysis_desc">麻痺</string>
+    <string name="help_element_sleep_desc">睡眠</string>
+    <string name="help_element_blast_desc">爆破</string>
 
-    <string name="help_header_combined">Combined Elements</string>
-    <string name="help_header_base">Base Elements</string>
-    <string name="help_header_ailments">Ailments</string>
+    <string name="help_header_combined">複属性</string>
+    <string name="help_header_base">通常属性</string>
+    <string name="help_header_ailments">状態異常属性</string>
 
-    <string name="talisman_full_name">%s Talisman</string>
+    <string name="talisman_full_name">%sの護石</string>
     <string-array name="talisman_names">
-        <item>Pawn</item>
-        <item>Bishop</item>
-        <item>Knight</item>
-        <item>Rook</item>
-        <item>Queen</item>
-        <item>King</item>
-        <item>Dragon</item>
-        <item>Unknowable</item>
-        <item>Mystic</item>
-        <item>Hero</item>
-        <item>Legend</item>
-        <item>Creator</item>
+        <item>兵士</item>
+        <item>闘士</item>
+        <item>騎士</item>
+        <item>城塞</item>
+        <item>女王</item>
+        <item>王</item>
+        <item>龍</item>
+        <item>未知</item>
+        <item>神秘</item>
+        <item>英雄</item>
+        <item>伝説</item>
+        <item>天</item>
     </string-array>
 
     <string-array name="slot_values">
@@ -659,14 +659,14 @@
     </string-array>
 
     <string-array name="filter_restriction">
-        <item>Minimum</item>
-        <item>Exactly</item>
-        <item>Maximum</item>
+        <item>最小</item>
+        <item>ちょうど</item>
+        <item>最大</item>
     </string-array>
 
     <string-array name="hunter_type">
-        <item>Blademaster</item>
-        <item>Gunner</item>
+        <item>剣士</item>
+        <item>ガンナー</item>
     </string-array>
 
 </resources>
