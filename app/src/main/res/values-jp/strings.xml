@@ -16,7 +16,7 @@
     <string name="about">このアプリについて</string>
     <string name="about_version">バージョン %s</string>
     <string name="about_message">
-        Gathering Hall Studios はモンスターハンターシリーズの為のアプリを開発すること
+        Gathering Hall Studiosはモンスターハンターシリーズの為のアプリを開発すること
         を目的としたデザイナー、デベロッパー陣によるオープンソースチームです。
         contact@gatheringhallstudiosもしくはDiscordでご連絡ください。
     </string>
@@ -55,14 +55,14 @@
     <string name="value_zenny">%dz</string>
 
     <string name="placeholder_unknown">不明</string>
-    <string name="filter_final_option">Final Only</string>
+    <string name="filter_final_option">終端のみ</string>
     <string name="empty_message">No Data</string>
     <string name="list_empty_message">素材が不足しています</string>
 
-    <string name="dialog_message_delete">\"%s\" が削除されます</string>
-    <string name="dialog_message_delete_multi">これら %d 個のアイテムが削除されます</string>
+    <string name="dialog_message_delete">\"%s\"が削除されます</string>
+    <string name="dialog_message_delete_multi">これら%d個のアイテムが削除されます</string>
     <string name="dialog_message_copy">\"%s\" が複製されます</string>
-    <string name="dialog_message_copy_multi">これら %d 個のアイテムが複製されます.</string>
+    <string name="dialog_message_copy_multi">これら%d個のアイテムが複製されます.</string>
 
     <!-- CONFIRM EXIT -->
     <string name="exit_title">クエストリタイア</string>
@@ -241,7 +241,7 @@
     <!-- Setting names -->
     <string name="preference_app_language">アプリ言語</string>
     <string name="preference_app_language_description">
-        %s をアプリ言語として使用する。
+        %sをアプリ言語として使用する。
         \nDefault は翻訳版が存在する場合システム言語を使用します、存在しない場合は英語を使用します。
         再起動が必要です。
     </string>
@@ -250,7 +250,7 @@
     </string>
     <string name="preference_data_language">データ言語 (BETA)</string>
     <string name="preference_data_language_description">
-        ゲーム内のデータを %s で表示する。
+        ゲーム内のデータを%sで表示する。
         \nDefault は可能な場合システム言語を使用します。
     </string>
     <string name="preference_dark_mode">テーマ (BETA)</string>
@@ -472,7 +472,7 @@
     <string name="wishlist_quantity_hint">数量</string>
     <string name="wishlist_add_title">どのウィッシュリストに追加しますか?</string>
     <string name="wishlist_add_set_title">装備をどのウィッシュリストに追加しますか?</string>
-    <string name="wishlist_add_success">%s をウィッシュリストに追加しました</string>
+    <string name="wishlist_add_success">%sをウィッシュリストに追加しました</string>
     <string name="wishlist_text_total">累計コスト</string>
     <string name="wishlist_error_name_required">ウィッシュリストに名前が必要です</string>
     <string name="wishlist_error_quantity_required">数量を指定してください</string>
@@ -481,9 +481,9 @@
     <string name="wishlist_tab_wishlist">ウィッシュリスト</string>
     <string name="wishlist_tab_materials">必要素材</string>
 
-    <string name="wishlist_created">ウィッシュリスト %s を作成しました</string>
-    <string name="wishlist_add_item">%s を追加しました</string>
-    <string name="wishlist_renamed">%s へ名前を変更しました</string>
+    <string name="wishlist_created">ウィッシュリスト「%s」を作成しました</string>
+    <string name="wishlist_add_item">%sを追加しました</string>
+    <string name="wishlist_renamed">%sへ名前を変更しました</string>
     <string name="wishlist_deleted">ウィッシュリストを削除しました</string>
 
     <string name="no_slots" translatable="false">―――</string>
