@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
+    <release version="1.1.1" versioncode="23">
+        <change>Added Japanese UI language (tenpuradon).</change>
+        <change>Enabled Japanese dataset in settings.</change>
+        <change>Updated some of hardcoded strings.</change>
+    </release>
     <release version="1.1.0" versioncode="22">
         <change>Fixed G Hiden Stone Quests not showing up in G Special tab.</change>
         <change>Added new mixed element icons (silversoulart).</change>

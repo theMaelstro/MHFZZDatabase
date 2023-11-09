@@ -38,8 +38,8 @@ android {
         //2.3.5  Version Code:20   Released 12-20-2018
         //2.3.6  Version Code:21   Released 12-20-2018
 
-        versionCode 22
-        versionName "1.1.0"
+        versionCode 23
+        versionName "1.1.1"
 
         compileOptions {
             // we'll still be able to target lower java versions because of desugar

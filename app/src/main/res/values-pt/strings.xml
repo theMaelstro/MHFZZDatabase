@@ -33,6 +33,8 @@
     <string name="about_language_de">Alemão</string>
     <string name="about_language_it">Italiano</string>
     <string name="about_language_pt">Português</string>
+    <string name="about_language_ja">Japonesa</string>
+
     <string name="about_japanese_wiki">Wiki Japonesa</string>
     <string name="about_asb">Construtor de Conjunto de Armaduras</string>
 
@@ -332,9 +334,13 @@
     <string name="item_gather_day">[D]</string>
     <string name="item_gather_night">[N]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
+    <string name="gather_area_area">Area</string>
+    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_hidden">Hidden</string>
     <string name="gather_site_bug">Inseto</string>
     <string name="gather_site_gather">Recolher</string>
     <string name="gather_site_mine">Minerar</string>
+    <string name="gather_site_fishing">Pescar</string>
     <string name="gather_site_fishing_none">Pescar (Sem Isco)</string>
     <string name="gather_site_fishing_burst">Pescar (Isco Burst)</string>
     <string name="gather_site_fishing_goldenfish">Pescar (Isco Goldenfish)</string>

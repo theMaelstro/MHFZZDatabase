@@ -175,6 +175,31 @@ object AssetLoader {
     }
 
     /**
+     * Returns a localized string of the gathering area for the given Gathering object.
+     * todo: Rewrite to a proper localizer.
+     */
+    @JvmStatic fun localizeGatherArea(gather: Gathering): String {
+
+        val resId = when (gather.area) {
+            "c" -> R.string.gather_area_camp
+            "h" -> R.string.gather_area_hidden
+            else -> R.string.gather_area_area
+        }
+
+        if (resId == 0) {
+            Log.e(TAG, "Unknown gathering area ${gather.area}, not localized")
+            return gather.area ?: ""
+        }
+
+        val area = when (gather.area) {
+            "c", "h" -> ctx.getString(resId)
+            else -> ctx.getString(R.string.item_gather_area, ctx.getString(resId), gather.area)
+        }
+
+        return area
+    }
+
+    /**
      * Returns a localized string of the gathering site for the given Gathering object.
      */
     @JvmStatic fun localizeGatherSite(gather: Gathering): String {
@@ -185,6 +210,7 @@ object AssetLoader {
             "Fishing (Mega Fishing Fly)" -> R.string.gather_site_fishing_megafly
             "Fishing (No Bait)" -> R.string.gather_site_fishing_none
             "Fishing (Sushifish Bait)" -> R.string.gather_site_fishing_sushi
+            "Fishing" -> R.string.gather_site_fishing
             "Gather" -> R.string.gather_site_gather
             "Mine" -> R.string.gather_site_mine
             else -> 0
@@ -235,6 +261,15 @@ object AssetLoader {
         }
 
         return ctx.getString(t)
+    }
+
+    /**
+     * Returns a localized string that represents the Area for gathering node.
+     * todo: Rewrite to a proper localizer.
+     */
+    @JvmStatic fun localizeNodeAreaFull(gather: Gathering): String {
+        val area = localizeGatherArea(gather)
+        return ctx.getString(R.string.item_gather_area_full, area, gather.group)
     }
 
 

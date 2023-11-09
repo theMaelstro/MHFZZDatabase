@@ -33,6 +33,7 @@
 	<string name="about_language_de">Allemand</string>
     <string name="about_language_it">Italienne</string>
     <string name="about_language_pt">Portugais</string>
+    <string name="about_language_ja">Japonais</string>
 
     <string name="about_japanese_wiki">Wiki Japonais</string>
     <string name="about_asb">Concepteur d\'armure</string>
@@ -331,9 +332,13 @@
     <string name="item_gather_day">[J]</string>
     <string name="item_gather_night">[N]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
+    <string name="gather_area_area">Area</string>
+    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_hidden">Hidden</string>
     <string name="gather_site_bug">Insecte</string>
     <string name="gather_site_gather">Récolte</string>
     <string name="gather_site_mine">Mine</string>
+    <string name="gather_site_fishing">Pêcher</string>
     <string name="gather_site_fishing_none">Pêcher (Pas d\'Appât)</string>
     <string name="gather_site_fishing_burst">Pêcher (Appât Explosif)</string>
     <string name="gather_site_fishing_goldenfish">Pêcher (Poisson D\'or )</string>

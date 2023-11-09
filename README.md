@@ -25,4 +25,5 @@ Especially:
 - Buddy for German translation of the UI
 - Evo for Italian translation of the UI
 - Dedsonic for Portugese translation of the UI
+- tenpuradon (天丼) for Japanese translation of the UI
 - Mertnya for Zenith skill help (and letting me copy descriptions)

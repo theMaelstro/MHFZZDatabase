@@ -198,6 +198,14 @@
                 app:labelText="Dedsonic"
                 app:valueText="@string/about_language_pt" />
 
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSrc="@drawable/ic_github"
+                app:labelText="tenpuradon (天丼)"
+                android:tag="https://github.com/tenpuradon"
+                app:valueText="@string/about_language_ja" />
+
         </LinearLayout>
 
         <com.ghstudios.android.components.SectionHeaderCell

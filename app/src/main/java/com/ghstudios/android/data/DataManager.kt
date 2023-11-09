@@ -65,7 +65,7 @@ class DataManager private constructor(private val mAppContext: Context) {
      * Returns a map of supported language codes.
      */
     fun getLanguages() = listOf(
-        "en"//, "ja"
+        "en", "ja"
     )
 
 

@@ -33,6 +33,8 @@
     <string name="about_language_de">Deutsch</string>
     <string name="about_language_it">Italienisch</string>
     <string name="about_language_pt">Portugiesisch</string>
+    <string name="about_language_ja">Japanisch</string>
+
     <string name="about_japanese_wiki">Japanisches Wiki</string>
     <string name="about_asb">Armor Set Builder</string>
 
@@ -333,9 +335,13 @@
     <string name="item_gather_day">[T]</string>
     <string name="item_gather_night">[N]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
+    <string name="gather_area_area">Area</string>
+    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_hidden">Hidden</string>
     <string name="gather_site_bug">Käfer</string>
     <string name="gather_site_gather">Sammeln</string>
     <string name="gather_site_mine">Abbauen</string>
+    <string name="gather_site_fishing">Fischen</string>
     <string name="gather_site_fishing_none">Fischen (Kein Köder)</string>
     <string name="gather_site_fishing_burst">Fischen (Berst Köder)</string>
     <string name="gather_site_fishing_goldenfish">Fischen (Goldfisch Köder)</string>

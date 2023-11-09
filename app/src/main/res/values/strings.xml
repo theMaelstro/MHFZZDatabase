@@ -33,6 +33,7 @@
     <string name="about_language_de">German</string>
     <string name="about_language_it">Italian</string>
     <string name="about_language_pt">Portuguese</string>
+    <string name="about_language_ja">Japanese</string>
 
     <string name="about_japanese_wiki">Japanese Wiki</string>
     <string name="about_asb">Armor Set Builder</string>
@@ -327,15 +328,21 @@
     <string name="item_gather_fixed">[Fixed]</string>
     <string name="item_gather_common">[Common]</string>
     <string name="item_gather_rare">[Rare]</string>
-    <string name="item_gather_summer">[Summer]</string>
+    <string name="item_gather_summer">[Summer]</string> <!-- Seasons for gathering spots -->
     <string name="item_gather_breeding">[Breeding]</string>
     <string name="item_gather_winter">[Winter]</string>
-    <string name="item_gather_day">[D]</string>
-    <string name="item_gather_night">[N]</string>
-    <string name="item_gather_full">%3$s%2$s %1$s</string>
-    <string name="gather_site_bug">Bug</string>
+    <string name="item_gather_day">[D]</string> <!-- Day -->
+    <string name="item_gather_night">[N]</string>   <!-- Night -->
+    <string name="item_gather_full">%3$s%2$s %1$s</string> <!-- Full string for gathering node SeasonTime Type -->
+    <string name="gather_area_area">Area</string>
+    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_hidden">Hidden</string>
+    <string name="item_gather_area">%1$s %2$s</string>
+    <string name="item_gather_area_full">%1$s: %2$d</string>
+    <string name="gather_site_bug">Bug</string> <!-- Methods for gathering spots -->
     <string name="gather_site_gather">Gather</string>
     <string name="gather_site_mine">Mine</string>
+    <string name="gather_site_fishing">Fishing</string>
     <string name="gather_site_fishing_none">Fishing (No Bait)</string>
     <string name="gather_site_fishing_burst">Fishing (Burst Bait)</string>
     <string name="gather_site_fishing_goldenfish">Fishing (Goldenfish Bait)</string>

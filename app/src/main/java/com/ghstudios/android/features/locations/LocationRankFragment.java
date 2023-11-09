@@ -125,10 +125,16 @@ public class LocationRankFragment extends ListFragment implements
 		@Override
 		protected String getCustomGroup(Cursor c) {
 			Gathering g = ((GatheringCursor)c).getGathering();
-			return g.getArea() +" "
+			return AssetLoader.localizeGatherArea(g) + " "
+					+AssetLoader.localizeGatherSite(g) + " "
+					+g.getGroup()
+					;
+					/*
+					g.getArea() +" "
 					//+AssetLoader.localizeGatherModifier(g) + " "
 					+g.getSite() + " "
 					+g.getGroup();
+					 */
 		}
 
 		@Override

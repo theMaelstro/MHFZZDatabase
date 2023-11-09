@@ -33,6 +33,7 @@
     <string name="about_language_de">ドイツ語</string>
     <string name="about_language_it">イタリア語</string>
     <string name="about_language_pt">ポルトガル語</string>
+    <string name="about_language_ja">日本語</string>
 
     <string name="about_japanese_wiki">日本語Wiki</string>
     <string name="about_asb">装備シミュレーター</string>
@@ -333,9 +334,15 @@
     <string name="item_gather_day">[昼]</string>
     <string name="item_gather_night">[夜]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
+    <string name="gather_area_area">エリア</string>
+    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_hidden">Hidden</string>
+    <string name="item_gather_area">%1$s%2$s</string>
+    <string name="item_gather_area_full">%1$s:%2$d</string>
     <string name="gather_site_bug">虫取り</string>
     <string name="gather_site_gather">採取</string>
     <string name="gather_site_mine">採掘</string>
+    <string name="gather_site_fishing">釣り</string>
     <string name="gather_site_fishing_none">釣り (釣り餌無し)</string>
     <string name="gather_site_fishing_burst">釣り (バクダンゴ)</string>
     <string name="gather_site_fishing_goldenfish">釣り (黄金ダンゴ)</string>

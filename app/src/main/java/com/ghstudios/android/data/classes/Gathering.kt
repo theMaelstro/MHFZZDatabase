@@ -61,7 +61,7 @@ class Gathering {
     var rate: Float = 0f          // Gather rate
 
     //What group is it a part of, (Unique within an area)
-    var group: Int = 0
+    var group: Int = 0            // Index number of specific gathering node in given area.
 
     //is this a fixed gathering point
     var isFixed: Boolean = false

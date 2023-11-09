@@ -33,6 +33,7 @@
     <string name="about_language_de">Tedesca</string>
     <string name="about_language_it">Italiano</string>
     <string name="about_language_pt">Portoghese</string>
+    <string name="about_language_ja">Giapponese</string>
 
     <string name="about_japanese_wiki">Wiki Giapponese</string>
     <string name="about_asb">Creatore Set Armature</string>
@@ -334,6 +335,9 @@
     <string name="item_gather_day">[Giorno]</string>
     <string name="item_gather_night">[Notte]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
+    <string name="gather_area_area">Area</string>
+    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_hidden">Hidden</string>
     <string name="gather_site_bug">Insetto</string>
     <string name="gather_site_gather">Raccolta</string>
     <string name="gather_site_mine">Cava</string>
