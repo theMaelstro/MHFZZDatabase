@@ -1377,7 +1377,7 @@
                             android:layout_marginStart="96dp"
 
                             android:layout_marginLeft="96dp"
-                            android:text="80%"
+                            android:text="150%"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -1413,7 +1413,7 @@
                             android:layout_marginStart="96dp"
 
                             android:layout_marginLeft="96dp"
-                            android:text="80%"
+                            android:text="50%"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
