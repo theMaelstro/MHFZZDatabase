@@ -58,11 +58,11 @@
     <string name="placeholder_unknown">不明</string>
     <string name="filter_final_option">終端のみ</string>
     <string name="empty_message">No Data</string>
-    <string name="list_empty_message">素材が不足しています</string>
+    <string name="list_empty_message">データが不足しています</string>
 
     <string name="dialog_message_delete">\"%s\"が削除されます</string>
     <string name="dialog_message_delete_multi">これら%d個のアイテムが削除されます</string>
-    <string name="dialog_message_copy">\"%s\" が複製されます</string>
+    <string name="dialog_message_copy">\"%s\"が複製されます</string>
     <string name="dialog_message_copy_multi">これら%d個のアイテムが複製されます.</string>
 
     <!-- CONFIRM EXIT -->
@@ -243,7 +243,7 @@
     <string name="preference_app_language">アプリ言語</string>
     <string name="preference_app_language_description">
         %sをアプリ言語として使用する。
-        \nDefault は翻訳版が存在する場合システム言語を使用します、存在しない場合は英語を使用します。
+        \nデフォルトは翻訳版が存在する場合システム言語を使用します、存在しない場合は英語を使用します。
         再起動が必要です。
     </string>
     <string name="preference_app_language_description_disabled">
@@ -252,7 +252,7 @@
     <string name="preference_data_language">データ言語 (BETA)</string>
     <string name="preference_data_language_description">
         ゲーム内のデータを%sで表示する。
-        \nDefault は可能な場合システム言語を使用します。
+        \nデフォルトは可能な場合アプリ言語を使用します。
     </string>
     <string name="preference_dark_mode">テーマ (BETA)</string>
     <string name="preference_dark_mode_description">
@@ -335,7 +335,7 @@
     <string name="item_gather_night">[夜]</string>
     <string name="item_gather_full">%3$s%2$s %1$s</string>
     <string name="gather_area_area">エリア</string>
-    <string name="gather_area_camp">Camp</string>
+    <string name="gather_area_camp">キャンプ</string>
     <string name="gather_area_hidden">Hidden</string>
     <string name="item_gather_area">%1$s%2$s</string>
     <string name="item_gather_area_full">%1$s:%2$d</string>
@@ -367,8 +367,8 @@
     <string name="armor_type_both">共用</string>
     <string name="armor_type_blade">剣士</string>
     <string name="armor_type_gunner">ガンナー</string>
-    <string name="armor_type_blade_short">剣</string>
-    <string name="armor_type_gunner_short">銃</string>
+    <string name="armor_type_blade_short">剣士</string>
+    <string name="armor_type_gunner_short">ガンナー</string>
     <string name="armor_title_set">一式</string>
     <string name="armor_res_fire">火耐性:</string>
     <string name="armor_res_water">水耐性:</string>
@@ -667,7 +667,7 @@
 
     <string-array name="filter_restriction">
         <item>最小</item>
-        <item>ちょうど</item>
+        <item>丁度</item>
         <item>最大</item>
     </string-array>
 
