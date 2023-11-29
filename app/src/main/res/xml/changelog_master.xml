@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
+    <release version="1.1.2" versioncode="24">
+        <change>Updated some of wrong supremacy quest monsters.</change>
+    </release>
     <release version="1.1.1" versioncode="23">
         <change>Added Japanese UI language (tenpuradon).</change>
         <change>Enabled Japanese dataset in settings.</change>
