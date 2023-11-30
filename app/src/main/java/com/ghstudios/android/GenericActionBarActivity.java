@@ -321,7 +321,6 @@ public abstract class GenericActionBarActivity extends AppCompatActivity
                 return true;
 
             case R.id.universal_help:
-                Log.d("TEST","Does it work?");
                 Intent openHelp = new Intent(GenericActionBarActivity.this, UniversalHelpActivity.class);
                 startActivity(openHelp);
                 return true;

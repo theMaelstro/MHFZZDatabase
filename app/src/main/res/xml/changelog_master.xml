@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
     <release version="1.1.2" versioncode="24">
-        <change>Updated some of wrong supremacy quest monsters.</change>
+        <change>Updated Universal Help page with expandable lists.</change>
+        <change>Added Weapon Active Feature guide to Universal Helper.</change>
+        <change>Updated some supremacy quests with wrong monsters listed.</change>
+        <change>Fixed missing King Shakalaka icon.</change>
+        <change>Fixed missing Violent Laviente icon.</change>
+        <change>Fixed Japanese mistranslation for King Shakalaka.</change>
+        <change>Updated Crimson Demon to represent correct values.</change>
+        <change>Updated Japanese UI translations.</change>
     </release>
     <release version="1.1.1" versioncode="23">
         <change>Added Japanese UI language (tenpuradon).</change>

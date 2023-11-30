@@ -641,6 +641,7 @@
     <string name="help_header_combined">複属性</string>
     <string name="help_header_base">通常属性</string>
     <string name="help_header_ailments">状態異常属性</string>
+    <string name="help_header_activefeat">Weapon Active Feature</string>
 
     <string name="talisman_full_name">%sの護石</string>
     <string-array name="talisman_names">

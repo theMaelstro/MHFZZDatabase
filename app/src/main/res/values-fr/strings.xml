@@ -635,10 +635,35 @@
     <string name="help_element_sleep_desc">Sleep</string>
     <string name="help_element_blast_desc">Blast</string>
 
+    <string name="help_feature_greatsword">\u25CF When using an unsheathe attack, gains +100% Critical Rate.</string>
+    <string name="help_feature_longsword">\u25CF Increases Attack Power from +10 to +40 when Spirit Gauge is full.</string>
+    <string name="help_feature_tonfa">\u25CF Empowers all Ryuuki effects:
+        \nHead: KO duration increased from 20s to 30s
+        \nTail: Bleeding deals 1.5x damage
+        \nBody: Increases sharpness return from 15 to 20 and Gunner Attack Up from 25 to 50</string>
+    <string name="help_feature_magnetspike">\u25CF Increases "Magnetic Bind" finisher multiplier by 1.25x (from 600MV to 750MV).
+        \n\u25CF Raises cutting damage to the tail in slash mode by 1.1x.
+        \n\u25CF Stun value in impact mode is increased by 1.3x</string>
+    <string name="help_feature_swordandshield">\u25CF Increases the effect of elemental attacks and status ailments by 1.2x.</string>
+    <string name="help_feature_dualblades">\u25CF When in true demon mode, reduces the speed at which the HP bar decreases.
+        \n\u25CF When in demon mode, reduces stamina gauge decrease speed to ½ or ⅓ if marathon runner is activated.</string>
+    <string name="help_feature_hammer">\u25CF Increases accumulation value of stun by 1.5x.</string>
+    <string name="help_feature_huntinghorn">\u25CF Doubles melody duration.</string>
+    <string name="help_feature_lance">\u25CF Improves Guard skill by one level.
+        \n\u25CF Enables Reflect+3.</string>
+    <string name="help_feature_gunlance">\u25CF Increases non-attribute portion of shelling damage including Wyvern Fire by 1.5x.</string>
+    <string name="help_feature_switchaxe">\u25CF Increases Phial Meter recovery by reloading or guarding.</string>
+    <string name="help_feature_lightbowgun">\u25CF Gains +0.1x multiplier at critical distance.
+        \n\u25CF Increases effect of status ailment attacks by 1.2x.</string>
+    <string name="help_feature_heavybowgun">\u25CF Gains +0.1x multiplier at critical distance.</string>
+    <string name="help_feature_bow">\u25CF Reduces Charge time to 85%.</string>
+
     <string name="help_header_combined">Combined Elements</string>
     <string name="help_header_base">Base Elements</string>
     <string name="help_header_ailments">Ailments</string>
     <string name="talisman_full_name">%s Talisman</string>
+    <string name="help_header_activefeat">Weapon Active Feature</string>
+
     <string-array name="talisman_names">
         <item>Pawn</item>
         <item>Bishop</item>
