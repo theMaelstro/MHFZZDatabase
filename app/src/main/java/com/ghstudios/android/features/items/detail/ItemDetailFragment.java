@@ -18,6 +18,7 @@ import com.ghstudios.android.AppSettings;
 import com.ghstudios.android.AssetLoader;
 import com.ghstudios.android.adapter.ItemCombinationAdapterDelegate;
 import com.ghstudios.android.adapter.ItemStoreAdapterDelegate;
+import com.ghstudios.android.adapter.ItemMochaAdapterDelegate;
 import com.ghstudios.android.adapter.common.BasicListDelegationAdapter;
 import com.ghstudios.android.components.ColumnLabelTextCell;
 import com.ghstudios.android.components.LabelValueComponent;
@@ -42,6 +43,9 @@ public class ItemDetailFragment extends Fragment {
 
     @BindView(R.id.combination_section) ViewGroup combinationSection;
     @BindView(R.id.craft_combinations) RecyclerView combinationList;
+
+    @BindView(R.id.mocha_section) ViewGroup mochaSection;
+    @BindView(R.id.mocha_items) RecyclerView mochaList;
 
     @BindView(R.id.store_section) ViewGroup storeSection;
     @BindView(R.id.store_items) RecyclerView storeList;
@@ -102,6 +106,22 @@ public class ItemDetailFragment extends Fragment {
             adapter.setItems(items);
 
             combinationList.setAdapter(adapter);
+        });
+
+        viewModel.getMochaData().observe(this, (items) -> {
+            if (items == null || items.isEmpty()) {
+                return;
+            }
+
+            mochaSection.setVisibility(View.VISIBLE);
+
+            // DO NOT PUT ADAPTER AS AN INSTANCE VARIABLE OF THE FRAGMENT (or it'll leak)
+            ItemMochaAdapterDelegate delegate = new ItemMochaAdapterDelegate();
+            delegate.setResultItemNavigationEnabled(false);
+            BasicListDelegationAdapter<Object> adapter = new BasicListDelegationAdapter<>(delegate);
+            adapter.setItems(items);
+
+            mochaList.setAdapter(adapter);
         });
 
     }

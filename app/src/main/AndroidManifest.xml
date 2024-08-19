@@ -117,7 +117,7 @@
 
         <!-- COMBO LIST SECTION -->
         <activity
-            android:name="com.ghstudios.android.features.combining.CombiningListActivity"
+            android:name="com.ghstudios.android.features.combining.CombiningListPagerActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
 

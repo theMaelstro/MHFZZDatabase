@@ -64,6 +64,17 @@ public class S {
 	public static final String COLUMN_COMBINING_COMBINER = "combiner";
 	public static final String COLUMN_COMBINING_ALCHEMY = "alchemy";
 
+	// Mocha
+	public static final String TABLE_MOCHA_POTS = "mocha_pots";
+	public static final String COLUMN_MOCHA_ID = "_id";
+	public static final String COLUMN_MOCHA_POT = "pot";
+	public static final String COLUMN_MOCHA_INPUT = "input";
+	public static final String COLUMN_MOCHA_RESULT_1 = "result_1";
+	public static final String COLUMN_MOCHA_RESULT_2 = "result_2";
+	public static final String COLUMN_MOCHA_RESULT_3 = "result_3";
+	public static final String COLUMN_MOCHA_RESULT_4 = "result_4";
+	public static final String COLUMN_MOCHA_RESULT_5 = "result_5";
+	public static final String COLUMN_MOCHA_RESULT_6 = "result_6";
 	
 	// Components
 	public static final String TABLE_COMPONENTS = "components";

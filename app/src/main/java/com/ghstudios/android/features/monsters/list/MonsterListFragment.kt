@@ -3,13 +3,11 @@ package com.ghstudios.android.features.monsters.list
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 
 import com.ghstudios.android.data.classes.MonsterClass
 import com.ghstudios.android.RecyclerViewFragment
 import com.ghstudios.android.util.applyArguments
-import kotlinx.android.synthetic.main.fragment_item_monster_listitem.*
 
 
 /**

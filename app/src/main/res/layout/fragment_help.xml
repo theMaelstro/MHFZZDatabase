@@ -1819,6 +1819,170 @@
 
         </LinearLayout>
 
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:id="@+id/header_combining"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:labelText="@string/help_header_combining" />
+
+        <LinearLayout
+            android:id="@+id/list_combining"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.ghstudios.android.components.IconLabelTextCell
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:iconSrc="@drawable/icon_bomb"
+                app:labelText="@string/help_combining_alchemy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/help_combining_alchemy_guide" />
+
+        </LinearLayout>
+
+        <com.ghstudios.android.components.SectionHeaderCell
+            android:id="@+id/header_mochapot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:labelText="@string/help_header_mochapot" />
+
+        <LinearLayout
+            android:id="@+id/list_mochapot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="@drawable/icon_sac"
+                    app:labelText="@string/help_mocha_pot" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/help_mocha_pot_guide" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="@drawable/icon_mushroom"
+                    app:labelText="@string/help_mocha_input" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/help_mocha_input_guide" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="#D3D3D3"
+                    app:labelText="@string/help_mocha_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="#A43FD8"
+                    app:labelText="@string/help_mocha_5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="#2DAEB0"
+                    app:labelText="@string/help_mocha_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="#2FD033"
+                    app:labelText="@string/help_mocha_15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="#CED02F"
+                    app:labelText="@string/help_mocha_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ghstudios.android.components.IconLabelTextCell
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iconSrc="#D65C5C"
+                    app:labelText="@string/help_mocha_30" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>

@@ -14,6 +14,7 @@ import com.ghstudios.android.AssetLoader
 import com.ghstudios.android.ClickListeners.ItemClickListener
 import com.ghstudios.android.RecyclerViewFragment
 import com.ghstudios.android.adapter.ItemCombinationAdapterDelegate
+import com.ghstudios.android.adapter.ItemMochaAdapterDelegate
 import com.ghstudios.android.adapter.common.BasicListDelegationAdapter
 import com.ghstudios.android.data.classes.Component
 import com.ghstudios.android.mhgendatabase.R
@@ -38,6 +39,7 @@ class ItemUsageFragment : RecyclerViewFragment() {
 
     val adapter = BasicListDelegationAdapter(
             ItemCombinationAdapterDelegate(),
+            ItemMochaAdapterDelegate(),
             UsageAdapterDelegate()
     )
 
@@ -49,7 +51,7 @@ class ItemUsageFragment : RecyclerViewFragment() {
         viewModel.usageData.observe(this, Observer { usage ->
             usage ?: return@Observer
 
-            adapter.items = usage.combinations + usage.crafting
+            adapter.items = usage.combinations + usage.mocha + usage.crafting
             adapter.notifyDataSetChanged()
         })
     }

@@ -433,6 +433,16 @@ class DataManager private constructor(private val mAppContext: Context) {
     }
 
 
+    /********************************* MOCHA QUERIES  */
+
+    fun queryMochas(): MochaCursor {
+        return mHelper.queryMochas()
+    }
+
+    fun queryMochaOnItemID(id: Long): MochaCursor {
+        return mHelper.queryMochas()
+    }
+
     /********************************* MONSTER QUERIES  */
     /* Get a Cursor that has a list of all Monster */
 

@@ -26,6 +26,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.ghstudios.android.features.bentos.list.BentoListActivity;
+import com.ghstudios.android.features.combining.CombiningListPagerActivity;
 import com.ghstudios.android.features.cuffs.list.CuffListActivity;
 import com.ghstudios.android.features.help.UniversalHelpActivity;
 import com.ghstudios.android.features.meta.AboutActivity;
@@ -223,7 +224,7 @@ public abstract class GenericActionBarActivity extends AppCompatActivity
                 intent = new Intent(ctx, PalicoPagerActivity.class);
                 break;
             case MenuSection.COMBINING: // Combining
-                intent = new Intent(ctx, CombiningListActivity.class);
+                intent = new Intent(ctx, CombiningListPagerActivity.class);
                 break;
             case MenuSection.LOCATIONS: // Locations
                 intent = new Intent(ctx, LocationListActivity.class);

@@ -1249,7 +1249,13 @@ internal class MonsterHunterDatabaseHelper constructor(ctx: Context):
         //		FROM weapons AS w LEFT OUTER JOIN	items AS i ON w._id = i._id;
 
         return BentoCursor(db.rawQuery("""
-            SELECT i._id, i.$column_name name, i.icon_name, effect1, effect2, effect3, effect4, ingredient1_id, ingredient2_id, $column_item_1_name as item_1_name, i1.icon_name as item_1_icon_name,i1.icon_color as item_1_icon_color, $column_item_2_name as item_2_name, i2.icon_name as item_2_icon_name,i2.icon_color as item_2_icon_color
+            SELECT 
+                i._id, i.$column_name name, i.icon_name, 
+                effect1, effect2, effect3, effect4, 
+                ingredient1_id, 
+                ingredient2_id, 
+                $column_item_1_name as item_1_name, i1.icon_name as item_1_icon_name,i1.icon_color as item_1_icon_color,
+                $column_item_2_name as item_2_name, i2.icon_name as item_2_icon_name,i2.icon_color as item_2_icon_color
             FROM ${S.TABLE_BENTO} b
                 LEFT OUTER JOIN items i
                     ON b.bento_id = i._id
@@ -1331,6 +1337,85 @@ internal class MonsterHunterDatabaseHelper constructor(ctx: Context):
                     ON b.ingredient2_id = i2._id
             WHERE i._id = ?
         """, arrayOf(id.toString())))
+    }
+    /**
+     * ***************************** MOCHA QUERIES **********************************************
+     */
+    private val mocha_pot_name get() = localizeColumn("p.name")
+    private val mocha_input_name get() = localizeColumn("i.name")
+
+    private val mocha_item_1_name get() = localizeColumn("r1.name")
+    private val mocha_item_2_name get() = localizeColumn("r2.name")
+    private val mocha_item_3_name get() = localizeColumn("r3.name")
+    private val mocha_item_4_name get() = localizeColumn("r4.name")
+    private val mocha_item_5_name get() = localizeColumn("r5.name")
+    private val mocha_item_6_name get() = localizeColumn("r6.name")
+    /*
+	 * Get all mochas
+	 */
+
+    fun queryMochas(): MochaCursor {
+        /**
+        SELECT
+            m._id,
+            p._id, p.name, p.icon_name, p.icon_color,
+            i._id, i.name, i.icon_name, i.icon_color,
+            r1._id, r1.name, r1.icon_name, r1.icon_color,
+            r2._id,	r2.name, r2.icon_name, r2.icon_color,
+            r3._id, r3.name, r3.icon_name, r3.icon_color,
+            r4._id, r4.name, r4.icon_name, r4.icon_color,
+            r5._id, r5.name, r5.icon_name, r5.icon_color,
+            r6._id, r6.name, r6.icon_name, r6.icon_color
+        FROM
+            mocha_pots m
+        LEFT OUTER JOIN items p
+            ON m.pot = p._id
+        LEFT OUTER JOIN items i
+            ON m.input = i._id
+        LEFT OUTER JOIN items r1
+            ON m.result_1 = r1._id
+        LEFT OUTER JOIN items r2
+            ON m.result_2 = r2._id
+        LEFT OUTER JOIN items r3
+            ON m.result_3 = r3._id
+        LEFT OUTER JOIN items r4
+            ON m.result_4 = r4._id
+        LEFT OUTER JOIN items r5
+            ON m.result_5 = r5._id
+        LEFT OUTER JOIN items r6
+            ON m.result_6 = r6._id
+        */
+
+        return MochaCursor(db.rawQuery("""
+            SELECT
+                m._id,
+                pot, $mocha_pot_name as pot_name, p.icon_name as pot_icon_name, p.icon_color as pot_icon_color,
+                input, $mocha_input_name as input_name, i.icon_name as input_icon_name, i.icon_color as input_icon_color,
+                result_1, $mocha_item_1_name as item_1_name, r1.icon_name as item_1_icon_name, r1.icon_color as item_1_icon_color,
+                result_2, $mocha_item_2_name as item_2_name, r2.icon_name as item_2_icon_name, r2.icon_color as item_2_icon_color,
+                result_3, $mocha_item_3_name as item_3_name, r3.icon_name as item_3_icon_name, r3.icon_color as item_3_icon_color,
+                result_4, $mocha_item_4_name as item_4_name, r4.icon_name as item_4_icon_name, r4.icon_color as item_4_icon_color,
+                result_5, $mocha_item_5_name as item_5_name, r5.icon_name as item_5_icon_name, r5.icon_color as item_5_icon_color,
+                result_6, $mocha_item_6_name as item_6_name, r6.icon_name as item_6_icon_name, r6.icon_color as item_6_icon_color
+            FROM
+                ${S.TABLE_MOCHA_POTS} m
+            LEFT OUTER JOIN items p
+                ON m.pot = p._id
+            LEFT OUTER JOIN items i
+                ON m.input = i._id
+            LEFT OUTER JOIN items r1
+                ON m.result_1 = r1._id
+            LEFT OUTER JOIN items r2
+                ON m.result_2 = r2._id
+            LEFT OUTER JOIN items r3
+                ON m.result_3 = r3._id
+            LEFT OUTER JOIN items r4
+                ON m.result_4 = r4._id
+            LEFT OUTER JOIN items r5
+                ON m.result_5 = r5._id
+            LEFT OUTER JOIN items r6
+                ON m.result_6 = r6._id
+        """, emptyArray()))
     }
 
     /**

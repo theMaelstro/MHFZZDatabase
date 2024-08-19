@@ -199,6 +199,7 @@
     <string name="title_bentos">Bento</string>
     <string name="title_palicos">Palicos</string>
     <string name="title_combining">Kombination</string>
+    <string name="title_mocha">Mocha</string>
     <string name="title_locations">Orte</string>
     <string name="title_decorations">Dekorationen</string>
     <string name="title_cuffs">Skill Cuffs</string>
@@ -665,6 +666,24 @@
     <string name="help_header_base">Base Elements</string>
     <string name="help_header_ailments">Ailments</string>
     <string name="help_header_activefeat">Weapon Active Feature</string>
+    <string name="help_header_combining">Combining</string>
+    <string name="help_header_mochapot">Mocha Pot</string>
+
+    <string name="help_combining_alchemy">Alchemy</string>
+    <string name="help_combining_alchemy_guide">Recipes that require Alchemy skill activated have their name accented with color.</string>
+
+    <string name="help_mocha_pot">Pot to Bury</string>
+    <string name="help_mocha_input">Input Item</string>
+
+    <string name="help_mocha_pot_guide">Used in pickling by burying item in the ground for certain amount of time. Time can be determined by the color of smoke released. Dig up pot to receive item.</string>
+    <string name="help_mocha_input_guide">Item used in as ingredient in pickling.</string>
+
+    <string name="help_mocha_0">Less than 5m</string>
+    <string name="help_mocha_5">More than 5m</string>
+    <string name="help_mocha_10">More than 10m</string>
+    <string name="help_mocha_15">More than 15m</string>
+    <string name="help_mocha_20">More than 20m</string>
+    <string name="help_mocha_30">More than 30m</string>
 
     <string name="talisman_full_name">%s Talisman</string>
     <string-array name="talisman_names">
